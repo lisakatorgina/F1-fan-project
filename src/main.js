@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import "./scss/app.scss";
 
-Vue.config.productionTip = false
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import vueAwesomeCountdown from 'vue-awesome-countdown';
+
+Vue.config.productionTip = false;
+Vue.use(vueAwesomeCountdown, 'vac');
 
 new Vue({
   router,

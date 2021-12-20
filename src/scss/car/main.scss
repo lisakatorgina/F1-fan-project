@@ -1,0 +1,280 @@
+.car {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner {
+    width: 1000px;
+    position: relative;
+    flex-shrink: 0;
+    img {
+      display: block;
+      width: 100%;
+      &._hidden {
+        visibility: hidden;
+      }
+    }
+  }
+  &__canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    *, *:before, *:after {
+      transition: all 1s ease-out;
+      //opacity: 1!important;
+      position: absolute;
+    }
+    *:before, *:after {
+      content: '';
+    }
+    &_broken ._base *, &_broken ._base *:before, &_broken ._base *:after {
+      width: 10px!important;
+      height: 10px!important;
+      border-radius: 0!important;
+      //top: 0;
+      //left: 0;
+    }
+    ._base {
+      border: 1px solid black;
+      width: 825px;
+      height: 288px;
+      top: 135px;
+      left: 75px;
+    }
+    ._wheels {
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+      div {
+        background: black;
+        &._back {
+          width: 95px;
+          height: 70px;
+          left: 95px;
+          border-radius: 10px;
+          &._left {
+            top: 0;
+          }
+          &._right {
+            bottom: 0;
+          }
+        }
+        &._front {
+          width: 90px;
+          height: 55px;
+          right: 110px;
+          border-radius: 10px;
+          &:before, &:after {
+
+          }
+          &._left {
+            top: 3px;
+          }
+          &._right {
+            bottom: 3px;
+          }
+        }
+      }
+    }
+    ._body {
+      background: black;
+      width: 385px;
+      height: 148px;
+      left: 95px;
+      top: 70px;
+      opacity: 0.5;
+      &:before, &:after {
+        background: black;
+        width: 100%;
+        height: 50%;
+      }
+      &:before {
+        transform: rotate(-6deg);
+        transform-origin: 0 0;
+      }
+      &:after {
+        bottom: 0;
+        transform: rotate(6deg);
+        transform-origin: 0 100%;
+      }
+      ._back {
+        width: 100%;
+        height: 90px;
+        background: orange;
+        left: 40px;
+        top: 30px;
+        z-index: 1;
+        border-radius: 20px 90px 90px 20px;
+        &:before, &:after {
+          background: orange;
+          width: 91%;
+          height: 50%;
+        }
+        &:before {
+          transform: rotate(-6deg);
+          transform-origin: 0 0;
+        }
+        &:after {
+          bottom: 0;
+          transform: rotate(6deg);
+          transform-origin: 0 100%;
+        }
+      }
+      ._spine {
+        background: blue;
+        width: 70%;
+        height: 10px;
+        top: 40px;
+        z-index: 1;
+        &:before, &:after {
+          background: blue;
+          width: 100%;
+          height: 10px;
+        }
+        &:before {
+          transform: rotate(-3deg);
+          transform-origin: 0 0;
+          border-radius: 0 5px 0 0;
+        }
+        &:after {
+          bottom: 0;
+          transform: rotate(3deg);
+          transform-origin: 0 100%;
+          border-radius: 0 0 5px 0;
+        }
+        div {
+          background: blue;
+          right: -3px;
+          top: -10px;
+          width: 80px;
+          height: 30px;
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+    ._chassis {
+      width: 20px;
+      height: 172px;
+      right: 145px;
+      top: 58px;
+      opacity: 0.5;
+      background: black;
+      &:before, &:after {
+        width: 31px;
+        height: 14px;
+        background: black;
+      }
+      &:after {
+        bottom: 0;
+      }
+      ._left, ._right {
+        height: 50%;
+        width: 10px;
+        background: black;
+        left: -5px;
+      }
+      ._left {
+        top: -10px;
+        left: -5px;
+        transform: rotate(33deg);
+        transform-origin: 0 0;
+        &:before {
+          height: 100%;
+          width: 8px;
+          transform: rotate(-12deg);
+          background: black;
+          transform-origin: 0 0;
+          right: -5px;
+        }
+        &:after {
+          height: 100%;
+          width: 8px;
+          background: black;
+          transform: rotate(-38deg);
+          right: -18px;
+          transform-origin: 0 0;
+          top: -10px;
+        }
+      }
+      ._right {
+        bottom: -10px;
+        transform: rotate(-33deg);
+        transform-origin: 0 100%;
+        &:before {
+          height: 100%;
+          width: 8px;
+          transform: rotate(12deg);
+          background: black;
+          transform-origin: 0 100%;
+          right: -5px;
+        }
+        &:after {
+          height: 100%;
+          width: 8px;
+          background: black;
+          transform: rotate(38deg);
+          right: -18px;
+          transform-origin: 0 100%;
+          bottom: -10px;
+        }
+      }
+    }
+    ._cockpit {
+      width: 300px;
+      right: 46px;
+      height: 44px;
+      top: 123px;
+      background: black;
+      border-radius: 0 5px 5px 0;
+      opacity: 0.5;
+      &:before {
+        height: 24px;
+        border-radius: 0 40px 40px 0;
+        right: -30px;
+        width: 30px;
+        background: blue;
+        top: 8px;
+        border: 2px solid gray;
+      }
+      ._bottom {
+        width: 63%;
+        height: 100%;
+        &:before, &:after {
+          background: orange;
+          width: 100%;
+          height: 50%;
+        }
+        &:before {
+          transform-origin: 100% 0;
+          transform: rotate(7deg);
+          top: 2px;
+        }
+        &:after {
+          transform-origin: 100% 100%;
+          transform: rotate(-7deg);
+          bottom: 2px;
+          border-bottom: 2px solid white;
+        }
+      }
+      ._front {
+        width: 210px;
+        height: 48px;
+        right: 90px;
+        background: orange;
+        top: -3px;
+        border-radius: 0 50px 50px 0;
+      }
+      ._nose {
+        height: 28px;
+        border-radius: 0 40px 40px 0;
+        top: 8px;
+        right: -5px;
+        width: 100px;
+        background: orange;
+      }
+    }
+  }
+}
