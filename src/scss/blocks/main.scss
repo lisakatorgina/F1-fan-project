@@ -26,6 +26,8 @@ body {
   background: #000000;
   flex-direction: column;
   @media (max-width: 767px) {
+    justify-content: flex-start;
+    padding: 50px 20px;
   }
   video {
     position: fixed;
