@@ -1,11 +1,14 @@
 <template>
   <div class="intro">
-    <h1>I Love Formula 1</h1>
     <img src="../assets/img/logo.png">
     <div class="countdown">
-      <h2>New race season starts in</h2>
       <countdown :end-time="new Date(2022, 2, 17, 18, 0, 0)">
         <template v-slot:process="anyYouWantedScopName">
+          <h1>Loading in progress...</h1>
+          <div class="load-bar">
+            <div class="load-bar__progress" :style="{width: `${Math.round(100 - (100/93 * anyYouWantedScopName.timeObj.d))}%`}">{{ `${Math.round(100 - (100/93 * anyYouWantedScopName.timeObj.d))}%` }}</div>
+          </div>
+          <h2>New race season starts in</h2>
           <div class="countdown__wrap">
             <div>
               <span>{{ anyYouWantedScopName.timeObj.d }}</span>
