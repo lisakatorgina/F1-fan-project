@@ -6,6 +6,8 @@ body, html {
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 * {
   color: inherit;
@@ -40,6 +42,13 @@ body {
     min-width: 100%;
     min-height: 100%;
     opacity: 0.4;
+    transform: scale(1.5);
+    @media (max-width: 1023px) {
+      transform: scale(2);
+    }
+    @media (max-width: 767px) {
+      transform: scale(3.2);
+    }
   }
 }
 .nav {
@@ -51,40 +60,66 @@ body {
   background: rgba(#000000, 0.5);
   z-index: 1;
 }
+.inst {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 4px;
+  padding: 3px;
+  background: white;
+  text-align: center;
+  text-decoration: none;
+  img {
+    display: block;
+    width: 100px;
+  }
+  span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #b70798;
+  }
+}
 .intro {
   text-align: center;
   color: #000000;
   background: rgba(#ffffff, 0.3);
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 10px;
   position: relative;
   h1 {
     font-weight: 300;
     font-size: 30px;
-    margin: 0;
-    color: blue;
+    margin: 0 0 15px 0;
+    color: white;
   }
   img {
     width: 100px;
-    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 .countdown {
-  color: orange;
   h2 {
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 0 10px 0;
     font-size: 20px;
+    color: orange;
   }
   &__wrap {
     display: flex;
     font-size: 25px;
     justify-content: center;
+    color: orange;
     div {
-      margin: 0 10px;
+      margin: 0 5px;
     }
     small, span {
       display: block;
+    }
+    span {
+      background: rgba(#000000, 0.5);
+      padding: 1px 4px;
+      border-radius: 4px;
+      margin-bottom: 2px;
     }
     small {
       font-size: 0.5em;

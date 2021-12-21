@@ -5,6 +5,10 @@
       <source src="../assets/videobg.ogg" type="video/ogg">
     </video>
     <Intro/>
+    <a href="https://www.instagram.com/lisalovesformula1/" class="inst" target="_blank">
+      <img class="qr" src="../assets/img/qr.png" alt=""/>
+      <span>@lisalovesformula1</span>
+    </a>
   </div>
 </template>
 
