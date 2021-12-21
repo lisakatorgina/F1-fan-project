@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <video width="100%" height="100%" autoplay muted loop>
+      <source src="../assets/videobg.mp4" type="video/mp4">
+      <source src="../assets/videobg.ogg" type="video/ogg">
+    </video>
     <Intro/>
   </div>
 </template>
