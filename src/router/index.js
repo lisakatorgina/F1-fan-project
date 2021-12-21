@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-
+import Template from '../views/Template.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,7 +21,12 @@ const routes = [
   {
     path: '/car',
     name: 'Car',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Car.vue')
+    component: () => import('../views/Car.vue')
+  },
+  {
+    path: '/template',
+    name: 'Template',
+    component: () => import('../views/Template.vue')
   }
 ]
 
