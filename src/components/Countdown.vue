@@ -2,7 +2,7 @@
   <div class="countdown">
     <countdown :end-time="new Date(2022, 2, 17, 18, 0, 0)">
       <template v-slot:process="countdown">
-        <h1>New season is loading...</h1>
+        <h1 v-if="!noTitle">New season is loading...</h1>
         <div class="load-bar">
           <div class="load-bar__progress" :style="{width: `${Math.round(100 - (100/93 * countdown.timeObj.d))}%`}">{{ `${Math.round(100 - (100/93 * countdown.timeObj.d))}%` }}</div>
         </div>
@@ -37,5 +37,11 @@
 <script>
 export default {
   name: 'myCountdown',
+  props: {
+    noTitle: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>

@@ -1,13 +1,13 @@
 <template>
-  <div class="home home_template">
+  <div class="layout layout_gallery">
     <swiper ref="mySwiper" :options="swiperOptions">
       <swiper-slide v-for="(item, index) in shuffle(imagesArray)" :key="index">
-        <img class="home__bg" :src="require(`@/assets/img/photos/${item}`)" alt="">
+        <img :src="require(`@/assets/img/photos/${item}`)" alt="">
       </swiper-slide>
     </swiper>
     <router-link class="nav" to="/">Home</router-link>
     <div class="intro intro_dark">
-      <my-countdown></my-countdown>
+      <my-countdown no-title></my-countdown>
     </div>
   </div>
 </template>
@@ -29,6 +29,7 @@ export default {
         'carlos5.jpg',
         'carlos6.jpg',
         'carlos7.jpg',
+        'carlos8.jpg',
         'carlando.jpg',
         'carlando2.jpg',
         'lando.jpg',
@@ -79,12 +80,5 @@ export default {
 </script>
 
 <style>
-.swiper-container {
-  color: black;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
+
 </style>

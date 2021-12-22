@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <video width="100%" height="100%" autoplay muted loop playsinline>
+  <div class="layout">
+    <video width="100%" height="100%" poster="../assets/video-poster.png" autoplay muted loop playsinline>
       <source src="../assets/videobg.mp4" type="video/mp4">
       <source src="../assets/videobg.ogg" type="video/ogg">
     </video>

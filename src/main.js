@@ -5,12 +5,12 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import vueAwesomeCountdown from 'vue-awesome-countdown';
-import { Swiper as SwiperClass, Pagination, Mousewheel, Autoplay, Navigation, Grid, EffectFade } from 'swiper/swiper.esm';
+import { Swiper as SwiperClass, Pagination, Mousewheel, Autoplay, Navigation, EffectFade } from 'swiper/swiper.esm';
 import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter';
 
 Vue.config.productionTip = false;
 Vue.use(vueAwesomeCountdown, 'vac');
-SwiperClass.use([Pagination, Mousewheel, Autoplay, Navigation, Grid, EffectFade]);
+SwiperClass.use([Pagination, Mousewheel, Autoplay, Navigation, EffectFade]);
 Vue.use(getAwesomeSwiper(SwiperClass));
 
 new Vue({
