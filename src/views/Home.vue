@@ -8,18 +8,22 @@
       <img class="qr" src="../assets/img/qr.png" alt=""/>
       <span>@lisalovesformula1</span>
     </a>
-    <Intro/>
+    <div class="intro">
+      <img src="../assets/img/logo.png">
+      <my-countdown></my-countdown>
+    </div>
+    <router-link class="nav" to="/gallery">Gallery</router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Intro from "@/components/Intro";
+import MyCountdown from "@/components/Countdown";
 
 export default {
   name: 'Home',
   components: {
-    Intro,
+    MyCountdown
   }
 }
 </script>

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Template from '../views/Template.vue';
+import Gallery from '../views/Gallery.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -24,9 +24,9 @@ const routes = [
     component: () => import('../views/Car.vue')
   },
   {
-    path: '/template',
-    name: 'Template',
-    component: () => import('../views/Template.vue')
+    path: '/gallery',
+    name: 'Gallery',
+    component: () => import('../views/Gallery.vue')
   }
 ]
 

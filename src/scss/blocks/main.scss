@@ -32,6 +32,7 @@ body {
   &_template {
     justify-content: flex-end;
     padding: 30px;
+    background: none;
   }
   video {
     position: fixed;
@@ -54,18 +55,14 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    background-position: center;
-    background-size: cover;
+    object-fit: cover;
   }
 }
 .nav {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-  padding: 20px;
-  background: rgba(#000000, 0.5);
-  z-index: 1;
+  color: white;
+  margin: 20px 0;
+  text-decoration: none;
+  position: relative;
 }
 .inst {
   position: fixed;
