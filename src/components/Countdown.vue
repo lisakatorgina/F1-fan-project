@@ -5,6 +5,8 @@
         <h1 v-if="!noTitle">New season is loading...</h1>
         <div class="load-bar">
           <div class="load-bar__progress" :style="{width: `${Math.round(100 - (100/93 * countdown.timeObj.d))}%`}">{{ `${Math.round(100 - (100/93 * countdown.timeObj.d))}%` }}</div>
+          <span class="load-bar__mark" :style="{left: `${Math.round(100/93 * 17)}%`}">NY</span>
+          <span class="load-bar__mark" :style="{left: `${Math.round(100/93 * 69)}%`}">T</span>
         </div>
         <h2>The next racing weekend starts in</h2>
         <div class="countdown__wrap">

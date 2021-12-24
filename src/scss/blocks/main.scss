@@ -150,6 +150,7 @@ body {
   border-radius: 10px;
   margin: 10px 0;
   min-width: 225px;
+  position: relative;
   &:first-child {
     margin-top: 0;
   }
@@ -163,6 +164,18 @@ body {
     line-height: 14px;
     font-weight: 600;
     padding-right: 2px;
+  }
+  &__mark {
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    top: 0;
+    left: 50%;
+    background: white;
+    color: white;
+    font-size: 8px;
+    line-height: 16px;
+    text-indent: 3px;
   }
 }
 .switcher {
