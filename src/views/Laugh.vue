@@ -6,6 +6,10 @@
       <laugh-item name="carlos"></laugh-item>
       <laugh-item name="daniel"></laugh-item>
       <laugh-item name="max"></laugh-item>
+      <laugh-item name="checo"></laugh-item>
+      <laugh-item name="charles"></laugh-item>
+      <laugh-item name="lewis"></laugh-item>
+      <laugh-item name="seb"></laugh-item>
     </div>
   </div>
 </template>
