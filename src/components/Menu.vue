@@ -3,9 +3,9 @@
     <div class="menu__button" @click="opened = !opened"><span></span></div>
     <transition name="slide">
       <div class="menu__items" v-if="opened">
-        <router-link to="/" class="menu__item">Home</router-link>
-        <router-link to="/gallery" class="menu__item">Gallery</router-link>
-        <router-link to="/laugh" class="menu__item">Laugh</router-link>
+        <router-link to="/" class="menu__item" v-if="$route.name !== 'Home'">Home</router-link>
+        <router-link to="/gallery" class="menu__item" v-if="$route.name !== 'Gallery'">Gallery</router-link>
+        <router-link to="/laugh" class="menu__item" v-if="$route.name !== 'Laugh'">Laugh</router-link>
       </div>
     </transition>
   </div>
@@ -23,7 +23,6 @@ export default {
     }
   },
   mounted() {
-
   },
   watch: {
     '$route'() {

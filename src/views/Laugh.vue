@@ -5,6 +5,7 @@
       <laugh-item name="lando"></laugh-item>
       <laugh-item name="carlos"></laugh-item>
       <laugh-item name="daniel"></laugh-item>
+      <laugh-item name="max"></laugh-item>
     </div>
   </div>
 </template>

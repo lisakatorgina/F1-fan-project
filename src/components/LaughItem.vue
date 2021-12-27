@@ -34,7 +34,7 @@ export default {
         this.$nextTick(() => {
           this.laughing = false;
         });
-      }, this.audio.duration * 1000);
+      }, this.audio.duration * 1000 + 200);
     },
   },
 }
