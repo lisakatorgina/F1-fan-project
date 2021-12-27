@@ -1,0 +1,27 @@
+.laugh {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    &_active {
+      box-shadow: 0 0 10px $orange;
+    }
+    img {
+      width: 100%;
+    }
+    &-play {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      font-size: 14px;
+      background: rgba(white, 0.5);
+      padding: 5px;
+    }
+  }
+}

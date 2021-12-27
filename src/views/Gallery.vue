@@ -5,7 +5,6 @@
         <img :src="require(`@/assets/img/photos/${item}`)" alt="">
       </swiper-slide>
     </swiper>
-    <router-link class="nav" to="/">Home</router-link>
     <div class="intro intro_dark">
       <my-countdown no-title></my-countdown>
     </div>
@@ -32,6 +31,7 @@ export default {
         'carlos8.jpg',
         'carlando.jpg',
         'carlando2.jpg',
+        'carlando3.jpg',
         'lando.jpg',
         'lando2.jpg',
         'lando3.jpg',
@@ -49,7 +49,8 @@ export default {
         'charles3.jpg',
         'checo.jpg',
         'checo2.jpg',
-        'maxiel.jpg'
+        'maxiel.jpg',
+        'dando.jpg'
       ],
       swiperOptions: {
         effect: 'fade',

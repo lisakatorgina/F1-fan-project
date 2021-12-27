@@ -3,11 +3,6 @@
     <img v-if="!laughing" :src="require(`../assets/img/laugh/${name}-1.png`)" :alt="name">
     <img v-else :src="require(`../assets/img/laugh/${name}-2.png`)" :alt="name">
     <transition name="fade"><span class="laugh__item-play" v-if="!laughing">Play ►</span></transition>
-    <audio ref="audio">
-      <source :src="require(`../media/${name}.ogg`)" type="audio/ogg">
-      <source :src="require(`../media/${name}.mp3`)" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
   </div>
 </template>
 
@@ -24,10 +19,12 @@ export default {
     return {
       laughing: false,
       audio: {},
+      audioPath: ''
     }
   },
   mounted() {
-    this.audio = this.$refs.audio;
+    this.audioPath = require(`../media/${this.name}.mp3`);
+    this.audio = new Audio(this.audioPath);
   },
   methods: {
     laugh() {

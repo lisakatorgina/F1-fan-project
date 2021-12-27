@@ -12,17 +12,18 @@
       <img src="../assets/img/logo.png">
       <my-countdown></my-countdown>
     </div>
-    <router-link class="nav" to="/gallery">Gallery</router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import MyCountdown from "@/components/Countdown";
+import SiteMenu from "@/components/Menu";
 
 export default {
   name: 'Home',
   components: {
+    SiteMenu,
     MyCountdown
   }
 }

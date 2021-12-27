@@ -1,0 +1,36 @@
+.countdown {
+  h1 {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    color: white;
+  }
+  h2 {
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    color: white
+  }
+  &__wrap {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    color: $orange;
+    div {
+      margin: 0 5px;
+    }
+    small, span {
+      display: block;
+    }
+    span {
+      background: rgba(#000000, 0.5);
+      padding: 1px 4px;
+      border-radius: 4px;
+      margin-bottom: 2px;
+    }
+    small {
+      font-size: 0.5em;
+      //opacity: 0.6;
+    }
+  }
+}

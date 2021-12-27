@@ -1,0 +1,58 @@
+.menu {
+  position: fixed;
+  background: $orange;
+  z-index: 2;
+  text-align: center;
+  &__button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    span {
+      width: 24px;
+      height: 2px;
+      background: black;
+      position: relative;
+      transition: background 0s linear 0.3s;
+      .menu_opened & {
+        background: none;
+      }
+      &:before, &:after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background: black;
+        position: absolute;
+        left: 0;
+        transition: bottom 0.3s linear 0.3s, top 0.3s linear 0.3s, transform 0.3s;
+        .menu_opened & {
+          transition: bottom 0.3s, top 0.3s, transform 0.3s linear 0.3s;
+        }
+      }
+      &:before {
+        top: -8px;
+        .menu_opened & {
+          top: 0;
+          transform: rotate(45deg);
+        }
+      }
+      &:after {
+        bottom: -8px;
+        .menu_opened & {
+          bottom: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &__items {
+  }
+  &__item {
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
