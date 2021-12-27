@@ -1,3 +1,4 @@
+$orange: #ff9e1b;
 body, html {
   margin: 0;
   padding: 0;
@@ -47,6 +48,16 @@ body {
     @media (max-width: 767px) {
       transform: scale(3.2);
     }
+  }
+  &_laugh {
+    background: white;
+    display: block;
+    padding: 40px;
+    height: auto;
+  }
+  &__title {
+    margin: 0 0 40px 0;
+    font-weight: 300;
   }
 }
 .nav {
@@ -124,7 +135,7 @@ body {
     display: flex;
     font-size: 25px;
     justify-content: center;
-    color: orange;
+    color: $orange;
     div {
       margin: 0 5px;
     }
@@ -155,9 +166,9 @@ body {
     margin-top: 0;
   }
   &__progress {
-    background: orange;
+    background: $orange;
     height: 14px;
-    border-radius: 14px;
+    border-radius: 14px 0 0 14px;
     color: white;
     text-align: right;
     font-size: 10px;
@@ -201,4 +212,37 @@ body {
       object-fit: cover;
     }
   }
+}
+.laugh {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    &_active {
+      box-shadow: 0 0 10px $orange;
+    }
+    img {
+      width: 100%;
+    }
+    &-play {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      font-size: 14px;
+      background: rgba(white, 0.5);
+      padding: 5px;
+    }
+  }
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
