@@ -10,6 +10,9 @@
       <laugh-item name="charles"></laugh-item>
       <laugh-item name="lewis"></laugh-item>
       <laugh-item name="seb"></laugh-item>
+      <laugh-item name="esteban"></laugh-item>
+      <laugh-item name="pierre"></laugh-item>
+      <laugh-item name="lance"></laugh-item>
     </div>
   </div>
 </template>
