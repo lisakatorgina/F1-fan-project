@@ -3,6 +3,8 @@
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
   &__item {
     width: 200px;
     height: 200px;
