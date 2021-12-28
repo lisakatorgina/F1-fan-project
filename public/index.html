@@ -38,10 +38,12 @@
     </script>
 </head>
 <body>
-<h1 style="width: 0; height: 0; overflow: hidden; margin: 0; padding: 0;">Formula 1 fan project</h1>
+<h1 style="width: 0; height: 0; overflow: hidden; margin: 0; padding: 0;">Formula 1 fan project made by Lisa Katorgina</h1>
 <noscript><div><img src="https://mc.yandex.ru/watch/86967508" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<div id="app"></div>
-<!-- built files will be auto injected -->
+<div id="app" v-cloak>
+    <div class="loader">
+        <img src="<%= BASE_URL %>loader.gif" alt="">
+    </div>
+</div>
 </body>
 </html>

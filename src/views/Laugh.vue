@@ -1,5 +1,5 @@
 <template>
-  <div class="layout layout_laugh">
+  <div class="layout layout_simple">
     <h1 class="layout__title">How they laugh</h1>
     <div class="laugh">
       <laugh-item name="lando"></laugh-item>

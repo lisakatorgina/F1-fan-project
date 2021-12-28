@@ -3,6 +3,8 @@
   background: $orange;
   z-index: 2;
   text-align: center;
+  top: 0;
+  left: auto;
   &__button {
     display: flex;
     width: 32px;
@@ -51,7 +53,7 @@
   }
   &__item {
     display: block;
-    padding: 10px 5px;
+    padding: 8px 5px;
     text-decoration: none;
     font-size: 14px;
   }

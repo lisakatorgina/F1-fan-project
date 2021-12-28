@@ -10,6 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+[v-cloak], [v-cloak] * {
+  display: none;
+}
 * {
   color: inherit;
   box-sizing: border-box;
@@ -49,7 +52,7 @@ body {
       transform: scale(3.2);
     }
   }
-  &_laugh {
+  &_simple {
     background: white;
     display: block;
     padding: 40px;
@@ -108,6 +111,22 @@ body {
     }
   }
 }
+
+.about {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 300;
+  p {
+    margin: 20px 0;
+    line-height: 1.5;
+    a {
+      color: $orange;
+      text-decoration: none;
+    }
+  }
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
 }
