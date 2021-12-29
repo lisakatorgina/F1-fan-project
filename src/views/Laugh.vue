@@ -13,6 +13,7 @@
       <laugh-item name="esteban"></laugh-item>
       <laugh-item name="pierre"></laugh-item>
       <laugh-item name="lance"></laugh-item>
+      <laugh-item name="kimi"></laugh-item>
     </div>
   </div>
 </template>
