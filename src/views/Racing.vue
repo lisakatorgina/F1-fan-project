@@ -24,6 +24,12 @@
 export default {
   components: {
   },
+  metaInfo: {
+    title: 'Racing',
+    meta: [
+      {name: 'description', content: 'Racing schedule and info' },
+    ]
+  },
   data() {
     return {
       tracks: [

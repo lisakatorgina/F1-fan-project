@@ -24,6 +24,9 @@ export default {
   components: {
     LaughItem,
   },
+  metaInfo: {
+    title: 'Laugh',
+  },
   data() {
     return {
 

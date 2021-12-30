@@ -25,6 +25,12 @@ export default {
   components: {
     SiteMenu,
     MyCountdown
-  }
+  },
+  metaInfo: {
+    titleTemplate: null,
+    meta: [
+      {name: 'description', content: 'Season 2022 countdown. F1 humor, gallery, art' },
+    ]
+  },
 }
 </script>

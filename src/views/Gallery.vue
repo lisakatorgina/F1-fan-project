@@ -18,6 +18,9 @@ export default {
   components: {
     MyCountdown
   },
+  metaInfo: {
+    title: 'Gallery',
+  },
   data() {
     return {
       imagesArray: [

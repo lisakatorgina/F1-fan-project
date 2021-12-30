@@ -15,6 +15,13 @@
 <script>
 import SiteMenu from "@/components/Menu";
 export default {
-  components: {SiteMenu}
+  components: {SiteMenu},
+  metaInfo: {
+    title: 'Formula 1 fan project',
+    titleTemplate: 'Formula 1 fan project | %s',
+    meta: [
+      {name: 'description', content: 'Season 2022 countdown. F1 humor, gallery, art' },
+    ]
+  },
 }
 </script>

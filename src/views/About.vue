@@ -9,3 +9,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    title: 'About',
+    meta: [
+      {property: 'description', content: 'About site creator'},
+    ]
+  },
+}
+</script>
