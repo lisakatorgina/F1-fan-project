@@ -21,7 +21,6 @@
 <script>
 import LaughItem from "@/components/LaughItem";
 export default {
-  name: 'Gallery',
   components: {
     LaughItem,
   },
