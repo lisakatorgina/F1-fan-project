@@ -131,15 +131,27 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  padding: 20px;
+  padding: 10px;
+  @media (max-width: 767px) {
+    padding: 5px;
+  }
   &__title {
     font-size: 12px;
     display: block;
     text-align: center;
     margin-bottom: 5px;
-    .sharing_home &, .sharing_gallery &  {
+    .sharing_Home &, .sharing_Gallery &  {
       color: white;
     }
+  }
+  .ya-share2__list {
+    margin: 0 auto!important;
+    display: block!important;
+  }
+  .ya-share2__item {
+    display: block!important;
+    margin: 0 0 5px 0!important;
+    text-align: center;
   }
 }
 
