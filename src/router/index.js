@@ -33,9 +33,9 @@ const routes = [
     component: () => import('../views/Laugh.vue')
   },
   {
-    path: '/races',
-    name: 'Races',
-    component: () => import('../views/Races.vue')
+    path: '/racing',
+    name: 'Racing',
+    component: () => import('../views/Racing.vue')
   }
 ]
 
