@@ -127,6 +127,22 @@ body {
   }
 }
 
+.sharing {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  &__title {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    .sharing_home &, .sharing_gallery &  {
+      color: white;
+    }
+  }
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
 }
