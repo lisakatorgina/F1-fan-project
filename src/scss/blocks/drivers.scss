@@ -1,0 +1,118 @@
+.drivers {
+  font-size: 14px;
+  max-width: 800px;
+  margin: 0 auto;
+  &__item {
+    margin: 5px 0;
+    border: 1px solid $orange;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 767px) {
+      gap: 10px;
+    }
+  }
+}
+.driver {
+  &__points {
+    font-weight: 700;
+  }
+  &__position {
+    width: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(black, 0.6);
+  }
+  &__number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid red;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    line-height: 26px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  &__name {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      width: 120px;
+      flex-grow: 0;
+    }
+    h2 {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      font-size: 16px;
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+    }
+  }
+  &__country {
+    flex: 1 1 0;
+    @media (max-width: 767px) {
+      flex-grow: 0;
+      span {
+        display: none;
+      }
+    }
+  }
+  &__team {
+    flex: 1 1 0;
+  }
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(black, 0.5);
+  z-index: 2;
+  &__box {
+    position: fixed;
+    width: 100%;
+    max-width: 768px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: white;
+    @media (max-width: 767px) {
+      top: 100px;
+      left: 0;
+      transform: none;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      max-height: 600px;
+      object-position: center;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    width: 40px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  h3 {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px
+  }
+}
