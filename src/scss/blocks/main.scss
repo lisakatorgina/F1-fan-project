@@ -56,6 +56,9 @@ body {
     background: white;
     display: block;
     padding: 40px;
+    @media (max-width: 767px) {
+      padding: 32px;
+    }
   }
   &__title {
     margin: 0 0 30px 0;

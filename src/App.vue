@@ -20,8 +20,10 @@ export default {
     title: 'Formula 1 fan project',
     titleTemplate: 'Formula 1 fan project | %s',
     meta: [
-      {name: 'description', content: 'Season 2022 countdown. F1 humor, gallery, art' },
+      {name: 'description', content:  'Season 2022 countdown. F1 humor, gallery, art.'},
+      {property: 'og:title', content: "Formula 1 fan project"},
+      {property: 'og:description', content: 'Season 2022 countdown. F1 humor, gallery, art.'},
     ]
-  },
+  }
 }
 </script>

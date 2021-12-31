@@ -27,7 +27,7 @@ export default {
   metaInfo: {
     title: 'Racing',
     meta: [
-      {name: 'description', content: 'Racing schedule and info' },
+      {property: 'og:title', content: "Racing schedule and info"},
     ]
   },
   data() {

@@ -14,8 +14,10 @@
       height: 14px;
       border-radius: 14px;
       overflow: hidden;
+      position: relative;
+      z-index: 1;
     }
-    background: $orange;
+    background: rgba($orange, 0.8);
     height: 14px;
     color: white;
     text-align: right;
