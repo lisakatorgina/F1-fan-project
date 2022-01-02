@@ -45,7 +45,7 @@ export default {
         {name: 'Carlos Sainz', team: 'Ferrari', number: '55', country: 'Spain', flag: '🇪🇸', points: 0, photo: 'carlos9.jpg'},
         {name: 'Lando Norris', team: 'McLaren', number: '4', country: 'UK', flag: '🇬🇧', points: 0, photo: 'lando7.jpg'},
         {name: 'Charles Leclerc', team: 'Ferrari', number: '16', country: 'Monaco', flag: '🇲🇨', points: 0, photo: 'charles4.jpg'},
-        {name: 'Daniel Ricciardo', team: 'Mclaren', number: '3', country: 'Australia', flag: '🇦🇺', points: 0, photo: 'daniel3.jpg'},
+        {name: 'Daniel Ricciardo', team: 'Mclaren', number: '3', country: 'Australia', flag: '🇦🇺', points: 0, photo: 'daniel4.jpg'},
         {name: 'Pierre Gasly', team: 'Alphatauri', number: '10', country: 'France', flag: '🇫🇷', points: 0, photo: 'pierre.jpg'},
         {name: 'Fernando Alonso', team: 'Alpine', number: '14', country: 'Spain', flag: '🇪🇸', points: 0, photo: 'fernando.jpg'},
         {name: 'Esteban Ocon', team: 'Alpine', number: '31', country: 'France', flag: '🇫🇷', points: 0, photo: 'esteban.jpg'},
