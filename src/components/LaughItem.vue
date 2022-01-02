@@ -30,16 +30,19 @@ export default {
   mounted() {
     this.audioPath = require(`../media/${this.name}.mp3`);
     this.audio = new Audio(this.audioPath);
+    this.audio.load();
   },
   methods: {
     laugh() {
-      this.laughing = true;
-      this.audio.play();
-      setTimeout(() => {
-        this.$nextTick(() => {
-          this.laughing = false;
-        });
-      }, this.audio.duration * 1000 + 200);
+      if(!this.laughing) {
+        this.laughing = true;
+        this.audio.play();
+        setTimeout(() => {
+          this.$nextTick(() => {
+            this.laughing = false;
+          });
+        }, this.audio.duration * 1000 + 200);
+      }
     },
   },
 }

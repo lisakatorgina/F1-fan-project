@@ -45,16 +45,19 @@ export default {
   mounted() {
     this.audioPath = require(`../media/twch.mp3`);
     this.audio = new Audio(this.audioPath);
+    this.audio.load();
   },
   methods: {
     sound() {
-      this.audioOn = true;
-      this.audio.play();
-      setTimeout(() => {
-        this.$nextTick(() => {
-          this.audioOn = false;
-        });
-      }, this.audio.duration * 1000 + 200);
+      if (!this.audioOn) {
+        this.audioOn = true;
+        this.audio.play();
+        setTimeout(() => {
+          this.$nextTick(() => {
+            this.audioOn = false;
+          });
+        }, this.audio.duration * 1000 + 200);
+      }
     },
   }
 }
