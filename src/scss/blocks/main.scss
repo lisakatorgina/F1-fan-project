@@ -65,6 +65,12 @@ body {
     font-weight: 300;
     text-align: center;
   }
+  &__subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin: -20px 0 30px 0;
+    font-weight: normal;
+  }
 }
 .inst {
   position: fixed;

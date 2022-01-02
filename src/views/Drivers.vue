@@ -1,6 +1,7 @@
 <template>
   <div class="layout layout_simple">
     <h1 class="layout__title">Season 2022 drivers</h1>
+    <h3 class="layout__subtitle">In order of last season standings</h3>
     <div class="drivers">
       <div v-for="(driver, index) in driversData" :key="index" class="drivers__item driver">
         <span class="driver__position">{{ index + 1 }}</span>
@@ -10,14 +11,15 @@
         </span>
         <span class="driver__team">{{ driver.team }}</span>
         <span class="driver__country"><span>{{ driver.country }}</span> {{ driver.flag }}</span>
-        <span class="driver__points">{{ driver.points }}</span>
+        <!-- span class="driver__points">{{ driver.points }}</span -->
       </div>
     </div>
     <div class="popup" v-if="popupOpened" @click="closePopup($event)">
       <div class="popup__box">
         <span class="popup__close" @click="popupOpened = false">&times;</span>
         <h3>{{ popupName }}</h3>
-        <img :src="openedPhoto" alt="">
+        <div class="popup__photo" :style="{'background-image': `url(${openedPhoto}`}"></div>
+        <!-- img :src="openedPhoto" alt="" -->
       </div>
     </div>
   </div>
@@ -47,8 +49,8 @@ export default {
         {name: 'Pierre Gasly', team: 'Alphatauri', number: '10', country: 'France', flag: '🇫🇷', points: 0, photo: 'pierre.jpg'},
         {name: 'Fernando Alonso', team: 'Alpine', number: '14', country: 'Spain', flag: '🇪🇸', points: 0, photo: 'fernando.jpg'},
         {name: 'Esteban Ocon', team: 'Alpine', number: '31', country: 'France', flag: '🇫🇷', points: 0, photo: 'esteban.jpg'},
-        {name: 'Sebastian Vettel', team: 'Aston Martin', number: '5', country: 'Germany', flag: '🇩🇪', points: 0, photo: 'seb.jpg'},
-        {name: 'Lance Stroll', team: 'Aston Martin', number: '18', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'lance.jpg'},
+        {name: 'Sebastian Vettel', team: 'Aston Martin', number: '5', country: 'Germany', flag: '🇩🇪', points: 0, photo: 'seb2.jpg'},
+        {name: 'Lance Stroll', team: 'Aston Martin', number: '18', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'lance2.jpg'},
         {name: 'Yuki Tsunoda', team: 'Alphatauri', number: '22', country: 'Japan', flag: '🇯🇵', points: 0, photo: 'yuki.jpg'},
         {name: 'George Russell', team: 'Mercedes', number: '15', country: 'UK', flag: '🇬🇧', points: 0, photo: 'george.jpg'},
         {name: 'Nicholas Latifi', team: 'Williams', number: '6', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'nicholas.jpg'},
@@ -65,6 +67,7 @@ export default {
   mounted() {
     this.driversData.sort(function(a, b){
       return b.points - a.points;
+      //return a.team.localeCompare(b.team);
     });
   },
   methods: {

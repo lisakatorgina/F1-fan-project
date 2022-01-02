@@ -91,13 +91,12 @@
       left: 0;
       transform: none;
     }
-    img {
-      width: 100%;
-      object-fit: cover;
-      display: block;
-      max-height: 600px;
-      object-position: center;
-    }
+  }
+  &__photo {
+    height: 450px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
   }
   &__close {
     position: absolute;
