@@ -29,6 +29,10 @@ export default {
       type: String,
       default: ''
     },
+    imagePathOn: {
+      type: String,
+      default: ''
+    },
     name: {
       type: String,
       default: ''
@@ -51,8 +55,8 @@ export default {
     this.audio.load();
     this.duration = this.audio.duration;
     if (this.withImage) {
-      this.image1 = require(`../assets/img${this.imagePath}-1.png`);
-      this.image2 = require(`../assets/img${this.imagePath}-2.png`);
+      this.image1 = require(`../assets/img${this.imagePath}`);
+      this.image2 = require(`../assets/img${this.imagePath}`);
     }
   },
   methods: {

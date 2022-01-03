@@ -12,10 +12,10 @@
   }
   &__pic {
     width: 200px;
-    height: 200px;
     transition: box-shadow 0.3s;
     img {
       width: 100%;
+      display: block;
     }
   }
   &_on &__pic {
