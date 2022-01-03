@@ -58,6 +58,7 @@ export default {
         'checo3.jpg',
         'maxiel.jpg',
         'dando.jpg',
+        'pierre2.jpg',
       ],
       swiperOptions: {
         effect: 'fade',

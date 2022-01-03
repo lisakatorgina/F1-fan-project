@@ -10,7 +10,7 @@
           <template v-else-if="index === 2">🥉</template>
           <template v-else>{{ index + 1 }}</template>
         </div>
-        <div class="driver__name" @click="openPopup(driver.photo, driver.name)">
+        <div class="driver__name" @click="openPopup(index)">
           <div>
             <h2>{{ driver.name }}</h2>
             <p v-if="driver.note" class="driver__note">{{ driver.note }}</p>
@@ -18,7 +18,7 @@
           <span class="driver__number">{{ driver.number }}</span>
         </div>
         <div class="driver__team">{{ driver.team }}</div>
-        <div class="driver__country"><span>{{ driver.country }}</span> {{ driver.flag }}</div>
+        <div class="driver__country" @click="changePhoto(currentGalleryIndex)"><span>{{ driver.country }}</span> {{ driver.flag }}</div>
         <!-- span class="driver__points">{{ driver.points }}</span -->
       </div>
     </div>
@@ -26,8 +26,10 @@
       <div class="popup__box">
         <span class="popup__close" @click="popupOpened = false">&times;</span>
         <h3>{{ popupName }}</h3>
-        <div class="popup__photo" :style="{'background-image': `url(${openedPhoto}`}"></div>
-        <!-- img :src="openedPhoto" alt="" -->
+        <div class="popup__photo" :style="{'background-image': `url(${openedPhoto}`}">
+          <span class="popup__prev" v-if="currentGalleryIndex > 0" @click="changePhoto(currentGalleryIndex - 1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></span>
+          <span class="popup__next" v-if="currentGalleryIndex < (driversData.length-1)" @click="changePhoto(currentGalleryIndex + 1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></span>
+        </div>
       </div>
     </div>
   </div>
@@ -53,7 +55,7 @@ export default {
         {name: 'Carlos Sainz', team: 'Ferrari', number: '55', country: 'Spain', flag: '🇪🇸', points: 0, photo: 'carlos9.jpg'},
         {name: 'Lando Norris', team: 'McLaren', number: '4', country: 'UK', flag: '🇬🇧', points: 0, photo: 'lando7.jpg'},
         {name: 'Charles Leclerc', team: 'Ferrari', number: '16', country: 'Monaco', flag: '🇲🇨', points: 0, photo: 'charles4.jpg'},
-        {name: 'Daniel Ricciardo', team: 'Mclaren', number: '3', country: 'Australia', flag: '🇦🇺', points: 0, photo: 'daniel4.jpg'},
+        {name: 'Daniel Ricciardo', team: 'Mclaren', number: '3', country: 'Australia', flag: '🇦🇺', points: 0, photo: 'daniel4.webp'},
         {name: 'Pierre Gasly', team: 'Alphatauri', number: '10', country: 'France', flag: '🇫🇷', points: 0, photo: 'pierre.jpg'},
         {name: 'Fernando Alonso', team: 'Alpine', number: '14', country: 'Spain', flag: '🇪🇸', points: 0, photo: 'fernando.jpg'},
         {name: 'Esteban Ocon', team: 'Alpine', number: '31', country: 'France', flag: '🇫🇷', points: 0, photo: 'esteban.jpg'},
@@ -69,6 +71,7 @@ export default {
         {name: 'Alex Albon', team: 'Williams', number: '23', country: 'Thailand', flag: '🇹🇭', points: 0, photo: 'alex.webp', note: 'Returning'},
         {name: 'Guanyu Zhou', team: 'Alfa Romeo', number: '24', country: 'China', flag: '🇨🇳', points: 0, photo: 'guanyu.jpg', note: 'New'},
       ],
+      currentGalleryIndex: 0,
       openedPhoto: '',
       popupOpened: false,
       popupName: 'Name'
@@ -81,10 +84,17 @@ export default {
     });
   },
   methods: {
-    openPopup(image, name) {
+    openPopup(index) {
       this.popupOpened = true;
-      this.openedPhoto = require(`@/assets/img/photos/${image}`);
-      this.popupName = name;
+      this.changePhoto(index);
+    },
+    changePhoto(index) {
+      if (index >= this.driversData.length || index < 0) {
+        return;
+      }
+      this.openedPhoto = require(`@/assets/img/photos/${this.driversData[index].photo}`);
+      this.popupName = this.driversData[index].name;
+      this.currentGalleryIndex = index;
     },
     closePopup(e) {
       if (e.target.className === 'popup') {

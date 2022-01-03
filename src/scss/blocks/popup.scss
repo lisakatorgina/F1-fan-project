@@ -24,6 +24,7 @@
     width: 100%;
     background-position: center;
     background-size: cover;
+    position: relative;
   }
   &__close {
     position: absolute;
@@ -51,5 +52,30 @@
     width: 100%;
     display: block;
     height: 432px;
+  }
+  &__prev, &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    background: rgba(white, 0.3);
+    padding: 3px;
+    border-radius: 3px;
+    svg {
+      display: block;
+    }
+  }
+  &__prev {
+    left: 10px;
+    @media (max-width: 767px) {
+      left: 5px;
+    }
+  }
+  &__next {
+    right: 10px;
+    @media (max-width: 767px) {
+      right: 5px;
+    }
   }
 }
