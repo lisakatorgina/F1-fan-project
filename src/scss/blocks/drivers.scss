@@ -12,6 +12,7 @@
     gap: 30px;
     @media (max-width: 767px) {
       gap: 10px;
+      padding: 5px 10px;
     }
   }
 }
@@ -40,10 +41,10 @@
   }
   &__name {
     width: 200px;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
     @media (max-width: 767px) {
       width: 120px;
       flex-grow: 0;
@@ -56,6 +57,12 @@
         margin: 0 5px 0 0;
         font-size: 14px;
       }
+    }
+    p {
+      margin: 0;
+      color: green;
+      font-weight: 600;
+      font-size: 10px;
     }
   }
   &__country {
@@ -74,55 +81,5 @@
   }
   &__team {
     flex: 1 1 0;
-  }
-}
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(black, 0.5);
-  z-index: 2;
-  &__box {
-    position: fixed;
-    width: 100%;
-    max-width: 768px;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    background: white;
-    @media (max-width: 767px) {
-      left: 0;
-      transform: translateY(-50%);
-    }
-  }
-  &__photo {
-    height: 450px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-  }
-  &__close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 40px;
-    width: 40px;
-    line-height: 38px;
-    text-align: center;
-    font-weight: 300;
-    cursor: pointer;
-    @media (max-width: 767px) {
-      line-height: 33px;
-    }
-  }
-  h3 {
-    text-align: center;
-    margin: 10px;
-    font-size: 20px;
-    @media (max-width: 767px) {
-      font-size: 16px;
-    }
   }
 }

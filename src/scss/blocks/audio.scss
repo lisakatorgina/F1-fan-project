@@ -1,0 +1,37 @@
+.audio {
+  cursor: pointer;
+  &__play {
+    padding: 5px;
+    border-radius: 3px;
+    background: rgba(white, 0.3);
+    text-align: center;
+    svg {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+  &__pic {
+    width: 200px;
+    height: 200px;
+    transition: box-shadow 0.3s;
+    img {
+      width: 100%;
+    }
+  }
+  &_on &__pic {
+    box-shadow: 0 0 10px $orange;
+  }
+  &_with-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .audio__play {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+  }
+}

@@ -85,7 +85,7 @@ body {
     position: relative;
     top: auto;
     right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   img {
     display: block;
@@ -166,16 +166,12 @@ body {
 
 .twch {
   position: relative;
-  margin: 20px 0;
-  padding: 5px;
-  border-radius: 3px;
-  background: rgba(white, 0.5);
+  margin: 0 0 20px 0;
+}
+.music {
+  position: relative;
+  margin: 0 0 20px 0;
   cursor: pointer;
-  text-align: center;
-  svg {
-    display: inline-block;
-    vertical-align: bottom;
-  }
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;

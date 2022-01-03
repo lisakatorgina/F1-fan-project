@@ -39,7 +39,7 @@ export default {
         {country: 'Italy', flag: '🇮🇹', place: 'Imola', name: 'Autodromo Enzo e Dino Ferrari', dates: 'April 22-24', laps: '63', image: 'imola.svg'},
         {country: 'United States', flag: '🇺🇸', place: 'Miami', name: 'Miami International Autodrome', dates: 'May 6-8', laps: '57', image: 'miami.svg'},
         {country: 'Spain', flag: '🇪🇸', place: 'Catalunya', name: 'Circuit de Barcelona-Catalunya', dates: 'May 20-22', laps: '66', image: 'barcelona.svg'},
-        {country: 'Monaco', flag: '🇲🇨', place: 'Monte Carlo', name: 'Circuit de Monaco', dates: 'May 27-29', laps: '78', image: ''},
+        {country: 'Monaco', flag: '🇲🇨', place: 'Monte Carlo', name: 'Circuit de Monaco', dates: 'May 27-29', laps: '78', image: 'monaco.svg'},
         {country: 'Azerbaijan', flag: '🇦🇿', place: 'Baku', name: 'Baku City Circuit', dates: 'June 10-12', laps: '51', image: ''},
         {country: 'Canada', flag: '🇨🇦', place: 'Montreal', name: 'Circuit Gilles-Villeneuve', dates: 'June 17-19', laps: '70', image: ''},
         {country: 'Great Britain', flag: '🇬🇧', place: 'Silverstone', name: 'Silverstone Circuit', dates: 'July 1-3', laps: '52', image: ''},

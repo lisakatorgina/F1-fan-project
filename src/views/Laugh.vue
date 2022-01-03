@@ -1,28 +1,28 @@
 <template>
   <div class="layout layout_simple">
     <h1 class="layout__title">How they laugh</h1>
-    <div class="laugh">
-      <laugh-item name="lando"></laugh-item>
-      <laugh-item name="carlos"></laugh-item>
-      <laugh-item name="daniel"></laugh-item>
-      <laugh-item name="max"></laugh-item>
-      <laugh-item name="checo"></laugh-item>
-      <laugh-item name="charles"></laugh-item>
-      <laugh-item name="lewis"></laugh-item>
-      <laugh-item name="seb"></laugh-item>
-      <laugh-item name="esteban"></laugh-item>
-      <laugh-item name="pierre"></laugh-item>
-      <laugh-item name="lance"></laugh-item>
-      <laugh-item name="kimi"></laugh-item>
+    <div class="sounds">
+      <play-sound class="sounds__item" audio-source="lando.mp3" with-image image-path="/laugh/lando" name="lando"></play-sound>
+      <play-sound class="sounds__item" audio-source="carlos.mp3" with-image image-path="/laugh/carlos" name="carlos"></play-sound>
+      <play-sound class="sounds__item" audio-source="daniel.mp3" with-image image-path="/laugh/daniel" name="daniel"></play-sound>
+      <play-sound class="sounds__item" audio-source="max.mp3" with-image image-path="/laugh/max" name="max"></play-sound>
+      <play-sound class="sounds__item" audio-source="checo.mp3" with-image image-path="/laugh/checo" name="checo"></play-sound>
+      <play-sound class="sounds__item" audio-source="charles.mp3" with-image image-path="/laugh/charles" name="charles"></play-sound>
+      <play-sound class="sounds__item" audio-source="lewis.mp3" with-image image-path="/laugh/lewis" name="lewis"></play-sound>
+      <play-sound class="sounds__item" audio-source="seb.mp3" with-image image-path="/laugh/seb" name="seb"></play-sound>
+      <play-sound class="sounds__item" audio-source="esteban.mp3" with-image image-path="/laugh/esteban" name="esteban"></play-sound>
+      <play-sound class="sounds__item" audio-source="pierre.mp3" with-image image-path="/laugh/pierre" name="pierre"></play-sound>
+      <play-sound class="sounds__item" audio-source="lance.mp3" with-image image-path="/laugh/lance" name="lance"></play-sound>
+      <play-sound class="sounds__item" audio-source="kimi.mp3" with-image image-path="/laugh/kimi" name="kimi"></play-sound>
     </div>
   </div>
 </template>
 
 <script>
-import LaughItem from "@/components/LaughItem";
+import PlaySound from "@/components/playSound";
 export default {
   components: {
-    LaughItem,
+    PlaySound,
   },
   metaInfo: {
     title: 'Laugh',
