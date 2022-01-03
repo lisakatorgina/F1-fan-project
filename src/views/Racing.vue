@@ -13,8 +13,10 @@
           <small>{{ item.place }}</small>
         </h2>
         <h3>{{ item.name }}</h3>
-        <img v-if="item.image !== ''" :src="require(`../assets/img/tracks/${item.image}`)" :alt="item.name">
-        <p class="races__item-laps">{{ item.laps }} laps</p>
+        <div class="races__item-image">
+          <img v-if="item.image !== ''" :src="require(`../assets/img/tracks/${item.image}`)" :alt="item.name">
+          <p class="races__item-laps">{{ item.laps }} laps</p>
+        </div>
       </div>
     </div>
   </div>
@@ -43,10 +45,10 @@ export default {
         {country: 'Azerbaijan', flag: '🇦🇿', place: 'Baku', name: 'Baku City Circuit', dates: 'June 10-12', laps: '51', image: 'baku.svg'},
         {country: 'Canada', flag: '🇨🇦', place: 'Montreal', name: 'Circuit Gilles-Villeneuve', dates: 'June 17-19', laps: '70', image: 'montreal.svg'},
         {country: 'Great Britain', flag: '🇬🇧', place: 'Silverstone', name: 'Silverstone Circuit', dates: 'July 1-3', laps: '52', image: 'silverstone.svg'},
-        {country: 'Austria', flag: '🇦🇹', place: 'Spielberg', name: 'Red Bull Ring', dates: 'July 8-10', laps: '71', image: ''},
-        {country: 'France', flag: '🇫🇷', place: 'Le Castellet', name: 'Circuit Paul Ricard', dates: 'July 22-24', laps: '53', image: ''},
-        {country: 'Hungary', flag: '🇭🇺', place: 'Budapest', name: 'Hungaroring', dates: 'July 29-31', laps: '70', image: ''},
-        {country: 'Belgium', flag: '🇧🇪', place: 'Spa-Francorchamps', name: 'Circuit de Spa-Francorchamps', dates: 'August 26-28', laps: '44', image: ''},
+        {country: 'Austria', flag: '🇦🇹', place: 'Spielberg', name: 'Red Bull Ring', dates: 'July 8-10', laps: '71', image: 'redbull.svg'},
+        {country: 'France', flag: '🇫🇷', place: 'Le Castellet', name: 'Circuit Paul Ricard', dates: 'July 22-24', laps: '53', image: 'paulricard.svg'},
+        {country: 'Hungary', flag: '🇭🇺', place: 'Budapest', name: 'Hungaroring', dates: 'July 29-31', laps: '70', image: 'hungaroring.svg'},
+        {country: 'Belgium', flag: '🇧🇪', place: 'Spa-Francorchamps', name: 'Circuit de Spa-Francorchamps', dates: 'August 26-28', laps: '44', image: 'spa.svg'},
         {country: 'Netherlands', flag: '🇳🇱', place: 'Zandvoort', name: 'Circuit Zandvoort', dates: 'September 2-4', laps: '72', image: ''},
         {country: 'Italy', flag: '🇮🇹', place: 'Monza', name: 'Autodromo Nazionale Monza', dates: 'September 9-11', laps: '53', image: ''},
         {country: 'Russia', flag: '🇷🇺', place: 'Sochi', name: 'Sochi Autodrom', dates: 'September 23-25', laps: '53', image: ''},

@@ -3,7 +3,7 @@
     <h1 class="layout__title">Season 2022 drivers</h1>
     <h3 class="layout__subtitle">In order of last season standings</h3>
     <div class="drivers">
-      <div v-for="(driver, index) in driversData" :key="index" class="drivers__item driver">
+      <div v-for="(driver, index) in driversData" :key="index" :class="['drivers__item', 'driver', {'driver_out': driver.out, 'driver_new': driver.new}]">
         <div class="driver__position">
           <template v-if="index === 0">🏆</template>
           <template v-else-if="index === 1">🥈</template>
@@ -63,13 +63,13 @@ export default {
         {name: 'Lance Stroll', team: 'Aston Martin', number: '18', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'lance2.jpg'},
         {name: 'Yuki Tsunoda', team: 'Alphatauri', number: '22', country: 'Japan', flag: '🇯🇵', points: 0, photo: 'yuki.jpg'},
         {name: 'George Russell', team: 'Mercedes', number: '15', country: 'UK', flag: '🇬🇧', points: 0, photo: 'george.jpg'},
-        {name: 'Kimi Raikkonen', team: 'Alfa Romeo', number: '7', country: 'Finland', flag: '🇫🇮', points: 0, photo: 'kimi.jpg', note: 'Retired'},
+        {name: 'Kimi Raikkonen', team: 'Alfa Romeo', number: '7', country: 'Finland', flag: '🇫🇮', points: 0, photo: 'kimi.jpg', note: 'Retired', out: true},
         {name: 'Nicholas Latifi', team: 'Williams', number: '6', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'nicholas.jpg'},
-        {name: 'Antonio Giovinazzi', team: 'Alfa Romeo', number: '99', country: 'Italy', flag: '🇮🇹', points: 0, photo: 'antonio.jpg', note: 'Went to Formula E'},
+        {name: 'Antonio Giovinazzi', team: 'Alfa Romeo', number: '99', country: 'Italy', flag: '🇮🇹', points: 0, photo: 'antonio.jpg', note: 'Went to Formula E', out: true},
         {name: 'Mick Schumacher', team: 'Haas', number: '19', country: 'Germany', flag: '🇩🇪', points: 0, photo: 'mick.jpg'},
         {name: 'Nikita Mazepin', team: 'Haas', number: '9', country: 'Russia', flag: '🇷🇺', points: 0, photo: 'nikita.jpg'},
-        {name: 'Alex Albon', team: 'Williams', number: '23', country: 'Thailand', flag: '🇹🇭', points: 0, photo: 'alex.webp', note: 'Returning'},
-        {name: 'Guanyu Zhou', team: 'Alfa Romeo', number: '24', country: 'China', flag: '🇨🇳', points: 0, photo: 'guanyu.jpg', note: 'New'},
+        {name: 'Alex Albon', team: 'Williams', number: '23', country: 'Thailand', flag: '🇹🇭', points: 0, photo: 'alex.webp', note: 'Returning', new: true},
+        {name: 'Guanyu Zhou', team: 'Alfa Romeo', number: '24', country: 'China', flag: '🇨🇳', points: 0, photo: 'guanyu.jpg', note: 'New', new: true},
       ],
       currentGalleryIndex: 0,
       openedPhoto: '',

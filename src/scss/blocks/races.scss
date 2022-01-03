@@ -11,10 +11,15 @@
     flex-grow: 0;
     flex-shrink: 0;
     position: relative;
-    img {
-      width: 90%;
-      display: block;
+    &-image {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      width: 80%;
       margin: 0 auto;
+      img {
+        width: 100%;
+      }
     }
     &-header {
       display: flex;

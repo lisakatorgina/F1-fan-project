@@ -1,10 +1,13 @@
 <template>
   <div class="layout layout_gallery">
     <swiper ref="mySwiper" :options="swiperOptions">
-      <swiper-slide v-for="(item, index) in shuffle(imagesArray)" :key="index">
-        <img :src="require(`@/assets/img/photos/${item}`)" alt="">
+      <swiper-slide v-for="(item, index) in shuffle(this.photos)" :key="index">
+        <!-- img :src="require(`@/assets/img/photos/${item}`)" alt="" -->
+        <img :src="item" alt="">
       </swiper-slide>
     </swiper>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     <div class="intro intro_dark">
       <my-countdown no-title></my-countdown>
     </div>
@@ -23,55 +26,30 @@ export default {
   },
   data() {
     return {
-      imagesArray: [
-        'carlos.jpg',
-        'carlos2.jpg',
-        'carlos3.jpg',
-        'carlos4.jpg',
-        'carlos5.jpg',
-        'carlos6.jpg',
-        'carlos7.jpg',
-        'carlos8.jpg',
-        'carlos9.jpg',
-        'carlando.jpg',
-        'carlando2.jpg',
-        'carlando3.jpg',
-        'lando.jpg',
-        'lando2.jpg',
-        'lando3.jpg',
-        'lando4.png',
-        'lando5.jpg',
-        'lando6.jpg',
-        'lando7.jpg',
-        'max.jpg',
-        'max2.jpg',
-        'max3.jpg',
-        'maxandlando.jpg',
-        'daniel.jpg',
-        'daniel2.jpg',
-        'charles.jpg',
-        'charles2.jpg',
-        'charles3.jpg',
-        'charles4.jpg',
-        'checo.jpg',
-        'checo2.jpg',
-        'checo3.jpg',
-        'maxiel.jpg',
-        'dando.jpg',
-        'pierre2.jpg',
-      ],
       swiperOptions: {
         effect: 'fade',
-        speed: 2000,
+        speed: 1000,
         loop: true,
         autoplay: {
           delay: 5000,
           disableOnInteraction: false
         },
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          disabledClass: "is-disabled"
+        },
       }
     }
   },
+  computed: {
+    photos() {
+      const paths = require.context('@/assets/img/photos/', false)
+      return paths .keys().map(x => paths (x))
+    }
+  },
   mounted() {
+
   },
   methods: {
     shuffle(array) {
