@@ -53,9 +53,9 @@ export default {
         {country: 'Italy', flag: '🇮🇹', place: 'Monza', name: 'Autodromo Nazionale Monza', dates: 'September 9-11', laps: '53', image: 'monza.svg'},
         {country: 'Russia', flag: '🇷🇺', place: 'Sochi', name: 'Sochi Autodrom', dates: 'September 23-25', laps: '53', image: 'sochi.svg'},
         {country: 'Singapore', flag: '🇸🇬', place: 'Singapore', name: 'Marina Bay Street Circuit', dates: 'Septenber 30 - October 2', laps: '61', image: 'marina-bay.svg'},
-        {country: 'Japan', flag: '🇯🇵', place: 'Suzuka', name: 'Suzuka International Racing Course', dates: 'October 7-9', laps: '53', image: ''},
-        {country: 'United States', flag: '🇺🇸', place: 'Austin', name: 'Circuit of The Americas', dates: 'October 21-23', laps: '56', image: ''},
-        {country: 'Mexico', flag: '🇲🇽', place: 'Mexico City', name: 'Autódromo Hermanos Rodríguez', dates: 'October 28-30', laps: '71', image: ''},
+        {country: 'Japan', flag: '🇯🇵', place: 'Suzuka', name: 'Suzuka International Racing Course', dates: 'October 7-9', laps: '53', image: 'suzuka.svg'},
+        {country: 'United States', flag: '🇺🇸', place: 'Austin', name: 'Circuit of The Americas', dates: 'October 21-23', laps: '56', image: 'austin.svg'},
+        {country: 'Mexico', flag: '🇲🇽', place: 'Mexico City', name: 'Autódromo Hermanos Rodríguez', dates: 'October 28-30', laps: '71', image: 'mexico.svg'},
         {country: 'Brazil', flag: '🇧🇷', place: 'São Paulo', name: 'Autódromo José Carlos Pace', dates: 'November 11-13', laps: '71', image: ''},
         {country: 'Abu Dhabi', flag: '🇦🇪', place: 'Yas Island', name: 'Yas Marina Circuit', dates: 'November 18-20', laps: '58', image: ''}
       ]
