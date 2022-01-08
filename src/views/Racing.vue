@@ -57,7 +57,7 @@ export default {
         {country: 'United States', flag: '🇺🇸', place: 'Austin', name: 'Circuit of The Americas', dates: 'October 21-23', laps: '56', image: 'austin.svg'},
         {country: 'Mexico', flag: '🇲🇽', place: 'Mexico City', name: 'Autódromo Hermanos Rodríguez', dates: 'October 28-30', laps: '71', image: 'mexico.svg'},
         {country: 'Brazil', flag: '🇧🇷', place: 'São Paulo', name: 'Autódromo José Carlos Pace', dates: 'November 11-13', laps: '71', image: 'brazil.svg'},
-        {country: 'Abu Dhabi', flag: '🇦🇪', place: 'Yas Island', name: 'Yas Marina Circuit', dates: 'November 18-20', laps: '58', image: ''}
+        {country: 'Abu Dhabi', flag: '🇦🇪', place: 'Yas Island', name: 'Yas Marina Circuit', dates: 'November 18-20', laps: '58', image: 'yas-marina.svg'}
       ]
     }
   },
