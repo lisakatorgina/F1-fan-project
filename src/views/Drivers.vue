@@ -50,7 +50,7 @@ export default {
       driversData: [
         {name: 'Max Verstappen', team: 'Red Bull', number: '33', country: 'Nederland', flag: '🇳🇱', points: 0, photo: 'max.jpg'},
         {name: 'Lewis Hamilton', team: 'Mercedes', number: '44', country: 'UK', flag: '🇬🇧', points: 0, photo: 'lewis.jpg'},
-        {name: 'Valtteri Bottas', team: 'Alfa Romeo', number: '77', country: 'Finland', flag: '🇫🇮', points: 0, photo: 'valtteri.jpg'},
+        {name: 'Valtteri Bottas', team: 'Alfa Romeo', number: '77', country: 'Finland', flag: '🇫🇮', points: 0, photo: 'valtteri.jpg', note: '2021 Mercedes'},
         {name: 'Sergio Perez', team: 'Red Bull', number: '11', country: 'Mexico', flag: '🇲🇽', points: 0, photo: 'checo3.jpg'},
         {name: 'Carlos Sainz', team: 'Ferrari', number: '55', country: 'Spain', flag: '🇪🇸', points: 0, photo: 'carlos9.jpg'},
         {name: 'Lando Norris', team: 'McLaren', number: '4', country: 'UK', flag: '🇬🇧', points: 0, photo: 'lando7.jpg'},
@@ -62,7 +62,7 @@ export default {
         {name: 'Sebastian Vettel', team: 'Aston Martin', number: '5', country: 'Germany', flag: '🇩🇪', points: 0, photo: 'seb2.jpg'},
         {name: 'Lance Stroll', team: 'Aston Martin', number: '18', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'lance2.jpg'},
         {name: 'Yuki Tsunoda', team: 'Alphatauri', number: '22', country: 'Japan', flag: '🇯🇵', points: 0, photo: 'yuki.jpg'},
-        {name: 'George Russell', team: 'Mercedes', number: '15', country: 'UK', flag: '🇬🇧', points: 0, photo: 'george.jpg'},
+        {name: 'George Russell', team: 'Mercedes', number: '15', country: 'UK', flag: '🇬🇧', points: 0, photo: 'george.jpg', note: '2021 Williams'},
         {name: 'Kimi Raikkonen', team: 'Alfa Romeo', number: '7', country: 'Finland', flag: '🇫🇮', points: 0, photo: 'kimi.jpg', note: 'Retired', out: true},
         {name: 'Nicholas Latifi', team: 'Williams', number: '6', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'nicholas.jpg'},
         {name: 'Antonio Giovinazzi', team: 'Alfa Romeo', number: '99', country: 'Italy', flag: '🇮🇹', points: 0, photo: 'antonio.jpg', note: 'Went to Formula E', out: true},

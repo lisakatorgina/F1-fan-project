@@ -17,11 +17,37 @@
   }
 }
 .driver {
+  position: relative;
+  &_new, &_out {
+    &:after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: 15px;
+      width: 12px;
+      height: 12px;
+      margin-top: -6px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @media (max-width: 767px) {
+        top: -4px;
+        right: -4px;
+        margin: 0;
+      }
+    }
+  }
   &_out {
     background: rgba(red, 0.1);
+    &:after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 9h24v6h-24z' fill='red'/%3E%3C/svg%3E");
+    }
   }
   &_new {
     background: rgba(green, 0.1);
+    &:after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M24 9h-9v-9h-6v9h-9v6h9v9h6v-9h9z' fill='green'/%3E%3C/svg%3E");
+    }
   }
   &__points {
     font-weight: 700;
