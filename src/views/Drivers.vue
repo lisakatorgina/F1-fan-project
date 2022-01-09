@@ -33,7 +33,7 @@
           <span class="popup__next" v-if="currentGalleryIndex < (driversData.length-1)" @click="changePhoto(currentGalleryIndex + 1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></span>
         </div>
         <div class="popup__info">
-          <p>{{ currentDriver.country }} {{ currentDriver.flag }}</p>
+          <p>{{ currentDriver.country }} {{ currentDriver.flag }} №: {{ currentDriver.number }}</p>
           <p>BD: {{ getBirthday(currentDriver.birthdate) }}</p>
           <p>Age: {{ getAge(currentDriver.birthdate) }}</p>
           <p v-if="currentDriver.champ">🏆 {{ currentDriver.champ }}</p>
@@ -71,7 +71,7 @@ export default {
         {name: 'Lance Stroll', team: 'Aston Martin', number: '18', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'lance2.jpg', birthdate: '1998/10/29'},
         {name: 'Yuki Tsunoda', team: 'Alphatauri', number: '22', country: 'Japan', flag: '🇯🇵', points: 0, photo: 'yuki.jpg', birthdate: '2000/05/11'},
         {name: 'George Russell', team: 'Mercedes', number: '15', country: 'UK', flag: '🇬🇧', points: 0, photo: 'george.jpg', note: '2021 Williams', birthdate: '1998/02/15'},
-        {name: 'Kimi Raikkonen', team: 'Alfa Romeo', number: '7', country: 'Finland', flag: '🇫🇮', points: 0, photo: 'kimi.jpg', note: 'Retired', out: true, birthdate: '1979/10/17'},
+        {name: 'Kimi Raikkonen', team: 'Alfa Romeo', number: '7', country: 'Finland', flag: '🇫🇮', points: 0, photo: 'kimi.jpg', note: 'Retired', out: true, birthdate: '1979/10/17', champ: '2007'},
         {name: 'Nicholas Latifi', team: 'Williams', number: '6', country: 'Canada', flag: '🇨🇦', points: 0, photo: 'nicholas.jpg', birthdate: '1995/06/29'},
         {name: 'Antonio Giovinazzi', team: 'Alfa Romeo', number: '99', country: 'Italy', flag: '🇮🇹', points: 0, photo: 'antonio.jpg', note: '2022 Formula E', out: true, birthdate: '1993/12/14'},
         {name: 'Mick Schumacher', team: 'Haas', number: '19', country: 'Germany', flag: '🇩🇪', points: 0, photo: 'mick.jpg', birthdate: '1999/03/22'},

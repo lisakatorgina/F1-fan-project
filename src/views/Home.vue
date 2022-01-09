@@ -1,9 +1,10 @@
 <template>
   <div class="layout">
-    <video width="100%" height="100%" poster="../assets/video-poster.png" autoplay muted loop playsinline>
+    <video v-if="isMobile || videoBg" class="layout__bg layout__bg_video" width="100%" height="100%" poster="../assets/video-poster.png" autoplay muted loop playsinline>
       <source src="../assets/videobg.mp4" type="video/mp4">
       <source src="../assets/videobg.ogg" type="video/ogg">
     </video>
+    <img v-else src="../assets/video-poster.png" alt="" class="layout__bg layout__bg_image" @click="videoBg = !videoBg">
     <a href="https://www.instagram.com/lisalovesformula1/" class="inst" target="_blank">
       <img class="qr" src="../assets/img/qr.png" alt=""/>
       <span>@lisalovesformula1</span>
@@ -46,10 +47,16 @@ export default {
   },
   data() {
     return {
-      musicPopupOpened: false
+      musicPopupOpened: false,
+      videoBg: false
     }
   },
   mounted() {
+  },
+  computed: {
+    isMobile: function () {
+      return this.$vssWidth < 1024
+    },
   },
   methods: {
     closePopup(e) {

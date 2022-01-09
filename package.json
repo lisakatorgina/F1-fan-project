@@ -14,7 +14,8 @@
     "vue-awesome-countdown": "^1.1.4",
     "vue-awesome-swiper": "^4.1.1",
     "vue-meta": "^2.4.0",
-    "vue-router": "^3.2.0"
+    "vue-router": "^3.2.0",
+    "vue-screen-size": "^1.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
