@@ -2,6 +2,9 @@
   font-size: 14px;
   max-width: 800px;
   margin: 0 auto;
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
   &__item {
     margin: 5px 0;
     border: 1px solid $orange;
@@ -91,12 +94,6 @@
         font-size: 14px;
       }
     }
-    p {
-      margin: 0;
-      color: $orange;
-      font-weight: 600;
-      font-size: 10px;
-    }
   }
   &__country {
     flex: 1 1 0;
@@ -114,5 +111,11 @@
   }
   &__team {
     flex: 1 1 0;
+  }
+  &__note {
+    margin: 0;
+    color: $orange;
+    font-weight: 600;
+    font-size: 10px;
   }
 }
