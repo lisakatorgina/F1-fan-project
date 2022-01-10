@@ -9,7 +9,7 @@
         </div>
         <h2>
           <span>{{ item.country }}</span>
-          <span>{{ item.flag }}</span>
+          <span>{{ getFlag(item.country) }}</span>
           <small>{{ item.place }}</small>
         </h2>
         <h3>{{ item.name }}</h3>
@@ -23,6 +23,9 @@
 </template>
 
 <script>
+import racing from "@/data/racing";
+import getFlag from "@/utils/getflag";
+
 export default {
   components: {
   },
@@ -34,37 +37,13 @@ export default {
   },
   data() {
     return {
-      tracks: [
-        {country: 'Bahrain', flag: '🇧🇭', place: 'Sakhir', name: 'Bahrain International Circuit', dates: 'March 18-20', laps: '57', image: 'sakhir.svg'},
-        {country: 'Saudi Arabia', flag: '🇸🇦', place: 'Jeddah', name: 'Jeddah Corniche Circuit', dates: 'March 25-27', laps: '50', image: 'jeddah.svg'},
-        {country: 'Australia', flag: '🇦🇺', place: 'Melbourn', name: 'Melbourne Grand Prix Circuit', dates: 'April 8-10', laps: '58', image: 'melbourn.svg'},
-        {country: 'Italy', flag: '🇮🇹', place: 'Imola', name: 'Autodromo Enzo e Dino Ferrari', dates: 'April 22-24', laps: '63', image: 'imola.svg'},
-        {country: 'United States', flag: '🇺🇸', place: 'Miami', name: 'Miami International Autodrome', dates: 'May 6-8', laps: '57', image: 'miami.svg'},
-        {country: 'Spain', flag: '🇪🇸', place: 'Catalunya', name: 'Circuit de Barcelona-Catalunya', dates: 'May 20-22', laps: '66', image: 'barcelona.svg'},
-        {country: 'Monaco', flag: '🇲🇨', place: 'Monte Carlo', name: 'Circuit de Monaco', dates: 'May 27-29', laps: '78', image: 'monaco.svg'},
-        {country: 'Azerbaijan', flag: '🇦🇿', place: 'Baku', name: 'Baku City Circuit', dates: 'June 10-12', laps: '51', image: 'baku.svg'},
-        {country: 'Canada', flag: '🇨🇦', place: 'Montreal', name: 'Circuit Gilles-Villeneuve', dates: 'June 17-19', laps: '70', image: 'montreal.svg'},
-        {country: 'Great Britain', flag: '🇬🇧', place: 'Silverstone', name: 'Silverstone Circuit', dates: 'July 1-3', laps: '52', image: 'silverstone.svg'},
-        {country: 'Austria', flag: '🇦🇹', place: 'Spielberg', name: 'Red Bull Ring', dates: 'July 8-10', laps: '71', image: 'redbull.svg'},
-        {country: 'France', flag: '🇫🇷', place: 'Le Castellet', name: 'Circuit Paul Ricard', dates: 'July 22-24', laps: '53', image: 'paulricard.svg'},
-        {country: 'Hungary', flag: '🇭🇺', place: 'Budapest', name: 'Hungaroring', dates: 'July 29-31', laps: '70', image: 'hungaroring.svg'},
-        {country: 'Belgium', flag: '🇧🇪', place: 'Spa-Francorchamps', name: 'Circuit de Spa-Francorchamps', dates: 'August 26-28', laps: '44', image: 'spa.svg'},
-        {country: 'Netherlands', flag: '🇳🇱', place: 'Zandvoort', name: 'Circuit Zandvoort', dates: 'September 2-4', laps: '72', image: 'zandvoort.svg'},
-        {country: 'Italy', flag: '🇮🇹', place: 'Monza', name: 'Autodromo Nazionale Monza', dates: 'September 9-11', laps: '53', image: 'monza.svg'},
-        {country: 'Russia', flag: '🇷🇺', place: 'Sochi', name: 'Sochi Autodrom', dates: 'September 23-25', laps: '53', image: 'sochi.svg'},
-        {country: 'Singapore', flag: '🇸🇬', place: 'Singapore', name: 'Marina Bay Street Circuit', dates: 'Septenber 30 - October 2', laps: '61', image: 'marina-bay.svg'},
-        {country: 'Japan', flag: '🇯🇵', place: 'Suzuka', name: 'Suzuka International Racing Course', dates: 'October 7-9', laps: '53', image: 'suzuka.svg'},
-        {country: 'United States', flag: '🇺🇸', place: 'Austin', name: 'Circuit of The Americas', dates: 'October 21-23', laps: '56', image: 'austin.svg'},
-        {country: 'Mexico', flag: '🇲🇽', place: 'Mexico City', name: 'Autódromo Hermanos Rodríguez', dates: 'October 28-30', laps: '71', image: 'mexico.svg'},
-        {country: 'Brazil', flag: '🇧🇷', place: 'São Paulo', name: 'Autódromo José Carlos Pace', dates: 'November 11-13', laps: '71', image: 'brazil.svg'},
-        {country: 'Abu Dhabi', flag: '🇦🇪', place: 'Yas Island', name: 'Yas Marina Circuit', dates: 'November 18-20', laps: '58', image: 'yas-marina.svg'}
-      ]
+      tracks: racing,
     }
   },
   mounted() {
   },
   methods: {
-
+    getFlag
   }
 }
 </script>

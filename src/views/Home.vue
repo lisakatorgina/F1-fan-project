@@ -12,8 +12,11 @@
     <div class="twch">
       <play-sound audio-source="twch.mp3"></play-sound>
     </div>
-    <div class="music" @click="musicPopupOpened = true">
+    <div class="popup-link" @click="musicPopupOpened = true">
       🎻🎻🎻
+    </div>
+    <div class="popup-link" @click="lastLapVideo = true">
+      Abu Dhabi final lap
     </div>
     <div class="intro">
       <img src="../assets/img/logo.png">
@@ -24,6 +27,13 @@
         <h3>Formula 1 Theme</h3>
         <span class="popup__close" @click="musicPopupOpened = false">&times;</span>
         <iframe src="https://www.youtube.com/embed/8AYy-BcjRXg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="popup popup_video" v-if="lastLapVideo" @click="closePopup($event)">
+      <div class="popup__box">
+        <h3>The final lap of Abu Dhabi GP</h3>
+        <span class="popup__close" @click="lastLapVideo = false">&times;</span>
+        <iframe src="https://www.youtube.com/embed/zJjiz8yXf0E?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -48,7 +58,8 @@ export default {
   data() {
     return {
       musicPopupOpened: false,
-      videoBg: false
+      videoBg: false,
+      lastLapVideo: false
     }
   },
   mounted() {

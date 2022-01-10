@@ -173,10 +173,11 @@ body {
   position: relative;
   margin: 0 0 20px 0;
 }
-.music {
+.popup-link {
   position: relative;
   margin: 0 0 20px 0;
   cursor: pointer;
+  color: white;
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
