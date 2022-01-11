@@ -14,23 +14,23 @@
       <img v-if="item.image !== ''" :src="require(`../assets/img/tracks/${item.image}`)" :alt="item.name">
       <template v-if="results[index]">
         <div class="races__item-info">
-          <p>
+          <p v-if="results[index].quali.length > 0">
             Quali:
             <span v-for="(item, index) in results[index].quali.slice(0, 3)" :key="index">
               <b>{{ index + 1 }}.</b>{{ getName(item) }}
             </span>
           </p>
-          <p>
+          <p v-if="results[index].race.length > 0">
             Race:
             <span v-for="(item, index) in results[index].race.slice(0, 3)" :key="index">
               <b>{{ index + 1 }}.</b>{{ getName(item) }}
             </span>
           </p>
-          <p>
+          <p v-if="results[index].lap.length != ''">
             Fast-lap:
             <span>{{ getName(results[index].lap) }}</span>
           </p>
-          <p><a href="" @click.prevent="showPopup = index">Show all results</a></p>
+          <p v-if="results[index].race.length > 0"><a href="" @click.prevent="showPopup = index">Show all results</a></p>
         </div>
         <div class="popup" v-if="showInfo(index)">
           <div class="popup__box">
