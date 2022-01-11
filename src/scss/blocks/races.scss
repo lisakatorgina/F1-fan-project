@@ -11,14 +11,25 @@
     flex-grow: 0;
     flex-shrink: 0;
     position: relative;
+    &_past {
+      background: rgba(gray, 0.2);
+    }
+    &_current {
+      background: rgba(green, 0.05);
+    }
     &-image {
       height: 150px;
       display: flex;
       align-items: center;
-      width: 80%;
       margin: 0 auto;
+      position: relative;
       img {
-        width: 100%;
+       width: 80%;
+        display: block;
+        margin: 0 auto;
+        .races__item_past &, .races__item_current & {
+          opacity: 0.5;
+        }
       }
     }
     &-header {
@@ -84,6 +95,14 @@
       margin: 0;
       font-size: 13px;
       font-weight: 400;
+    }
+    &-info {
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      padding: 10px 0 0 0;
+      font-size: 12px;
     }
   }
 }

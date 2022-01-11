@@ -212,3 +212,13 @@ body {
     }
   }
 }
+.results {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  li {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

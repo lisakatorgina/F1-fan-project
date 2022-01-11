@@ -50,6 +50,10 @@
 <script>
 import drivers from "@/data/drivers";
 import getFlag from "@/utils/getflag";
+import getName from "@/utils/getName";
+import points from "@/data/points";
+import results from "@/data/results";
+
 export default {
   components: {
   },
@@ -65,9 +69,15 @@ export default {
       currentGalleryIndex: 0,
       openedPhoto: '',
       popupOpened: false,
+      points: points,
+      results: results
     }
   },
   mounted() {
+    for (var i = 0; i < this.driversData.length; i++) {
+      var _id = this.driversData[i].id;
+      this.driversData[i].points = this.getPoints[_id] ? this.getPoints[_id] : 0;
+    }
     this.driversData.sort(function(a, b){
       return b.points - a.points;
       //return a.team.localeCompare(b.team);
@@ -76,6 +86,17 @@ export default {
   computed: {
     currentDriver() {
       return this.driversData[this.currentGalleryIndex];
+    },
+    getPoints() {
+      var result = {};
+      for (var i = 1; i <= Object.keys(this.results).length; i++ ) {
+        var race = this.results[i].race;
+        for (var k = 0; k < race.length; k++) {
+          var name = race[k];
+          result[name] = result[name] ? result[name] + points[k] : points[k];
+        }
+      }
+      return result;
     }
   },
   methods: {
@@ -110,7 +131,8 @@ export default {
       var formatD = d.toLocaleString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})
       return formatD;
     },
-    getFlag
+    getFlag,
+    getName,
   }
 }
 </script>
