@@ -21,7 +21,7 @@
           <p v-if="driver.note" class="driver__note">{{ driver.note }}</p>
         </div>
         <div class="driver__country" @click="changePhoto(currentGalleryIndex)"><span>{{ driver.country }}</span> {{ getFlag(driver.country) }}</div>
-        <!-- span class="driver__points">{{ driver.points }}</span -->
+        <span v-if="Object.keys(results).length > 0" class="driver__points">{{ driver.points }}</span>
       </div>
     </div>
     <div class="popup" v-if="popupOpened" @click="closePopup($event)">
@@ -91,9 +91,14 @@ export default {
       var result = {};
       for (var i = 1; i <= Object.keys(this.results).length; i++ ) {
         var race = this.results[i].race;
+        var lap = this.results[i].lap;
         for (var k = 0; k < race.length; k++) {
           var name = race[k];
-          result[name] = result[name] ? result[name] + points[k] : points[k];
+          var incr = points[k] ? points[k] : 0
+          result[name] = result[name] ? result[name] + incr : incr;
+          if (name === lap) {
+            result[name]++;
+          }
         }
       }
       return result;
