@@ -2,26 +2,26 @@
   <div class="layout layout_simple">
     <h1 class="layout__title">Season 2022 drivers</h1>
     <h3 class="layout__subtitle">In order of last season standings</h3>
-    <div class="drivers">
-      <div v-for="(driver, index) in driversData" :key="index" :class="['drivers__item', 'driver', {'driver_out': driver.out, 'driver_new': driver.new}]">
-        <div class="driver__position">
+    <div class="table">
+      <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row', {'row_out': driver.out, 'row_new': driver.new}]">
+        <div class="row__position">
           <template v-if="index === 0">🏆</template>
           <template v-else-if="index === 1">🥈</template>
           <template v-else-if="index === 2">🥉</template>
           <template v-else>{{ index + 1 }}</template>
         </div>
-        <div class="driver__name" @click="openPopup(index)">
+        <div class="row__name">
           <div>
-            <h2>{{ driver.name }}</h2>
+            <h2><a href="" @click.prevent="openPopup(index)">{{ driver.name }}</a></h2>
           </div>
-          <span class="driver__number">{{ driver.number }}</span>
+          <span class="row__number">{{ driver.number }}</span>
         </div>
-        <div class="driver__team">
+        <div class="row__team">
           {{ driver.team }}
-          <p v-if="driver.note" class="driver__note">{{ driver.note }}</p>
+          <p v-if="driver.note" class="row__note">{{ driver.note }}</p>
         </div>
-        <div class="driver__country" @click="changePhoto(currentGalleryIndex)"><span>{{ driver.country }}</span> {{ getFlag(driver.country) }}</div>
-        <span v-if="Object.keys(results).length > 0" class="driver__points">{{ driver.points }}</span>
+        <div class="row__country" @click="changePhoto(currentGalleryIndex)"><span>{{ driver.country }}</span> {{ getFlag(driver.country) }}</div>
+        <span v-if="Object.keys(results).length > 0" class="row__points">{{ driver.points }}</span>
       </div>
     </div>
     <div class="popup" v-if="popupOpened" @click="closePopup($event)">
@@ -51,8 +51,8 @@
 import drivers from "@/data/drivers";
 import getFlag from "@/utils/getflag";
 import getName from "@/utils/getName";
-import points from "@/data/points";
 import results from "@/data/results";
+import getPoints from "@/utils/getPoints";
 
 export default {
   components: {
@@ -69,14 +69,13 @@ export default {
       currentGalleryIndex: 0,
       openedPhoto: '',
       popupOpened: false,
-      points: points,
       results: results
     }
   },
   mounted() {
     for (var i = 0; i < this.driversData.length; i++) {
       var _id = this.driversData[i].id;
-      this.driversData[i].points = this.getPoints[_id] ? this.getPoints[_id] : 0;
+      this.driversData[i].points = getPoints()[_id] ? getPoints()[_id] : 0;
     }
     this.driversData.sort(function(a, b){
       return b.points - a.points;
@@ -87,22 +86,6 @@ export default {
     currentDriver() {
       return this.driversData[this.currentGalleryIndex];
     },
-    getPoints() {
-      var result = {};
-      for (var i = 1; i <= Object.keys(this.results).length; i++ ) {
-        var race = this.results[i].race;
-        var lap = this.results[i].lap;
-        for (var k = 0; k < race.length; k++) {
-          var name = race[k];
-          var incr = points[k] ? points[k] : 0
-          result[name] = result[name] ? result[name] + incr : incr;
-          if (name === lap) {
-            result[name]++;
-          }
-        }
-      }
-      return result;
-    }
   },
   methods: {
     openPopup(index) {
@@ -138,6 +121,7 @@ export default {
     },
     getFlag,
     getName,
+    getPoints,
   }
 }
 </script>

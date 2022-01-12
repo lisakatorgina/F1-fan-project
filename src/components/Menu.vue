@@ -5,6 +5,7 @@
       <div class="menu__items" v-if="opened">
         <router-link to="/" class="menu__item" v-if="$route.name !== 'Home'">Home</router-link>
         <router-link to="/drivers" class="menu__item" v-if="$route.name !== 'Drivers'">Drivers</router-link>
+        <router-link to="/teams" class="menu__item" v-if="$route.name !== 'Teams'">Teams</router-link>
         <router-link to="/racing" class="menu__item" v-if="$route.name !== 'Racing'">Racing</router-link>
         <router-link to="/gallery" class="menu__item" v-if="$route.name !== 'Gallery'">Gallery</router-link>
         <router-link to="/laugh" class="menu__item" v-if="$route.name !== 'Laugh'">Laugh</router-link>

@@ -45,6 +45,11 @@ const routes = [
     component: () => import('../views/Drivers.vue')
   },
   {
+    path: '/teams',
+    name: 'Teams',
+    component: () => import('../views/Teams.vue')
+  },
+  {
     path: '/lando',
     name: 'Lando',
     component: () => import('../views/Lando.vue')

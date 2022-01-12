@@ -1,4 +1,4 @@
-.drivers {
+.table {
   font-size: 14px;
   max-width: 800px;
   margin: 0 auto;
@@ -19,7 +19,7 @@
     }
   }
 }
-.driver {
+.row {
   position: relative;
   &_new, &_out {
     &:after {
@@ -76,7 +76,6 @@
   }
   &__name {
     width: 200px;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,10 +87,14 @@
       display: inline-block;
       margin: 0 10px 0 0;
       font-size: 16px;
-      text-decoration: underline;
       @media (max-width: 767px) {
         margin: 0 5px 0 0;
         font-size: 14px;
+      }
+    }
+    &_team {
+      @media (max-width: 767px) {
+        width: 70px;
       }
     }
   }
@@ -111,11 +114,30 @@
   }
   &__team {
     flex: 1 1 0;
+    &_small {
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
   }
   &__note {
     margin: 0;
     color: $orange;
     font-weight: 600;
     font-size: 10px;
+  }
+  &__logo {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    @media (max-width: 767px) {
+      width: 50px;
+      height: 20px;
+    }
+    img {
+      height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
   }
 }
