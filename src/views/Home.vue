@@ -24,7 +24,7 @@
     </div>
     <div class="popup popup_video" v-if="musicPopupOpened" @click="closePopup($event)">
       <div class="popup__box">
-        <h3>Formula 1 Theme</h3>
+        <h3>Formula 1 Music Theme</h3>
         <span class="popup__close" @click="musicPopupOpened = false">&times;</span>
         <iframe src="https://www.youtube.com/embed/8AYy-BcjRXg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>

@@ -28,7 +28,10 @@
         display: block;
         margin: 0 auto;
         .races__item_past &, .races__item_current & {
-          opacity: 0.5;
+          opacity: 0.4;
+        }
+        .races__item_past & {
+          filter: grayscale(100%);
         }
       }
     }
@@ -64,12 +67,18 @@
       }
     }
     &-dates {
-      color: rgba(black, 0.8);
+      color: white;
       font-weight: 600;
       font-size: 12px;
       background: $orange;
       border-radius: 2px;
       padding: 1px 3px;
+      .races__item_past & {
+        filter: grayscale(100%);
+      }
+      .races__item_current & {
+        background: seagreen;
+      }
     }
     &-laps {
       color: gray;
@@ -103,6 +112,26 @@
       width: 100%;
       padding: 10px 0 0 0;
       font-size: 12px;
+      h4 {
+        font-size: 12px;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+        margin: 0 0 10px 0;
+        padding: 0;
+        li {
+          display: inline-block;
+          text-transform: uppercase;
+          margin-right: 10px;
+        }
+      }
+      p {
+        margin: 0 0 10px 0;
+      }
     }
+  }
+  &__all-result {
+    font-weight: bold;
   }
 }
