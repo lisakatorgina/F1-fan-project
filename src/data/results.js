@@ -1,9 +1,9 @@
 export default {
     /*1: {
         past: true,
-        quali: ['ver', 'nor', 'sai', 'alo', 'maz', 'oco', 'vet', 'ric', 'lec', 'bot'],
+        quali: ['ver', 'nor', 'sai', 'alo', 'maz', 'oco', 'vet', 'ric', 'lec', 'bot', 'alb', 'sch', 'per', 'tsu', 'ham', 'rus', 'gas', 'lat', 'str', 'zho'],
         race: ['ver', 'nor', 'sai', 'alo', 'maz', 'oco', 'vet', 'ric', 'lec', 'bot', 'alb', 'sch', 'per'],
-        out: ['tsu', 'ham'],
+        out: ['tsu', 'ham', 'rus', 'gas', 'lat', 'str', 'zho'],
         lap: 'ver'
     },
     2: {

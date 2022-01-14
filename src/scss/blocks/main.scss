@@ -242,8 +242,14 @@ body {
     &:nth-child(3) {
       background: rgba(GoldenRod, 0.5);
     }
-    &._fast {
-      color: Fuchsia;
+    svg {
+      height: 14px;
+      fill: Fuchsia;
+      vertical-align: middle;
+    }
+    img {
+      height: 14px;
+      vertical-align: middle;
     }
   }
 }

@@ -49,29 +49,41 @@
               <span class="popup__close" @click="showPopup = null">&times;</span>
             </h3>
             <div class="popup__body">
+              <template v-if="results[index].race.length > 0">
+                <h4>Race</h4>
+                <ul class="race-results">
+                  <li v-for="(item, i) in results[index].race" :key="item">
+                    <span>
+                      <b>{{ i + 1 }}.</b> {{ getName(item) }}
+                      <img v-if="getTeam(item)" :src="require(`@/assets/img/logos/${getTeam(item)}`)" alt="">
+                    </span>
+                    <span>
+                      <template v-if="item === results[index].lap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 6h2v8h-2v-8zm1 12.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/></svg>
+                      </template>
+                      {{ getRacePoints(item, i, false) }}
+                    </span>
+                  </li>
+                  <li v-for="(item, i) in results[index].out" :key="item">
+                    <span>
+                      <b>out</b> {{ getName(item) }}
+                      <img v-if="getTeam(item)" :src="require(`@/assets/img/logos/${getTeam(item)}`)" alt="">
+                    </span>
+                    <span>
+                      <template v-if="item === results[index].lap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 6h2v8h-2v-8zm1 12.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/></svg>
+                      </template>
+                      {{ getRacePoints(item, i, true) }}
+                    </span>
+                  </li>
+                </ul>
+              </template>
               <h4>Qualifying</h4>
               <ul class="quali-results">
                 <li v-for="(item, i) in results[index].quali" :key="item">
                   <b>{{ i + 1 }}.</b> {{ getName(item) }}
                 </li>
               </ul>
-              <template v-if="results[index].race.length > 0">
-              <h4>Race</h4>
-                <ul class="race-results">
-                  <li v-for="(item, i) in results[index].race" :key="item" :class="{'_fast': item === results[index].lap}">
-                    <span><b>{{ i + 1 }}.</b> {{ getName(item) }}</span>
-                    <span>
-                      {{ getPoints(item, i, false) }}
-                    </span>
-                  </li>
-                  <li v-for="(item, i) in results[index].out" :key="item">
-                    <span><b>out</b> {{ getName(item) }}</span>
-                    <span>
-                      {{ getPoints(item, i, true) }}
-                    </span>
-                  </li>
-                </ul>
-              </template>
             </div>
           </div>
         </div>
@@ -84,11 +96,14 @@
 <script>
 import getFlag from "@/utils/getflag";
 import getName from "@/utils/getName";
+import getTeam from "@/utils/getTeam";
 import points from "@/data/points";
 import results from "@/data/results";
+import Teams from "@/views/Teams";
 
 export default {
   name: 'raceItem',
+  components: {Teams},
   props: {
     item: {
       type: Object,
@@ -112,12 +127,13 @@ export default {
   methods: {
     getName,
     getFlag,
+    getTeam,
     showInfo(index) {
       if (index === this.showPopup) {
         return true;
       }
     },
-    getPoints(item, index, out) {
+    getRacePoints(item, index, out) {
       var _points = 0;
       if (!out) {
         _points = this.points[index] || 0;
