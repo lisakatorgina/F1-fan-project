@@ -8,9 +8,6 @@
     </swiper>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    <div class="intro intro_dark">
-      <my-countdown no-title></my-countdown>
-    </div>
   </div>
 </template>
 

@@ -1,10 +1,12 @@
 .audio {
   cursor: pointer;
+  display: inline-block;
   &__play {
     padding: 5px;
     border-radius: 3px;
     background: rgba(white, 0.3);
     text-align: center;
+    display: inline-block;
     svg {
       display: inline-block;
       vertical-align: bottom;

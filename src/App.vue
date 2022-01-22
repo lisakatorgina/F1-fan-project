@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <site-menu/>
-    <router-view/>
-    <div :class="['sharing', `sharing_${$route.name}`]">
-      <span class="sharing__title">Share</span>
-      <div class="ya-share2" data-curtain data-size="s" data-lang="en" data-services="facebook,twitter"></div>
+    <div :class="['layout', `layout_${$route.name}`]">
+      <site-header/>
+      <div class="content">
+        <router-view/>
+      </div>
     </div>
   </div>
 </template>
@@ -13,9 +13,9 @@
 
 </style>
 <script>
-import SiteMenu from "@/components/Menu";
+import SiteHeader from "@/components/Header";
 export default {
-  components: {SiteMenu},
+  components: {SiteHeader},
   metaInfo: {
     title: 'Formula 1 fan project',
     titleTemplate: 'Formula 1 fan project | %s',

@@ -1,6 +1,6 @@
 <template>
-  <div class="layout layout_simple">
-    <h1 class="layout__title">How they laugh</h1>
+  <div>
+    <h1 class="content__title">How they laugh</h1>
     <div class="sounds">
       <play-sound class="sounds__item" audio-source="lando.mp3" with-image image-path="/laugh/lando-1.png" image-path-on="/laugh/lando-2.png" name="lando"></play-sound>
       <play-sound class="sounds__item" audio-source="carlos.mp3" with-image image-path="/laugh/carlos-1.png" image-path-on="/laugh/carlos-2.png" name="carlos"></play-sound>

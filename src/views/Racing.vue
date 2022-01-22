@@ -1,6 +1,7 @@
 <template>
   <div class="layout layout_simple">
     <h1 class="layout__title">Racing season 2022</h1>
+    <my-countdown dark></my-countdown>
     <div class="races">
       <race-item v-for="(item, index) in tracks" :key="index" :item="item" :index="index + 1"></race-item>
     </div>
@@ -10,10 +11,12 @@
 <script>
 import racing from "@/data/racing";
 import RaceItem from "@/components/raceItem";
+import MyCountdown from "@/components/Countdown";
 
 export default {
   components: {
-    RaceItem
+    RaceItem,
+    MyCountdown
   },
   metaInfo: {
     title: 'Racing',

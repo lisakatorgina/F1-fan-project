@@ -1,7 +1,7 @@
 <template>
-  <div class="layout layout_simple">
-    <h1 class="layout__title">Season 2022 teams</h1>
-    <h3 class="layout__subtitle">In order of last season standings</h3>
+  <div>
+    <h1 class="content__title">Season 2022 teams</h1>
+    <h3 class="content__subtitle">In order of last season standings</h3>
     <div class="table">
       <div v-for="(team, index) in teamsData" :key="index" :class="['table__item', 'row']">
         <div class="row__position">

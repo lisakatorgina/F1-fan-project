@@ -1,8 +1,7 @@
 <template>
-  <div class="countdown">
+  <div :class="['countdown', {'countdown_dark': dark}]">
     <countdown :end-time="new Date(2022, 2, 17, 18, 0, 0)">
       <template v-slot:process="countdown">
-        <h1 v-if="!noTitle">New season is loading...</h1>
         <div class="load-bar">
           <div class="load-bar__progress-wrap">
             <div class="load-bar__progress" :style="{width: `${Math.round(100 - (100/93 * countdown.timeObj.d))}%`}">{{ `${Math.round(100 - (100/93 * countdown.timeObj.d))}%` }}</div>
@@ -42,7 +41,7 @@
 export default {
   name: 'myCountdown',
   props: {
-    noTitle: {
+    dark: {
       type: Boolean,
       default: false
     }

@@ -6,6 +6,9 @@
   margin: 10px 0;
   min-width: 225px;
   position: relative;
+  .countdown_dark & {
+    border-color: black;
+  }
   &:first-child {
     margin-top: 0;
   }
@@ -35,6 +38,10 @@
     background: white;
     color: white;
     font-size: 8px;
+    .countdown_dark & {
+      color: black;
+      background: black;
+    }
     span {
       position: absolute;
       bottom: 100%;

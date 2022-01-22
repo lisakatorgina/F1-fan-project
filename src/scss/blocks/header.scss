@@ -1,0 +1,100 @@
+.header {
+  position: sticky;
+  z-index: 2;
+  text-align: center;
+  top: 0;
+  left: auto;
+  width: 100%;
+  background: rgba(white, 0.9);
+  backdrop-filter: blur(2px);
+  border-bottom: 1px solid rgba(black, 0.05);
+  padding-bottom: 5px;
+  height: 54px;
+  .layout_Gallery & {
+    background: none;
+    backdrop-filter: none;
+    border: none;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    img {
+      height: 32px;
+    }
+  }
+  &__logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+  &__sharing {
+    padding: 5px 5px 0 0;
+    &-title {
+      font-size: 12px;
+      margin-top: 5px;
+      display: block;
+      .sharing_Gallery &  {
+        color: white;
+      }
+    }
+  }
+  &__menu-button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: $orange;
+    span {
+      width: 24px;
+      height: 2px;
+      background: black;
+      position: relative;
+      transition: background 0s linear 0.3s;
+      .header_menu-opened & {
+        background: none;
+      }
+      &:before, &:after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background: black;
+        position: absolute;
+        left: 0;
+        transition: bottom 0.3s linear 0.3s, top 0.3s linear 0.3s, transform 0.3s;
+        .header_menu-opened & {
+          transition: bottom 0.3s, top 0.3s, transform 0.3s linear 0.3s;
+        }
+      }
+      &:before {
+        top: -8px;
+        .header_menu-opened & {
+          top: 0;
+          transform: rotate(45deg);
+        }
+      }
+      &:after {
+        bottom: -8px;
+        .header_menu-opened & {
+          bottom: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  &__menu {
+    background: $orange;
+    position: absolute;
+    left: 0;
+    top: 32px;
+    &-item {
+      display: block;
+      padding: 8px 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 <template>
-  <div class="layout layout_simple">
-    <h1 class="layout__title">Season 2022 drivers</h1>
-    <h3 class="layout__subtitle">In order of last season standings</h3>
+  <div>
+    <h1 class="content__title">Season 2022 drivers</h1>
+    <h3 class="content__subtitle">In order of last season standings</h3>
     <div class="table">
       <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row', {'row_out': driver.out, 'row_new': driver.new}]">
         <div class="row__position">
