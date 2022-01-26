@@ -28,6 +28,10 @@
     left: 50%;
     top: 10px;
     transform: translateX(-50%);
+    .layout_Gallery & {
+      display: none;
+    }
+
   }
   &__sharing {
     padding: 5px 5px 0 0;

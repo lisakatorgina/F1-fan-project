@@ -20,7 +20,7 @@
       position: relative;
       z-index: 1;
     }
-    background: rgba($orange, 0.8);
+    background: $orange;
     height: 14px;
     color: white;
     text-align: right;
@@ -38,6 +38,7 @@
     background: white;
     color: white;
     font-size: 8px;
+    z-index: 1;
     .countdown_dark & {
       color: black;
       background: black;
