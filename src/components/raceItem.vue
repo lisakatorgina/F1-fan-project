@@ -1,7 +1,7 @@
 <template>
   <div :class="['races__item', {'races__item_past': past, 'races__item_current': current}, {'races__item_closed': closed && isMobile}]">
-    <span class="races__item-number" @click="closed = !closed">{{ index }}</span>
-    <div class="races__item-closed-content" @click="closed = !closed">
+    <span class="races__item-number" @click="toggleItem">{{ index }}</span>
+    <div class="races__item-closed-content" @click="toggleItem">
       <h3><span>{{ item.country }}</span></h3>
       <div class="races__item-info" v-if="results[index] && results[index].race.length > 0">
         <ul>
@@ -179,6 +179,11 @@ export default {
       }
       return _points;
     },
+    toggleItem() {
+      if (this.isMobile) {
+        this.closed = !this.closed;
+      }
+    }
   },
 }
 </script>
