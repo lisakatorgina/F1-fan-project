@@ -2,6 +2,7 @@
   <div :class="['countdown', {'countdown_dark': dark}]">
     <countdown :end-time="new Date(2022, 2, 17, 18, 0, 0)">
       <template v-slot:process="countdown">
+        <h2>We are on winter break</h2>
         <div class="load-bar">
           <div class="load-bar__progress-wrap">
             <div class="load-bar__progress" :style="{width: `${Math.round(100 - (100/93 * countdown.timeObj.d))}%`}">{{ `${Math.round(100 - (100/93 * countdown.timeObj.d))}%` }}</div>
@@ -59,7 +60,6 @@ export default {
     var _date = today.split(',')[0];
     var _year = today.split(',')[1];
     this.todayString = _date + ', ' + _year;
-    console.log(this.todayString);
   }
 }
 </script>

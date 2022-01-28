@@ -37,6 +37,7 @@ export default {
   watch: {
     '$route'() {
       this.opened = false;
+      window.scrollTo(0, 0);
     }
   },
   methods: {

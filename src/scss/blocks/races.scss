@@ -25,9 +25,36 @@
       padding: 0;
     }
     &_closed &-inner {
-      display: none;
+      //display: none;
     }
-    &-image {
+    &-close {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $orange;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        fill: white;
+        width: 50%;
+      }
+      .races__item_closed & {
+        background: none;
+        top: 5px;
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        svg {
+          fill: $orange;
+          width: 100%;
+        }
+      }
+    }
+    &-content {
       height: 150px;
       position: relative;
       margin-top: 10px;
@@ -53,6 +80,9 @@
       justify-content: flex-end;
       align-items: center;
       margin-bottom: 5px;
+      @media (max-width: 767px) {
+        justify-content: center;
+      }
     }
     &-number {
       width: 30px;
@@ -149,10 +179,9 @@
     }
     &-closed-content {
       text-align: center;
-      display: none;
       padding: 5px;
       .races__item_closed & {
-        display: block;
+        // display: block;
       }
       h3 {
         font-weight: 600;
@@ -165,3 +194,4 @@
     font-weight: bold;
   }
 }
+
