@@ -21,16 +21,15 @@
       background: rgba(green, 0.05);
     }
     &_closed {
-      width: auto;
-      padding: 0;
+
     }
     &_closed &-inner {
       //display: none;
     }
     &-close {
       position: absolute;
-      top: -10px;
-      right: -10px;
+      top: -15px;
+      right: -15px;
       width: 30px;
       height: 30px;
       border-radius: 50%;
@@ -42,22 +41,10 @@
         fill: white;
         width: 50%;
       }
-      .races__item_closed & {
-        background: none;
-        top: 5px;
-        right: 5px;
-        width: 10px;
-        height: 10px;
-        svg {
-          fill: $orange;
-          width: 100%;
-        }
-      }
     }
     &-content {
       height: 150px;
       position: relative;
-      margin-top: 10px;
       > img {
         position: absolute;
         width: 200px;
@@ -77,11 +64,11 @@
     }
     &-header {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
-      margin-bottom: 5px;
+      margin-bottom: 0;
       @media (max-width: 767px) {
-        justify-content: center;
+
       }
     }
     &-number {
@@ -96,8 +83,8 @@
       font-size: 12px;
       background: rgba(black, 0.8);
       position: absolute;
-      top: -10px;
-      left: -10px;
+      top: -15px;
+      left: -15px;
       &:before {
         content: '';
         width: 22px;
@@ -137,16 +124,17 @@
     }
     h2 {
       font-size: 18px;
-      margin: 0 0 5px 0;
+      margin: 0;
       line-height: 1;
       display: flex;
-      gap: 10px;
+      gap: 5px;
       align-items: center;
-      small {
-        font-size: 14px;
-      }
     }
     h3 {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    h4 {
       margin: 0;
       font-size: 13px;
       font-weight: 400;
@@ -154,6 +142,8 @@
     &-info {
       width: 100%;
       font-size: 12px;
+      margin-top: 10px;
+      position: relative;
       h4 {
         font-size: 12px;
         margin: 0;
@@ -175,18 +165,6 @@
       }
       p {
         margin: 0 0 10px 0;
-      }
-    }
-    &-closed-content {
-      text-align: center;
-      padding: 5px;
-      .races__item_closed & {
-        // display: block;
-      }
-      h3 {
-        font-weight: 600;
-        font-size: 14px;
-        margin: 0 20px 5px 20px;
       }
     }
   }

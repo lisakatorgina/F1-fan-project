@@ -27,6 +27,9 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    @media (max-width: 767px) {
+      height: 50vw;
+    }
   }
   &__close {
     position: absolute;

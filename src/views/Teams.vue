@@ -8,7 +8,9 @@
           {{ index + 1 }}
         </div>
         <div class="row__name row__name_team" @click="openPopup(index)">
-          <h2>{{ team.name }}</h2>
+          <h2>
+            <a href="" @click.prevent="openPopup(index)">{{ team.name }}</a>
+          </h2>
         </div>
         <div class="row__team row__team_small">
           {{ getName(team.drivers[0]) }}<br/>
@@ -18,6 +20,16 @@
           <img :src="require(`@/assets/img/logos/${team.logo}`)" :alt="team.name">
         </div>
         <span v-if="Object.keys(results).length > 0" class="row__points">{{ team.points }}</span>
+      </div>
+    </div>
+    <div class="popup" v-if="popupOpened" @click="closePopup($event)">
+      <div class="popup__box">
+        <span class="popup__close" @click="popupOpened = false">&times;</span>
+        <h3>{{ currentTeam.name }}</h3>
+        <div class="popup__photo popup__photo_horizontal" :style="{'background-image': `url(${openedPhoto}`}">
+          <span class="popup__prev" v-if="currentGalleryIndex > 0" @click="changePhoto(currentGalleryIndex - 1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></span>
+          <span class="popup__next" v-if="currentGalleryIndex < (teamsData.length-1)" @click="changePhoto(currentGalleryIndex + 1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></span>
+        </div>
       </div>
     </div>
   </div>
@@ -45,7 +57,7 @@ export default {
       openedPhoto: '',
       popupOpened: false,
       results: results,
-      teamsData: teams
+      teamsData: teams,
     }
   },
   mounted() {
@@ -60,8 +72,8 @@ export default {
     });
   },
   computed: {
-    currentDriver() {
-      return this.driversData[this.currentGalleryIndex];
+    currentTeam() {
+      return this.teamsData[this.currentGalleryIndex];
     },
   },
   methods: {
@@ -70,10 +82,10 @@ export default {
       this.changePhoto(index);
     },
     changePhoto(index) {
-      if (index >= this.driversData.length || index < 0) {
+      if (index >= this.teamsData.length || index < 0) {
         return;
       }
-      this.openedPhoto = require(`@/assets/img/photos/${this.driversData[index].photo}`);
+      this.openedPhoto = require(`@/assets/img/cars/${this.teamsData[index].image}`);
       this.currentGalleryIndex = index;
     },
     closePopup(e) {
@@ -81,22 +93,6 @@ export default {
         this.popupOpened = false;
       }
     },
-    getAge(dateString) {
-      var today = new Date();
-      var birthDate = new Date(dateString);
-      var age = today.getFullYear() - birthDate.getFullYear();
-      var m = today.getMonth() - birthDate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-      }
-      return age;
-    },
-    getBirthday(dateString) {
-      var d = new Date(dateString);
-      var formatD = d.toLocaleString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})
-      return formatD;
-    },
-    getFlag,
     getName,
     getPoints
   }

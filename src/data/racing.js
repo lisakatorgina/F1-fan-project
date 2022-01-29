@@ -16,7 +16,7 @@ export default [
     {country: 'Netherlands', place: 'Zandvoort', name: 'Circuit Zandvoort', dates: 'September 2-4', laps: '72', image: 'zandvoort.svg'},
     {country: 'Italy', place: 'Monza', name: 'Autodromo Nazionale Monza', dates: 'September 9-11', laps: '53', image: 'monza.svg'},
     {country: 'Russia', place: 'Sochi', name: 'Sochi Autodrom', dates: 'September 23-25', laps: '53', image: 'sochi.svg'},
-    {country: 'Singapore', place: 'Singapore', name: 'Marina Bay Street Circuit', dates: 'Septenber 30 - October 2', laps: '61', image: 'marina-bay.svg'},
+    {country: 'Singapore', place: 'Singapore', name: 'Marina Bay Street Circuit', dates: 'Sep 30 - Oct 2', laps: '61', image: 'marina-bay.svg'},
     {country: 'Japan', place: 'Suzuka', name: 'Suzuka International Racing Course', dates: 'October 7-9', laps: '53', image: 'suzuka.svg'},
     {country: 'United States', place: 'Austin', name: 'Circuit of The Americas', dates: 'October 21-23', laps: '56', image: 'austin.svg'},
     {country: 'Mexico', place: 'Mexico City', name: 'Autódromo Hermanos Rodríguez', dates: 'October 28-30', laps: '71', image: 'mexico.svg'},

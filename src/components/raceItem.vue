@@ -1,7 +1,7 @@
 <template>
   <div :class="['races__item', {'races__item_past': past, 'races__item_current': current}, {'races__item_closed': closed && isMobile}]">
     <span class="races__item-number" @click="toggleItem">{{ index }}</span>
-    <span class="races__item-close" @click="toggleItem" v-if="isMobile">
+    <span class="races__item-close" @click="toggleItem" v-if="isMobile && past">
       <template v-if="closed">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
       </template>
@@ -9,30 +9,23 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 10h24v4h-24z"/></svg>
       </template>
     </span>
-    <div class="races__item-closed-content" v-if="closed && isMobile" @click="toggleItem">
-      <h3><span>{{ item.country }}</span></h3>
-      <div class="races__item-info" v-if="results[index] && results[index].race.length > 0">
-        <ul>
-          <li v-for="(item, index) in results[index].race.slice(0, 3)" :key="index">
-            <b>{{ index + 1 }}.</b>
-            {{ item }}
-          </li>
-        </ul>
-      </div>
-      <span v-else class="races__item-dates">{{ item.dates }}</span>
-    </div>
-    <div class="races__item-inner" v-if="!closed || !isMobile">
-      <div class="races__item-header">
-        <span class="races__item-dates">{{ item.dates }}</span>
-      </div>
+    <div class="races__item-header">
       <h2>
         <span>{{ item.country }}</span>
         <span>{{ getFlag(item.country) }}</span>
-        <small>{{ item.place }}</small>
+        <span v-if="past">🏁️</span>
+        <span v-if="current">🚥</span>
       </h2>
-      <h3>{{ item.name }}</h3>
-      <div class="races__item-content">
-        <img v-if="item.image !== ''" :src="require(`../assets/img/tracks/${item.image}`)" :alt="item.name">
+      <span class="races__item-dates">
+        {{ item.dates }}
+      </span>
+    </div>
+    <transition name="slide">
+      <div class="races__item-inner" v-if="!closed || !isMobile" key="opened">
+        <h3>{{ item.place }}</h3>
+        <h4>{{ item.name }}</h4>
+        <div class="races__item-content">
+          <img v-if="item.image !== ''" :src="require(`../assets/img/tracks/${item.image}`)" :alt="item.name">
           <template v-if="results[index]">
             <div class="races__item-info">
               <template v-if="results[index].quali.length > 0">
@@ -65,8 +58,19 @@
             </div>
           </template>
         </div>
-      <p class="races__item-laps">{{ item.laps }} laps</p>
-    </div>
+        <p class="races__item-laps">{{ item.laps }} laps</p>
+      </div>
+    </transition>
+    <transition name="fade">
+      <div class="races__item-info" v-if="hasResults && closed && isMobile" key="closed">
+        <ul>
+          <li v-for="(item, index) in results[index].race.slice(0, 10)" :key="index">
+            <b>{{ index + 1 }}.</b>
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </transition>
     <div class="popup" v-if="showInfo(index)">
       <div class="popup__box">
         <h3>
@@ -161,10 +165,16 @@ export default {
         }
       }
       return false;
+    },
+    hasResults: function () {
+      if (this.results[this.index] && this.results[this.index].race.length > 0) {
+        return true;
+      }
+      return false;
     }
   },
   mounted() {
-    if (this.past) {
+    if (this.past && this.isMobile) {
       this.closed = true;
     }
   },
