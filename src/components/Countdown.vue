@@ -35,7 +35,7 @@
       </template>
       <template
           v-slot:finish>
-        <span>Hurray!</span>
+        <span>We are racing!</span>
       </template>
     </countdown>
   </div>

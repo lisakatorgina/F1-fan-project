@@ -1,11 +1,18 @@
 <template>
   <div :class="['header', {'header_menu-opened': opened}]">
     <div class="header__top">
-      <div class="header__menu-button" @click="opened = !opened"><span></span></div>
-      <div class="header__logo"><router-link to="/"><img src="../assets/img/logo.png"></router-link></div>
-      <div class="header__sharing">
-        <div class="ya-share2" data-curtain data-size="s" data-lang="en" data-services="facebook,twitter"></div>
-        <span class="header__sharing-title">Share</span>
+      <div class="header__col">
+        <div class="header__menu-button" @click="opened = !opened"><span></span></div>
+        <a class="header__music" href="" @click.prevent="callRoot">🎻🎻🎻</a>
+      </div>
+      <div class="header__col">
+        <div class="header__logo"><router-link to="/"><img src="../assets/img/logo.png"></router-link></div>
+      </div>
+      <div class="header__col">
+        <div class="header__sharing">
+          <div class="ya-share2" data-curtain data-size="s" data-lang="en" data-services="facebook,twitter"></div>
+          <span class="header__sharing-title">Share</span>
+        </div>
       </div>
     </div>
     <transition name="slide">
@@ -41,7 +48,9 @@ export default {
     }
   },
   methods: {
-
-  },
+    callRoot() {
+      this.$parent.musicPopupOpened = true;
+    }
+  }
 }
 </script>

@@ -1,7 +1,6 @@
 .header {
   position: sticky;
   z-index: 2;
-  text-align: center;
   top: 0;
   left: auto;
   width: 100%;
@@ -23,11 +22,22 @@
       height: 32px;
     }
   }
+  &__col {
+    flex: 1 1 0;
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:nth-child(3) {
+      text-align: right;
+    }
+  }
+  &__music {
+    text-decoration: none;
+    margin: 10px 0 0 10px;
+    font-size: 20px;
+  }
   &__logo {
-    position: absolute;
-    left: 50%;
-    top: 10px;
-    transform: translateX(-50%);
+    margin-top: 10px;
     .layout_Gallery & {
       display: none;
     }
@@ -35,6 +45,8 @@
   }
   &__sharing {
     padding: 5px 5px 0 0;
+    display: inline-block;
+    text-align: center;
     &-title {
       font-size: 12px;
       margin-top: 5px;
@@ -45,13 +57,14 @@
     }
   }
   &__menu-button {
-    display: flex;
+    display: inline-flex;
     width: 32px;
     height: 32px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     background: $orange;
+    vertical-align: top;
     span {
       width: 24px;
       height: 2px;

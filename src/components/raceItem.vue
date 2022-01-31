@@ -1,6 +1,6 @@
 <template>
   <div :class="['races__item', {'races__item_past': past, 'races__item_current': current}, {'races__item_closed': closed && isMobile}]">
-    <span class="races__item-number" @click="toggleItem">{{ index }}</span>
+    <span class="races__item-number">{{ index }}</span>
     <span class="races__item-close" @click="toggleItem" v-if="isMobile && past">
       <template v-if="closed">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
@@ -25,7 +25,7 @@
         <h3>{{ item.place }}</h3>
         <h4>{{ item.name }}</h4>
         <div class="races__item-content">
-          <img v-if="item.image !== ''" :src="require(`../assets/img/tracks/${item.image}`)" :alt="item.name">
+          <div class="races__item-image" v-if="item.image !== ''" :style="{'background-image': `url(${trackImage}`}"></div>
           <template v-if="results[index]">
             <div class="races__item-info">
               <template v-if="results[index].quali.length > 0">
@@ -146,6 +146,7 @@ export default {
       results: results,
       showPopup: null,
       closed: false,
+      trackImage: '',
     }
   },
   computed: {
@@ -177,6 +178,7 @@ export default {
     if (this.past && this.isMobile) {
       this.closed = true;
     }
+    this.trackImage = require(`@/assets/img/tracks/${this.item.image}`);
   },
   methods: {
     getName,
