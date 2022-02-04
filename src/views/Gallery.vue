@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     photos() {
-      const paths = require.context('@/assets/img/photos/', false)
+      const paths = require.context('@/assets/img/gallery/', false)
       return paths .keys().map(x => paths (x))
     }
   },
