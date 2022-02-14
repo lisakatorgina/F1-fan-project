@@ -4,7 +4,7 @@
     <h3 class="content__subtitle">In order of last season standings</h3>
     <div class="table">
       <div v-for="(team, index) in teamsData" :key="index" :class="['table__item', 'row']">
-        <div class="row__position">
+        <div class="row__position" v-if="Object.keys(results).length > 0">
           {{ index + 1 }}
         </div>
         <div class="row__name row__name_team" @click="openPopup(index)">

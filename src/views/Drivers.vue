@@ -4,12 +4,7 @@
     <h3 class="content__subtitle">In order of last season standings</h3>
     <div class="table">
       <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row']">
-        <div class="row__position">
-          <template v-if="index === 0">🏆</template>
-          <template v-else-if="index === 1">🥈</template>
-          <template v-else-if="index === 2">🥉</template>
-          <template v-else>{{ index + 1 }}</template>
-        </div>
+        <div class="row__position" v-if="Object.keys(results).length > 0">{{ index + 1 }}</div>
         <div class="row__name">
           <div>
             <h2><a href="" @click.prevent="openPopup(index)">{{ driver.name }}</a></h2>
