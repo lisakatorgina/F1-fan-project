@@ -26,20 +26,28 @@
         <h4>{{ item.name }}</h4>
         <div class="races__item-content">
           <div class="races__item-image" v-if="item.image !== ''" :style="{'background-image': `url(${trackImage}`}"></div>
-          <template v-if="results[index]">
+          <template v-if="raceResults">
             <div class="races__item-info">
-              <template v-if="results[index].quali.length > 0">
+              <template v-if="raceResults.quali">
                 <h4>Quali</h4>
                 <ul>
-                  <li v-for="(item, index) in results[index].quali.slice(0, 10)" :key="index">
+                  <li v-for="(item, index) in raceResults.quali.slice(0, 6)" :key="`quali${index}`">
                     <b>{{ index + 1 }}.</b>{{ item }}
                   </li>
                 </ul>
               </template>
-              <template v-if="results[index].race.length > 0">
+              <template v-if="raceResults.sprint">
+                <h4>Sprint</h4>
+                <ul>
+                  <li v-for="(item, index) in raceResults.sprint.slice(0, 8)" :key="`sprint${index}`">
+                    <b>{{ index + 1 }}.</b>{{ item }}
+                  </li>
+                </ul>
+              </template>
+              <template v-if="raceResults.race">
                 <h4>Race</h4>
                 <ul>
-                  <li v-for="(item, index) in results[index].race.slice(0, 10)" :key="index">
+                  <li v-for="(item, index) in raceResults.race.slice(0, 10)" :key="`race${index}`">
                     <b>
                       <template v-if="index === 0">🥇</template>
                       <template v-else-if="index === 1">🥈</template>
@@ -50,11 +58,11 @@
                   </li>
                 </ul>
               </template>
-              <p v-if="results[index].lap.length != ''">
+              <p v-if="raceResults.lap">
                 <b>Fastest lap: </b>
-                <span>{{ getName(results[index].lap) }}</span>
+                <span>{{ getName(raceResults.lap) }}</span>
               </p>
-              <p v-if="results[index].quali.length > 0" class=""><a href="" class="races__all-result" @click.prevent="showPopup = index">All results</a></p>
+              <p v-if="raceResults && raceResults.quali" class=""><a href="" class="races__all-result" @click.prevent="showPopup = index">All results</a></p>
             </div>
           </template>
         </div>
@@ -62,10 +70,13 @@
       </div>
     </transition>
     <transition name="fade">
-      <div class="races__item-info" v-if="hasResults && closed && isMobile" key="closed">
+      <div class="races__item-info" v-if="raceResults && closed && isMobile" key="closed">
         <ul>
-          <li v-for="(item, index) in results[index].race.slice(0, 10)" :key="index">
-            <b>{{ index + 1 }}.</b>
+          <li v-for="(item, index) in raceResults.race.slice(0, 10)" :key="index">
+            <template v-if="index === 0">🥇</template>
+            <template v-else-if="index === 1">🥈</template>
+            <template v-else-if="index === 2">🥉</template>
+            <template v-else>{{ index + 1 }}</template>
             {{ item }}
           </li>
         </ul>
@@ -78,28 +89,29 @@
           <span class="popup__close" @click="showPopup = null">&times;</span>
         </h3>
         <div class="popup__body">
-          <template v-if="results[index].race.length > 0">
+          <p v-if="raceResults.descr">{{ raceResults.descr }}</p>
+          <template v-if="raceResults.race">
             <h4>Race</h4>
             <ul class="race-results">
-              <li v-for="(item, i) in results[index].race" :key="item">
+              <li v-for="(item, i) in raceResults.race" :key="`race${item}`">
                 <span>
                   <b>{{ i + 1 }}.</b> {{ getName(item) }}
                   <img v-if="getTeam(item)" :src="require(`@/assets/img/logos/${getTeam(item)}`)" alt="">
                 </span>
                 <span>
-                  <template v-if="item === results[index].lap">
+                  <template v-if="item === raceResults.lap">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 6h2v8h-2v-8zm1 12.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/></svg>
                   </template>
                   {{ getRacePoints(item, i, false) }}
                 </span>
               </li>
-              <li v-for="(item, i) in results[index].out" :key="item">
+              <li v-for="(item, i) in raceResults.out" :key="`out${item}`">
                 <span>
                   <b>out</b> {{ getName(item) }}
                   <img v-if="getTeam(item)" :src="require(`@/assets/img/logos/${getTeam(item)}`)" alt="">
                 </span>
                 <span>
-                  <template v-if="item === results[index].lap">
+                  <template v-if="item === raceResults.lap">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 6h2v8h-2v-8zm1 12.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/></svg>
                   </template>
                   {{ getRacePoints(item, i, true) }}
@@ -107,9 +119,20 @@
               </li>
             </ul>
           </template>
+          <template v-if="raceResults.sprint">
+            <h4>Sprint</h4>
+            <ul class="race-results">
+              <li v-for="(item, i) in raceResults.sprint" :key="`sprint${item}`">
+                <span><b>{{ i + 1 }}.</b> {{ getName(item) }}</span>
+                <span>
+                  {{ 8 - i >= 0 ? 8 - i : 0 }}
+                </span>
+              </li>
+            </ul>
+          </template>
           <h4>Qualifying</h4>
           <ul class="quali-results">
-            <li v-for="(item, i) in results[index].quali" :key="item">
+            <li v-for="(item, i) in raceResults.quali" :key="`quali${item}`">
               <b>{{ i + 1 }}.</b> {{ getName(item) }}
             </li>
           </ul>
@@ -147,31 +170,33 @@ export default {
       showPopup: null,
       closed: false,
       trackImage: '',
+      raceResults: results[this.index],
     }
   },
   computed: {
     isMobile: function () {
       return this.$vssWidth < 768
     },
+
     past: function () {
-      if (this.results[this.index] !== undefined) {
-        return this.results[this.index].past;
+      if (this.raceResults) {
+        return this.raceResults.past;
       }
       return false;
     },
     current: function () {
-      if (this.results[this.index] !== undefined) {
-        if (this.results[this.index].quali.length > 0 && !this.past) {
+      if (this.raceResults) {
+        if (this.raceResults.quali && !this.past) {
           return true;
         }
       }
       return false;
     },
-    hasResults: function () {
-      if (this.results[this.index] && this.results[this.index].race.length > 0) {
-        return true;
+    pointsScale: function () {
+      if (this.raceResults) {
+        return this.raceResults.scores || "default";
       }
-      return false;
+      return 'default';
     }
   },
   mounted() {
@@ -192,9 +217,9 @@ export default {
     getRacePoints(item, index, out) {
       var _points = 0;
       if (!out) {
-        _points = this.points[index] || 0;
+        _points = this.points[this.pointsScale][index] || 0;
       }
-      if (item === this.results[this.index].lap) {
+      if (item === this.raceResults.lap) {
         _points++;
       }
       return _points;
