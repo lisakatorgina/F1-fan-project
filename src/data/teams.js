@@ -7,6 +7,6 @@ export default [
     {name: 'AlphaTauri', country: '', principal: 'Franz Tost', logo: 'alphatauri.png', drivers: ['gas', 'tsu'], points: 0, image: 'alphatauri.jpg'},
     {name: 'Aston Martin', country: '', principal: '', logo: 'astonmartin.png', drivers: ['vet', 'str'], points: 0, image: 'astonmartin.jpg'},
     {name: 'Williams', country: '', principal: 'Jost Capito', logo: 'williams.png', drivers: ['lat', 'alb'], points: 0, image: 'williams.jpg'},
-    {name: 'Alfa Romeo', country: '', principal: 'Frédéric Vasseur', logo: 'alfaromeo.png', drivers: ['bot', 'zho'], points: 0, image: 'alfaromeo.webp'},
+    {name: 'Alfa Romeo', country: '', principal: 'Frédéric Vasseur', logo: 'alfaromeo.png', drivers: ['bot', 'zho'], points: 0, image: 'alfaromeo.jpg'},
     {name: 'Haas', country: '', principal: 'Guenther Steiner', logo: 'haas.png', drivers: ['sch', 'maz'], points: 0, image: 'haas.jpg'},
 ]
