@@ -4,10 +4,10 @@ export default {
         //quali: ['mag', 'hul', 'sai', 'alo', 'oco', 'vet', 'ric', 'lec', 'bot', 'alb', 'sch', 'per', 'tsu', 'ham', 'rus', 'gas', 'lat', 'str', 'zho'],
         //sprint: ['nor', 'sai', 'alo', 'maz', 'oco', 'bot', 'tsu', 'alb', 'vet'],
         scores: 'default',
-        //race: ['ver', 'gas', 'sai', 'alo', 'oco', 'vet', 'ric', 'lec', 'bot', 'alb', 'sch', 'per'],
+        //race: ['ver', 'gas', 'sai', 'alo', 'oco', 'vet', 'ric', 'lec', 'bot', 'alb', 'sch', 'per', 'hul'],
         //out: ['tsu', 'ham', 'rus', 'gas', 'lat', 'str', 'zho'],
         //lap: 'ver',
-        //descr: 'Rain race. Huge collide on start. 3 safety cars',
+        //descr: 'Seb got covid and was replaced by Nico',
     },
     2: {
         past: false,

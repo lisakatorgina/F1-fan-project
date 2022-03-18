@@ -22,5 +22,5 @@ export default [
     {name: 'Kevin Magnussen', id: 'mag', team: 'Haas', number: '20', country: 'Denmark', points: 0, photo: 'kevin.webp', birthdate: '1992/10/05', link: 'https://en.wikipedia.org/wiki/Kevin_Magnussen'},
     {name: 'Alex Albon', id: 'alb', team: 'Williams', number: '23', country: 'Thailand', points: 0, photo: 'alex.webp', note: 'Returning', new: true, birthdate: '1996/03/23', link: 'https://en.wikipedia.org/wiki/Alex_Albon'},
     {name: 'Guanyu Zhou', id: 'zho', team: 'Alfa Romeo', number: '24', country: 'China', points: 0, photo: 'guanyu.jpg', note: 'New', new: true, birthdate: '1999/05/30', link: 'https://en.wikipedia.org/wiki/Guanyu_Zhou'},
-    {name: 'Nico Hülkenberg', id: 'hul', team: 'Aston Martin', number: '27', country: 'Germany', points: 0, photo: 'niko.jpg', reserve: true, birthdate: '1987/08/19', link: 'https://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg'},
+    {name: 'Nico Hülkenberg', id: 'hul', team: 'Aston Martin', number: '27', country: 'Germany', points: 0, photo: 'nico.jpg', reserve: true, birthdate: '1987/08/19', link: 'https://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg'},
 ]
