@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="content__title">Season 2022 teams</h1>
-    <h3 class="content__subtitle">In order of last season standings</h3>
+    <!-- h3 class="content__subtitle">In order of last season standings</h3 -->
     <div class="table">
       <div v-for="(team, index) in teamsData" :key="index" :class="['table__item', 'row']">
         <div class="row__position" v-if="Object.keys(results).length > 0">
@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import getFlag from "@/utils/getflag";
 import getName from "@/utils/getName";
 import results from "@/data/results";
 import teams from "@/data/teams";
@@ -64,7 +63,8 @@ export default {
     for (var i = 0; i < this.teamsData.length; i++) {
       var _driver1 = this.teamsData[i].drivers[0];
       var _driver2 = this.teamsData[i].drivers[1];
-      this.teamsData[i].points = (getPoints()[_driver1] ? getPoints()[_driver1] : 0) + (getPoints()[_driver2] ? getPoints()[_driver2] : 0);
+      var _driver3 = this.teamsData[i].drivers[2];
+      this.teamsData[i].points = (getPoints()[_driver1] ? getPoints()[_driver1] : 0) + (getPoints()[_driver2] ? getPoints()[_driver2] : 0) + (getPoints()[_driver3] ? getPoints()[_driver3] : 0);
     }
     this.teamsData.sort(function(a, b){
       return b.points - a.points;

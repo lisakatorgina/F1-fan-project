@@ -19,6 +19,9 @@
 }
 .row {
   position: relative;
+  &_hidden {
+    display: none;
+  }
   &_new, &_out {
     &:after {
       position: absolute;

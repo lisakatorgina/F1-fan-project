@@ -1,9 +1,9 @@
 <template>
   <div>
     <h1 class="content__title">Season 2022 drivers</h1>
-    <h3 class="content__subtitle">In order of last season standings</h3>
+    <!-- h3 class="content__subtitle">In order of last season standings</h3 -->
     <div class="table">
-      <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row']">
+      <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row', {'row_hidden': driver.reserve}]">
         <div class="row__position" v-if="Object.keys(results).length > 0">{{ index + 1 }}</div>
         <div class="row__name">
           <div>
@@ -13,7 +13,7 @@
         </div>
         <div class="row__team">
           {{ driver.team }}
-          <p v-if="driver.note" class="row__note">{{ driver.note }}</p>
+          <!-- p v-if="driver.note" class="row__note">{{ driver.note }}</p -->
         </div>
         <div class="row__country" @click="changePhoto(currentGalleryIndex)"><span>{{ driver.country }}</span> {{ getFlag(driver.country) }}</div>
         <span v-if="Object.keys(results).length > 0" class="row__points">{{ driver.points }}</span>

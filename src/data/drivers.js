@@ -18,7 +18,9 @@ export default [
     {name: 'Nicholas Latifi', id: 'lat', team: 'Williams', number: '6', country: 'Canada', points: 0, photo: 'nicholas.jpg', birthdate: '1995/06/29', link: 'https://en.wikipedia.org/wiki/Nicholas_Latifi'},
     /*{name: 'Antonio Giovinazzi', id: 'gio', team: 'Alfa Romeo', number: '99', country: 'Italy', points: 0, photo: 'antonio.jpg', note: '2022 Formula E', out: true, birthdate: '1993/12/14', link: 'https://en.wikipedia.org/wiki/Antonio_Giovinazzi'},*/
     {name: 'Mick Schumacher', id: 'sch', team: 'Haas', number: '19', country: 'Germany', points: 0, photo: 'mick.jpg', birthdate: '1999/03/22', link: 'https://en.wikipedia.org/wiki/Mick_Schumacher'},
-    {name: 'Nikita Mazepin', id: 'maz', team: 'Haas', number: '9', country: 'Russia', points: 0, photo: 'nikita.jpg', birthdate: '1999/03/02', link: 'https://en.wikipedia.org/wiki/Nikita_Mazepin'},
+    /*{name: 'Nikita Mazepin', id: 'maz', team: 'Haas', number: '9', country: 'Russia', points: 0, photo: 'nikita.jpg', birthdate: '1992/03/02', link: 'https://en.wikipedia.org/wiki/Nikita_Mazepin'},*/
+    {name: 'Kevin Magnussen', id: 'mag', team: 'Haas', number: '20', country: 'Denmark', points: 0, photo: 'kevin.webp', birthdate: '1992/10/05', link: 'https://en.wikipedia.org/wiki/Kevin_Magnussen'},
     {name: 'Alex Albon', id: 'alb', team: 'Williams', number: '23', country: 'Thailand', points: 0, photo: 'alex.webp', note: 'Returning', new: true, birthdate: '1996/03/23', link: 'https://en.wikipedia.org/wiki/Alex_Albon'},
     {name: 'Guanyu Zhou', id: 'zho', team: 'Alfa Romeo', number: '24', country: 'China', points: 0, photo: 'guanyu.jpg', note: 'New', new: true, birthdate: '1999/05/30', link: 'https://en.wikipedia.org/wiki/Guanyu_Zhou'},
+    {name: 'Nico Hülkenberg', id: 'hul', team: 'Aston Martin', number: '27', country: 'Germany', points: 0, photo: 'niko.jpg', reserve: true, birthdate: '1987/08/19', link: 'https://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg'},
 ]
