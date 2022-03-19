@@ -1,13 +1,13 @@
 export default {
     1: {
         past: false,
-        //quali: ['mag', 'hul', 'sai', 'alo', 'oco', 'vet', 'ric', 'lec', 'bot', 'alb', 'sch', 'per', 'tsu', 'ham', 'rus', 'gas', 'lat', 'str', 'zho'],
+        quali: ['lec', 'ver', 'sai', 'per', 'ham', 'bot', 'mag', 'alo', 'rus', 'gas', 'oco', 'sch', 'nor', 'alb', 'zho', 'tsu', 'hul', 'ric', 'str', 'lat'],
         //sprint: ['nor', 'sai', 'alo', 'maz', 'oco', 'bot', 'tsu', 'alb', 'vet'],
         scores: 'default',
         //race: ['ver', 'gas', 'sai', 'alo', 'oco', 'vet', 'ric', 'lec', 'bot', 'alb', 'sch', 'per', 'hul'],
         //out: ['tsu', 'ham', 'rus', 'gas', 'lat', 'str', 'zho'],
         //lap: 'ver',
-        //descr: 'Seb got covid and was replaced by Nico',
+        descr: 'Seb got covid and was replaced by Nico',
     },
     2: {
         past: false,
