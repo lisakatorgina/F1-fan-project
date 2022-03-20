@@ -21,7 +21,7 @@ export default {
   metaInfo: {
     title: 'Racing',
     meta: [
-      {property: 'og:title', content: "Racing schedule and info"},
+      {property: 'og:title', content: "Formula 1 racing schedule and results"},
     ]
   },
   data() {

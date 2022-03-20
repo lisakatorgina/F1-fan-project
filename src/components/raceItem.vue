@@ -31,7 +31,7 @@
               <template v-if="raceResults.quali">
                 <h4>Quali</h4>
                 <ul>
-                  <li v-for="(item, index) in raceResults.quali.slice(0, 6)" :key="`quali${index}`">
+                  <li v-for="(item, index) in raceResults.quali.slice(0, 8)" :key="`quali${index}`">
                     <b>{{ index + 1 }}.</b>{{ item }}
                   </li>
                 </ul>
@@ -52,7 +52,7 @@
                       <template v-if="index === 0">🥇</template>
                       <template v-else-if="index === 1">🥈</template>
                       <template v-else-if="index === 2">🥉</template>
-                      <template v-else>{{ index + 1 }}</template>
+                      <template v-else><b>{{ index + 1 }}</b>.</template>
                     </b>
                     {{ item }}
                   </li>
@@ -76,7 +76,7 @@
             <template v-if="index === 0">🥇</template>
             <template v-else-if="index === 1">🥈</template>
             <template v-else-if="index === 2">🥉</template>
-            <template v-else>{{ index + 1 }}</template>
+            <template v-else><b>{{ index + 1 }}</b>.</template>
             {{ item }}
           </li>
         </ul>

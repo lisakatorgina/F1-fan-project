@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="content__title">Racing season 2022</h1>
-    <my-countdown dark></my-countdown>
+    <!-- my-countdown dark></my-countdown -->
     <div class="races">
       <race-item v-for="(item, index) in tracks" :key="index" :item="item" :index="index + 1"></race-item>
     </div>
@@ -21,7 +21,7 @@ export default {
   metaInfo: {
     title: 'Home',
     meta: [
-      {property: 'og:title', content: "Racing schedule and info"},
+      {property: 'og:title', content: "Formula 1 racing schedule and results"},
     ],
   },
   data() {
