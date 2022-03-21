@@ -6,7 +6,7 @@ export default {
         race: ['lec', 'sai', 'ham', 'rus', 'mag', 'bot', 'oco', 'tsu', 'alo', 'zho', 'msc', 'str', 'alb', 'ric', 'nor', 'lat', 'hul'],
         out: ['per', 'ver', 'gas'],
         lap: 'lec',
-        descr: 'Seb got covid and was replaced by Nico. Pierre engine burnt. Both Red Bull had car failure on the last laps.',
+        descr: 'Seb got covid and was replaced by Nico. Safety car after Pierre engine burnt. Both Red Bull had car failure on the last laps.',
     },
     2: {
         past: false,
