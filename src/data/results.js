@@ -1,6 +1,6 @@
 export default {
     1: {
-        past: false,
+        past: true,
         quali: ['lec', 'ver', 'sai', 'per', 'ham', 'bot', 'mag', 'alo', 'rus', 'gas', 'oco', 'msc', 'nor', 'alb', 'zho', 'tsu', 'hul', 'ric', 'str', 'lat'],
         scores: 'default',
         race: ['lec', 'sai', 'ham', 'rus', 'mag', 'bot', 'oco', 'tsu', 'alo', 'zho', 'msc', 'str', 'alb', 'ric', 'nor', 'lat', 'hul'],
@@ -10,7 +10,7 @@ export default {
     },
     2: {
         past: false,
-        //quali: [],
+        quali: ['per', 'lec', 'sai', 'ver', 'oco', 'rus', 'alo', 'bot', 'gas', 'mag', 'nor', 'ric', 'zho', 'msc', 'str', 'ham', 'alb', 'hul', 'lat', 'tsu'],
         //sprint: [],
         //scores: 'default',
         //race: [],
