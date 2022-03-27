@@ -12,9 +12,9 @@ export default {
         past: false,
         quali: ['per', 'lec', 'sai', 'ver', 'oco', 'rus', 'alo', 'bot', 'gas', 'mag', 'nor', 'ric', 'zho', 'msc', 'str', 'ham', 'alb', 'hul', 'lat', 'tsu'],
         //sprint: [],
-        //scores: 'default',
-        //race: [],
-        //out: [],
-        //lap: '',
+        scores: 'default',
+        race: ['ver', 'lec', 'sai', 'per', 'rus', 'oco', 'nor', 'gas', 'mag', 'ham', 'zho', 'hul', 'str', 'alb'],
+        out: ['bot', 'alo', 'ric', 'lat', 'tsu'],
+        lap: 'lec',
     },
 }
