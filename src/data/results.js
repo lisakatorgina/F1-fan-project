@@ -16,6 +16,6 @@ export default {
         race: ['ver', 'lec', 'sai', 'per', 'rus', 'oco', 'nor', 'gas', 'mag', 'ham', 'zho', 'hul', 'str', 'alb'],
         out: ['bot', 'alo', 'ric', 'lat', 'tsu'],
         lap: 'lec',
-        descr: 'Nico is still replacing Seb. Checo qualified brilliantly on pole and had been leading the race but lost his position after an unlucky pit stop before the safety car which appeared because of Nicolas crash. Valtteri, Fernando and Daniel had car failures. Yuki was unable to start the race due to car issues. Intense fight between Max and Charles for the lead in the last laps.'
+        descr: 'Nico is still replacing Seb. Heavy crash of Mick on quali didn\'t let him to race on sunday. Checo qualified brilliantly on pole and had been leading the race but lost his position after an unlucky pit stop one lap before the safety car which appeared because of Nicolas crash. Valtteri, Fernando and Daniel had car failures. Yuki was unable to start the race due to car issues. Intense fight between Max and Charles for the lead in the last laps.'
     },
 }
