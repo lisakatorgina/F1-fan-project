@@ -107,7 +107,7 @@
               </li>
               <li v-for="(item, i) in raceResults.out" :key="`out${item}`">
                 <span>
-                  <b>out</b> {{ getName(item) }}
+                  <b>DNF</b> {{ getName(item) }}
                   <img v-if="getTeam(item)" :src="require(`@/assets/img/logos/${getTeam(item)}`)" alt="">
                 </span>
                 <span>
