@@ -20,7 +20,7 @@ export default {
     },
     3: {
         past: false,
-        quali: ['lec', 'ver', 'per', 'nor', 'ham', 'rus', 'ric', 'oco', 'sai', 'alo', 'gas', 'bot', 'tsu', 'zho', 'msc', 'alb', 'mag', 'vet', 'lat', 'str'],
+        quali: ['lec', 'ver', 'per', 'nor', 'ham', 'rus', 'ric', 'oco', 'sai', 'alo', 'gas', 'bot', 'tsu', 'zho', 'msc', 'mag', 'vet', 'lat', 'str', 'alb'],
         //sprint: [],
         scores: 'default',
         //race: ['ver', 'lec', 'sai', 'per', 'rus', 'oco', 'nor', 'gas', 'mag', 'ham', 'zho', 'hul', 'str'],
