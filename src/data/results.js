@@ -23,9 +23,9 @@ export default {
         quali: ['lec', 'ver', 'per', 'nor', 'ham', 'rus', 'ric', 'oco', 'sai', 'alo', 'gas', 'bot', 'tsu', 'zho', 'msc', 'mag', 'vet', 'lat', 'str', 'alb'],
         //sprint: [],
         scores: 'default',
-        //race: ['ver', 'lec', 'sai', 'per', 'rus', 'oco', 'nor', 'gas', 'mag', 'ham', 'zho', 'hul', 'str'],
-        //out: ['alb', 'bot', 'alo', 'ric', 'lat', 'tsu'],
-        //lap: 'lec',
+        race: ['lec', 'per', 'rus', 'ham', 'nor', 'ric', 'oco', 'bot', 'gas', 'alb', 'zho', 'str', 'msc', 'mag', 'tsu', 'lat', 'alo'],
+        out: ['ver', 'vet', 'sai'],
+        lap: 'lec',
         descr: 'Quali: Nicolas and Lance collided. Fernando engine failed.'
     },
 }
