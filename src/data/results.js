@@ -26,6 +26,6 @@ export default {
         race: ['lec', 'per', 'rus', 'ham', 'nor', 'ric', 'oco', 'bot', 'gas', 'alb', 'zho', 'str', 'msc', 'mag', 'tsu', 'lat', 'alo'],
         out: ['ver', 'vet', 'sai'],
         lap: 'lec',
-        descr: 'Quali: Nicolas and Lance collided. Fernando engine failed.'
+        descr: 'Quali: Nicolas and Lance collided. Fernando engine failed. Race: Carlos mada a mistake on second lap and got retire. Also Seb broke his car. Max had fuel leak problem and retired in the middle of the race. Alex run all the race on one tire set and went to pit on last lap, thanks to that got a point.'
     },
 }
