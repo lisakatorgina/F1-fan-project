@@ -19,13 +19,23 @@ export default {
         descr: 'Nico is still replacing Seb. Massive crash of Mick on quali didn\'t let him to race on sunday. Checo qualified brilliantly on pole and had been leading the race but lost his position after an unlucky pit stop one lap before the safety car which appeared because of Nicolas crash. Valtteri, Fernando and Daniel had car failures. Yuki was unable to start the race due to car issues. Intense fight between Max and Charles for the lead in the last laps.'
     },
     3: {
-        past: false,
+        past: true,
         quali: ['lec', 'ver', 'per', 'nor', 'ham', 'rus', 'ric', 'oco', 'sai', 'alo', 'gas', 'bot', 'tsu', 'zho', 'msc', 'mag', 'vet', 'lat', 'str', 'alb'],
         //sprint: [],
         scores: 'default',
         race: ['lec', 'per', 'rus', 'ham', 'nor', 'ric', 'oco', 'bot', 'gas', 'alb', 'zho', 'str', 'msc', 'mag', 'tsu', 'lat', 'alo'],
         out: ['ver', 'vet', 'sai'],
         lap: 'lec',
-        descr: 'Quali: Nicolas and Lance collided. Fernando engine failed. Race: Carlos mada a mistake on second lap and got retire. Also Seb broke his car. Max had fuel leak problem and retired in the middle of the race. Alex run all the race on one tire set and went to pit on last lap, thanks to that got a point.'
+        descr: 'Quali: Nicolas and Lance collided. Fernando engine failed.<br/> Race: Carlos mada a mistake on second lap and got retire. Also Seb broke his car. Max had fuel leak problem and retired in the middle of the race. Alex run all the race on one tire set and went to pit on last lap, thanks to that got a point.'
+    },
+    4: {
+        past: false,
+        quali: ['ver', 'lec', 'nor', 'mag', 'alo', 'ric', 'per', 'bot', 'vet', 'sai', 'rus', 'msc', 'ham', 'zho', 'str', 'tsu', 'gas', 'lat', 'oco', 'alb'],
+        //sprint: [],
+        scores: 'default',
+        //race: [],
+        //out: [],
+        //lap: 'lec',
+        descr: 'Quali: Rainy 🌧. A lot of accidents and red flags.'
     },
 }
