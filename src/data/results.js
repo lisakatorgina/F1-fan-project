@@ -31,7 +31,7 @@ export default {
     4: {
         past: false,
         quali: ['ver', 'lec', 'nor', 'mag', 'alo', 'ric', 'per', 'bot', 'vet', 'sai', 'rus', 'msc', 'ham', 'zho', 'str', 'tsu', 'gas', 'lat', 'oco', 'alb'],
-        //sprint: [],
+        sprint: ['ver', 'lec', 'per', 'sai', 'nor', 'ric', 'bot', 'mag', 'alo', 'msc', 'rus', 'tsu', 'vet', 'ham', 'str', 'oco', 'gas', 'alb', 'lat', 'zho'],
         scores: 'default',
         //race: [],
         //out: [],
