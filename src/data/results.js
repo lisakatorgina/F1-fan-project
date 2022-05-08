@@ -29,7 +29,7 @@ export default {
         descr: 'Quali: Nicolas and Lance collided. Fernando engine failed.<br/> Race: Carlos mada a mistake on second lap and got retire. Also Seb broke his car. Max had fuel leak problem and retired in the middle of the race. Alex run all the race on one tire set and went to pit on last lap, thanks to that got a point.'
     },
     4: {
-        past: false,
+        past: true,
         quali: ['ver', 'lec', 'nor', 'mag', 'alo', 'ric', 'per', 'bot', 'vet', 'sai', 'rus', 'msc', 'ham', 'zho', 'str', 'tsu', 'gas', 'lat', 'oco', 'alb'],
         sprint: ['ver', 'lec', 'per', 'sai', 'nor', 'ric', 'bot', 'mag', 'alo', 'msc', 'rus', 'tsu', 'vet', 'ham', 'str', 'oco', 'gas', 'alb', 'lat', 'zho'],
         scores: 'default',
@@ -38,4 +38,14 @@ export default {
         lap: 'ver',
         descr: 'Quali: Rainy 🌧. A lot of incidents and red flags. <br/>Sprint: A lot of overtakes and position improvements. Carlos get from 10 to 4, Checo from 7 to 3.<br>Race: Great start for both Red Bull. Carlos collided with Daniel on the first lap and retired. Max was leading the whole race. Charles made a mistake fighting with Checo on last laps and lost his third position. Started a little rainy but dried up afterwards.'
     },
+     5: {
+        past: false,
+        quali: ['lec', 'zai', 'ver', 'per', 'bot', 'ham', 'gas', 'nor', 'tsu', 'str', 'alo', 'rus', 'vet', 'ric', 'msc', 'mag', 'zho', 'alb', 'lat'],
+        scores: 'default',
+        race: ['ver', 'lec', 'sai', 'per', 'rus', 'ham', 'bot', 'oco', 'alo', 'alb', 'str', 'tsu', 'ric', 'lat', 'msc', 'mag', 'vet'],
+        out: ['gas', 'nor', 'zho'],
+        lap: 'ver',
+        descr: ''
+    },
+    
 }
