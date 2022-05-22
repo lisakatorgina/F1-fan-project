@@ -51,8 +51,8 @@ export default {
         past: false,
         quali: ['lec', 'ver', 'sai', 'rus', 'per', 'ham', 'bot', 'mag', 'ric', 'msc', 'nor', 'oco', 'tsu', 'gas', 'zho', 'vet', 'alo', 'str', 'alb', 'lat'],
         scores: 'default',
-        //race: [],
-        //out: [],
+        race: ['ver', 'per', 'rus', 'sai', 'ham', 'bot', 'oco', 'nor', 'alo', 'tsu', 'vet', 'ric', 'gas', 'msc', 'str', 'lat', 'mag', 'alb'],
+        out: ['zho', 'lec'],
         //lap: 'ver',
         descr: ''
     },
