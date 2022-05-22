@@ -39,7 +39,7 @@ export default {
         descr: 'Quali: Rainy 🌧. A lot of incidents and red flags. <br/>Sprint: A lot of overtakes and position improvements. Carlos get from 10 to 4, Checo from 7 to 3.<br>Race: Great start for both Red Bull. Carlos collided with Daniel on the first lap and retired. Max was leading the whole race. Charles made a mistake fighting with Checo on last laps and lost his third position. Started a little rainy but dried up afterwards.'
     },
      5: {
-        past: false,
+        past: true,
         quali: ['lec', 'zai', 'ver', 'per', 'bot', 'ham', 'gas', 'nor', 'tsu', 'str', 'alo', 'rus', 'vet', 'ric', 'msc', 'mag', 'zho', 'alb', 'lat'],
         scores: 'default',
         race: ['ver', 'lec', 'sai', 'per', 'rus', 'ham', 'bot', 'oco', 'alb', 'str', 'alo', 'tsu', 'ric', 'lat', 'msc'],
@@ -47,5 +47,13 @@ export default {
         lap: 'ver',
         descr: ''
     },
-
+    6: {
+        past: false,
+        quali: ['lec', 'ver', 'sai', 'rus', 'per', 'ham', 'bot', 'mag', 'ric', 'msc', 'nor', 'oco', 'tsu', 'gas', 'zho', 'vet', 'alo', 'str', 'alb', 'lat'],
+        scores: 'default',
+        //race: [],
+        //out: [],
+        //lap: 'ver',
+        descr: ''
+    },
 }
