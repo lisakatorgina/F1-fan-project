@@ -53,7 +53,7 @@ export default {
         scores: 'default',
         race: ['ver', 'per', 'rus', 'sai', 'ham', 'bot', 'oco', 'nor', 'alo', 'tsu', 'vet', 'ric', 'gas', 'msc', 'str', 'lat', 'mag', 'alb'],
         out: ['zho', 'lec'],
-        //lap: 'ver',
+        lap: 'per',
         descr: ''
     },
 }
