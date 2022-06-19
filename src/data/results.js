@@ -66,12 +66,21 @@ export default {
         descr: ''
     },
     8: {
-        past: false,
+        past: true,
         quali: ['lec', 'per', 'ver', 'sai', 'rus', 'gas', 'ham', 'tsu', 'vet', 'alo', 'nor', 'ric', 'oco', 'zho', 'bot', 'mag', 'alb', 'lat', 'str', 'msc'],
         scores: 'default',
         race: ['ver', 'per', 'rus', 'ham', 'gas', 'vet', 'alo', 'ric', 'nor', 'oco', 'bot', 'alb', 'tsu', 'msc', 'lat', 'str'],
         out: ['mag', 'zho', 'lec', 'sai'],
         lap: 'per',
+        descr: ''
+    },
+    9: {
+        past: false,
+        quali: ['ver', 'alo', 'sai', 'ham', 'mag', 'msc', 'oco', 'rus', 'ric', 'zho', 'bot', 'alb', 'per', 'nor', 'lec', 'gas', 'vet', 'str', 'lat', 'tsu'],
+        scores: 'default',
+        //race: [],
+        //out: [],
+        //lap: 'per',
         descr: ''
     },
 }
