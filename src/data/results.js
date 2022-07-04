@@ -90,6 +90,6 @@ export default {
         race: ['sai', 'per', 'ham', 'lec', 'alo', 'nor', 'ver', 'msc', 'vet', 'mag', 'str', 'lat', 'ric', 'tsu'],
         out: ['oco', 'gas', 'bot', 'rus', 'zho', 'alb'],
         lap: 'ham',
-        descr: 'Quali: First in career poul for carlos. Fist passing to Q3 for Nicolas. <br/> Race: First race win for Carlos. Terrible crash with Zho, George and Alex on start. Red flag. Checo passed from 17 to 2 place due to changing front wing after fighting with Charles at the beginning of the race. Max car also was damaged since the middle of the race and he was struggling the whole race what didn\'t let him to fight for the podium. Amazing fight between Checo, Lewis and Charles after safety car. Mick finished 8th and score his first points.'
+        descr: 'Quali: First in career poul for Carlos. Fist passing to Q3 for Nicolas. <br/> Race: First career race win for Carlos. Terrible crash with Zho, George and Alex on start. Red flag. Checo passed from 17 to 2 place due to changing front wing after fighting with Charles at the beginning of the race. Max car also was damaged since the middle of the race and he was struggling the whole race what didn\'t let him to fight for the podium. Amazing fight between Checo, Lewis and Charles after safety car. Mick finished 8th and score his first points.'
     },
 }
