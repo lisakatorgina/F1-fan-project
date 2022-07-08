@@ -84,12 +84,22 @@ export default {
         descr: ''
     },
     10: {
-        past: false,
+        past: true,
         quali: ['sai', 'ver', 'lec', 'per', 'ham', 'nor', 'alo', 'rus', 'zho', 'lat', 'gas', 'bot', 'tzu', 'ric', 'oco', 'alb', 'mag', 'vet', 'msc', 'str'],
         scores: 'default',
         race: ['sai', 'per', 'ham', 'lec', 'alo', 'nor', 'ver', 'msc', 'vet', 'mag', 'str', 'lat', 'ric', 'tsu'],
         out: ['oco', 'gas', 'bot', 'rus', 'zho', 'alb'],
         lap: 'ham',
         descr: 'Quali: First in career poul for Carlos. Fist passing to Q3 for Nicolas. <br/> Race: First career race win for Carlos. Terrible crash with Zho, George and Alex on start. Red flag. Checo passed from 17 to 2 place due to changing front wing after fighting with Charles at the beginning of the race. Max car also was damaged since the middle of the race and he was struggling the whole race what didn\'t let him to fight for the podium. Amazing fight between Checo, Lewis and Charles after safety car. Mick finished 8th and score his first points.'
+    },
+    11: {
+        past: false,
+        quali: ['ver', 'lec', 'sai', 'rus', 'oco', 'mag', 'msc', 'alo', 'ham', 'gas', 'alb', 'bot', 'per', 'tsu', 'nor', 'ric', 'str', 'zho', 'lat', 'vet'],
+        sprint: [],
+        scores: 'default',
+        //race: [],
+        //out: [],
+        //lap: 'ver',
+        //descr: 'Quali: Rainy 🌧. A lot of incidents and red flags. <br/>Sprint: A lot of overtakes and position improvements. Carlos get from 10 to 4, Checo from 7 to 3.<br>Race: Great start for both Red Bull. Carlos collided with Daniel on the first lap and retired. Max was leading the whole race. Charles made a mistake fighting with Checo on last laps and lost his third position. Started a little rainy but dried up afterwards.'
     },
 }
