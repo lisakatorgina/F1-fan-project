@@ -100,6 +100,6 @@ export default {
         race: ['lec', 'ver', 'ham', 'rus', 'oco', 'msc', 'nor', 'mag', 'ric', 'alo', 'bot', 'alb', 'str', 'zho', 'gas', 'tsu', 'vet'],
         out: ['sai', 'lat', 'per'],
         lap: 'ver',
-        descr: 'Quali: Lewis and George both crash to the wall, Checo time of q3 was deleted after quali for going out of the track, as result he got p13. <br/>Sprint: Checo managed to come from p13 to p5. <br/>Race: George hit Checo in the very beginning of the race and damaged his car what made Checo to roll back to the last position and retire later, George got 5 min penalty for that. Charles passed Max. Carlos car got on fire when he was fighting with Max for the second position.'
+        descr: 'Quali: Lewis and George both crash to the wall, Checo time of q3 was deleted after quali for going out of the track, as result he got p13. <br/>Sprint: Checo managed to come from p13 to p5. <br/>Race: George hit Checo in the very beginning of the race and damaged his car what made Checo to roll back to the last position and retire later, George got 5 second penalty for that. Carlos car got on fire when he was fighting with Max for the second position. Charles beat Max in fight for the first position, but during 2 last laps had problems with throttle pedal that could become fatal.'
     },
 }
