@@ -95,11 +95,11 @@ export default {
     11: {
         past: false,
         quali: ['ver', 'lec', 'sai', 'rus', 'oco', 'mag', 'msc', 'alo', 'ham', 'gas', 'alb', 'bot', 'per', 'tsu', 'nor', 'ric', 'str', 'zho', 'lat', 'vet'],
-        sprint: [],
+        sprint: ['ver', 'lec', 'sai', 'rus', 'per', 'oco', 'mag', 'ham', 'msc', 'bot', 'nor', 'ric', 'str', 'zho', 'gas', 'alb', 'tsu', 'lat', 'vet', 'alo'],
         scores: 'default',
-        //race: [],
-        //out: [],
-        //lap: 'ver',
-        //descr: 'Quali: Rainy 🌧. A lot of incidents and red flags. <br/>Sprint: A lot of overtakes and position improvements. Carlos get from 10 to 4, Checo from 7 to 3.<br>Race: Great start for both Red Bull. Carlos collided with Daniel on the first lap and retired. Max was leading the whole race. Charles made a mistake fighting with Checo on last laps and lost his third position. Started a little rainy but dried up afterwards.'
+        race: ['lec', 'ver', 'ham', 'rus', 'oco', 'msc', 'nor', 'mag', 'ric', 'alo', 'bot', 'alb', 'str', 'zho', 'gas', 'tsu', 'vet'],
+        out: ['sai', 'lat', 'per'],
+        lap: 'ver',
+        descr: 'Quali: Lewis and George both crash to the wall, Checo time of q3 was deleted after quali for going out of the track, as result he got p13. <br/>Sprint: Checo managed to come from p13 to p5. <br/>Race: George hit Checo in the very beginning of the race and damaged his car what made Checo to roll back to the last position and retire later, George got 5 min penalty for that. Charles passed Max. Carlos car got on fire when he was fighting with Max for the second position.'
     },
 }
