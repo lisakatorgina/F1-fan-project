@@ -93,7 +93,7 @@ export default {
         descr: 'Quali: First in career poul for Carlos. Fist passing to Q3 for Nicolas. <br/> Race: First career race win for Carlos. Terrible crash with Zho, George and Alex on start. Red flag. Checo passed from 17 to 2 place due to changing front wing after fighting with Charles at the beginning of the race. Max car also was damaged since the middle of the race and he was struggling the whole race what didn\'t let him to fight for the podium. Amazing fight between Checo, Lewis and Charles after safety car. Mick finished 8th and score his first points.'
     },
     11: {
-        past: false,
+        past: true,
         quali: ['ver', 'lec', 'sai', 'rus', 'oco', 'mag', 'msc', 'alo', 'ham', 'gas', 'alb', 'bot', 'per', 'tsu', 'nor', 'ric', 'str', 'zho', 'lat', 'vet'],
         sprint: ['ver', 'lec', 'sai', 'rus', 'per', 'oco', 'mag', 'ham', 'msc', 'bot', 'nor', 'ric', 'str', 'zho', 'gas', 'alb', 'tsu', 'lat', 'vet', 'alo'],
         scores: 'default',
@@ -101,5 +101,14 @@ export default {
         out: ['sai', 'lat', 'per'],
         lap: 'ver',
         descr: 'Quali: Lewis and George both crash to the wall, Checo time of q3 was deleted after quali for going out of the track, as result he got p13. <br/>Sprint: Checo managed to come from p13 to p5. <br/>Race: George hit Checo in the very beginning of the race and damaged his car what made Checo to roll back to the last position and retire later, George got 5 second penalty for that. Carlos car got on fire when he was fighting with Max for the second position. Charles beat Max in fight for the first position, but during 2 last laps had problems with throttle pedal that could become fatal.'
+    },
+    12: {
+        past: false,
+        scores: 'default',
+        quali: ['lec', 'ver', 'per', 'ham', 'nor', 'rus', 'alo', 'tsu', 'sai', 'mag', 'ric', 'oco', 'bot', 'vet', 'alb', 'gas', 'str', 'zho', 'msc', 'lat'],
+        race: ['ver', 'ham', 'rus', 'per', 'alo', 'nor', 'oco', 'ric', 'str', 'vet', 'gas', 'alb', 'bot', 'msc', 'zho'],
+        out: ['lat', 'mag', 'lec', 'tsu'],
+        lap: 'sai',
+        //descr: ''
     },
 }
