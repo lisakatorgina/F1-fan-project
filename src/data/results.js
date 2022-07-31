@@ -103,12 +103,21 @@ export default {
         descr: 'Quali: Lewis and George both crash to the wall, Checo time of q3 was deleted after quali for going out of the track, as result he got p13. <br/>Sprint: Checo managed to come from p13 to p5. <br/>Race: George hit Checo in the very beginning of the race and damaged his car what made Checo to roll back to the last position and retire later, George got 5 second penalty for that. Carlos car got on fire when he was fighting with Max for the second position. Charles beat Max in fight for the first position, but during 2 last laps had problems with throttle pedal that could become fatal.'
     },
     12: {
-        past: false,
+        past: true,
         scores: 'default',
         quali: ['lec', 'ver', 'per', 'ham', 'nor', 'rus', 'alo', 'tsu', 'sai', 'mag', 'ric', 'oco', 'bot', 'vet', 'alb', 'gas', 'str', 'zho', 'msc', 'lat'],
         race: ['ver', 'ham', 'rus', 'per', 'alo', 'nor', 'oco', 'ric', 'str', 'vet', 'gas', 'alb', 'bot', 'msc', 'zho'],
         out: ['lat', 'mag', 'lec', 'tsu'],
         lap: 'sai',
+        descr: 'Race: Charles was leading but crashed himself to the wall. George overtook Checo after the safety car.'
+    },
+    13: {
+        past: false,
+        scores: 'default',
+        quali: ['rus', 'sai', 'lec', 'nor', 'oco', 'alo', 'ham', 'bot', 'ric', 'ver', 'per', 'zho', 'mag', 'str', 'msc', 'tsu', 'alb', 'vet', 'gas', 'lat'],
+        race: ['ver', 'ham', 'rus', 'sai', 'per', 'lec', 'nor', 'alo', 'oco', 'vet', 'str', 'gas', 'zho', 'msc', 'ric', 'mag', 'alb', 'lat', 'tsu'],
+        out: ['bot'],
+        lap: 'ham',
         //descr: ''
     },
 }
