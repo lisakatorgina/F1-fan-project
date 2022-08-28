@@ -112,12 +112,43 @@ export default {
         descr: 'Race: Charles was leading but crashed himself to the wall. George overtook Checo after the safety car.'
     },
     13: {
-        past: false,
+        past: true,
         scores: 'default',
         quali: ['rus', 'sai', 'lec', 'nor', 'oco', 'alo', 'ham', 'bot', 'ric', 'ver', 'per', 'zho', 'mag', 'str', 'msc', 'tsu', 'alb', 'vet', 'gas', 'lat'],
         race: ['ver', 'ham', 'rus', 'sai', 'per', 'lec', 'nor', 'alo', 'oco', 'vet', 'str', 'gas', 'zho', 'msc', 'ric', 'mag', 'alb', 'lat', 'tsu'],
         out: ['bot'],
         lap: 'ham',
         //descr: ''
+    },
+    14: {
+        past: false,
+        scores: 'default',
+        quali: ['ver', 'sai', 'per', 'lec', 'oco', 'alo', 'ham', 'rus', 'alb', 'nor', 'ric', 'gas', 'zho', 'str', 'msc', 'vet', 'lat', 'mag', 'tsu', 'bot'],
+        race: ['ver', 'per', 'sai', 'rus', 'alo', 'lec', 'oco', 'vet', 'gas', 'alb', 'str', 'nor', 'tsu', 'zho', 'ric', 'mag', 'msc', 'lat'],
+        out: ['bot', 'ham'],
+        lap: 'ver',
+        descr: 'Because of car parts replacement penalties several drivers rolled back to the end of the grid.<br/> Starting grid: <br> <ul style="list-style: none; column-count: 4; margin: 10px 0; padding: 0; font-size: 12px; display: inline-block;">' +
+            '<li>1. SAI</li>' +
+            '<li>2. PER</li>' +
+            '<li>3. ALO</li>' +
+            '<li>4. HAM</li>' +
+            '<li>5. RUS</li>' +
+            '<li>6. ALB</li>' +
+            '<li>7. RIC</li>' +
+            '<li>8. GAS</li>' +
+            '<li>9. STR</li>' +
+            '<li>10. VET</li>' +
+            '<li>11. LAT</li>' +
+            '<li>12. MAG</li>' +
+            '<li>13. BOT</li>' +
+            '<li>14. VER</li>' +
+            '<li>15. LEC</li>' +
+            '<li>16. OCO</li>' +
+            '<li>17. NOR</li>' +
+            '<li>18. ZHO</li>' +
+            '<li>19. MSC</li>' +
+            '<li>pit lane TSU</li>' +
+            '</ul><br/>' +
+            'Race: Lewis had contact with Fernando in the very beginning of the race and got out. Valtteri also got out because of the incident with Nicolas'
     },
 }
