@@ -21,7 +21,7 @@
         <router-link to="/drivers" class="header__menu-item" v-if="$route.name !== 'Drivers'">Drivers</router-link>
         <router-link to="/teams" class="header__menu-item" v-if="$route.name !== 'Teams'">Teams</router-link>
         <router-link to="/gallery" class="header__menu-item" v-if="$route.name !== 'Gallery'">Gallery</router-link>
-        <router-link to="/laugh" class="header__menu-item" v-if="$route.name !== 'Laugh'">Laugh</router-link>
+        <!--router-link to="/laugh" class="header__menu-item" v-if="$route.name !== 'Laugh'">Laugh</router-link-->
         <router-link to="/about" class="header__menu-item" v-if="$route.name !== 'About'">About</router-link>
       </div>
     </transition>
