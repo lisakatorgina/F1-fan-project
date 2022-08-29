@@ -127,7 +127,7 @@ export default {
         race: ['ver', 'per', 'sai', 'rus', 'alo', 'lec', 'oco', 'vet', 'gas', 'alb', 'str', 'nor', 'tsu', 'zho', 'ric', 'mag', 'msc', 'lat'],
         out: ['bot', 'ham'],
         lap: 'ver',
-        descr: 'Because of car parts replacement penalties several drivers rolled back to the end of the grid.<br/> Starting grid: <br> <ul style="list-style: none; column-count: 4; margin: 10px 0; padding: 0; font-size: 12px; display: inline-block;">' +
+        descr: 'Because of car parts replacement penalties several drivers rolled back to the end of the grid.<br/> Starting grid: <br> <ul>' +
             '<li>1. SAI</li>' +
             '<li>2. PER</li>' +
             '<li>3. ALO</li>' +
