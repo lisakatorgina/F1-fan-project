@@ -106,7 +106,7 @@ export default {
         past: true,
         scores: 'default',
         quali: ['lec', 'ver', 'per', 'ham', 'nor', 'rus', 'alo', 'tsu', 'sai', 'mag', 'ric', 'oco', 'bot', 'vet', 'alb', 'gas', 'str', 'zho', 'msc', 'lat'],
-        race: ['ver', 'ham', 'rus', 'per', 'alo', 'nor', 'oco', 'ric', 'str', 'vet', 'gas', 'alb', 'bot', 'msc', 'zho'],
+        race: ['ver', 'ham', 'rus', 'per', 'sai', 'alo', 'nor', 'oco', 'ric', 'str', 'vet', 'gas', 'alb', 'bot', 'msc', 'zho'],
         out: ['lat', 'mag', 'lec', 'tsu'],
         lap: 'sai',
         descr: 'Race: Charles was leading but crashed himself to the wall. George overtook Checo after the safety car.'
@@ -121,7 +121,7 @@ export default {
         //descr: ''
     },
     14: {
-        past: false,
+        past: true,
         scores: 'default',
         quali: ['ver', 'sai', 'per', 'lec', 'oco', 'alo', 'ham', 'rus', 'alb', 'nor', 'ric', 'gas', 'zho', 'str', 'msc', 'vet', 'lat', 'mag', 'tsu', 'bot'],
         race: ['ver', 'per', 'sai', 'rus', 'alo', 'lec', 'oco', 'vet', 'gas', 'alb', 'str', 'nor', 'tsu', 'zho', 'ric', 'mag', 'msc', 'lat'],
@@ -150,5 +150,14 @@ export default {
             '<li>pit lane TSU</li>' +
             '</ul><br/>' +
             'Race: Lewis had contact with Fernando in the very beginning of the race and got out. Valtteri also got out because of the incident with Nicolas'
+    },
+    15: {
+        past: true,
+        scores: 'default',
+        quali: ['ver', 'lec', 'sai', 'ham', 'per', 'rus', 'nor', 'msc', 'tsu', 'str', 'gas', 'oco', 'alo', 'zho', 'alb', 'bot', 'ric', 'mag', 'vet', 'lat'],
+        race: ['ver', 'rus', 'lec', 'ham', 'per', 'alo', 'nor', 'sai', 'oco', 'str', 'gas', 'alb', 'msc', 'vet', 'mag', 'zho', 'ric', 'lat'],
+        out: ['bot', 'tsu'],
+        lap: 'ver',
+        //descr: ''
     },
 }
