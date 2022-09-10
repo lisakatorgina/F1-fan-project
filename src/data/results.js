@@ -127,7 +127,7 @@ export default {
         race: ['ver', 'per', 'sai', 'rus', 'alo', 'lec', 'oco', 'vet', 'gas', 'alb', 'str', 'nor', 'tsu', 'zho', 'ric', 'mag', 'msc', 'lat'],
         out: ['bot', 'ham'],
         lap: 'ver',
-        descr: 'Because of car parts replacement penalties several drivers rolled back to the end of the grid.<br/> Starting grid: <br> <ul>' +
+        descr: '<p>Because of car parts replacement penalties several drivers rolled back to the end of the grid.</p><p>Starting grid: </p><ul>' +
             '<li>1. SAI</li>' +
             '<li>2. PER</li>' +
             '<li>3. ALO</li>' +
@@ -148,8 +148,8 @@ export default {
             '<li>18. ZHO</li>' +
             '<li>19. MSC</li>' +
             '<li>pit lane TSU</li>' +
-            '</ul><br/>' +
-            'Race: Lewis had contact with Fernando in the very beginning of the race and got out. Valtteri also got out because of the incident with Nicolas'
+            '</ul>' +
+            '<p>Race: Lewis had contact with Fernando in the very beginning of the race and got out. Valtteri also got out because of the incident with Nicolas</p>'
     },
     15: {
         past: true,
@@ -159,5 +159,35 @@ export default {
         out: ['bot', 'tsu'],
         lap: 'ver',
         //descr: ''
+    },
+    16: {
+        past: false,
+        scores: 'default',
+        quali: ['lec', 'ver', 'sai', 'per', 'ham', 'rus', 'nor', 'ric', 'gas', 'alo', 'oco', 'bot', 'dev', 'zho', 'tsu', 'lat', 'vet', 'str', 'mag', 'msc'],
+        //race: [],
+        //out: ['],
+        lap: 'ver',
+        descr: '<p>A lot of grid penaltie again.<p/><p>Starting grid:</p>' +
+            '<ul><li>1. LEC</li>' +
+            '<li>2. RUS</li>' +
+            '<li>3. NOR</li>' +
+            '<li>4. RIC</li>' +
+            '<li>5. GAS</li>' +
+            '<li>6. ALO</li>' +
+            '<li>7. VER</li>' +
+            '<li>8. DEV</li>' +
+            '<li>9. ZHO</li>' +
+            '<li>10. LAT</li>' +
+            '<li>11. VET</li>' +
+            '<li>12. STR</li>' +
+            '<li>13. PER</li>' +
+            '<li>14. OCO</li>' +
+            '<li>15. BOT</li>' +
+            '<li>16. MAG</li>' +
+            '<li>17. MSC</li>' +
+            '<li>18. SAI</li>' +
+            '<li>19. HAM</li>' +
+            '<li>20. TSU</li>' +
+            '</ul>'
     },
 }
