@@ -165,8 +165,8 @@ export default {
         scores: 'default',
         quali: ['lec', 'ver', 'sai', 'per', 'ham', 'rus', 'nor', 'ric', 'gas', 'alo', 'oco', 'bot', 'dev', 'zho', 'tsu', 'lat', 'vet', 'str', 'mag', 'msc'],
         //race: [],
-        //out: ['],
-        lap: 'ver',
+        //out: [],
+        //lap: '',
         descr: '<p>A lot of grid penaltie again.<p/><p>Starting grid:</p>' +
             '<ul><li>1. LEC</li>' +
             '<li>2. RUS</li>' +
