@@ -89,7 +89,7 @@
           <span class="popup__close" @click="showPopup = null">&times;</span>
         </h3>
         <div class="popup__body">
-          <div v-if="raceResults.descr" v-html="raceResults.descr"></div>
+          <div style="background: red" v-if="raceResults.descr" v-html="raceResults.descr"></div>
           <template v-if="raceResults.race">
             <h4>Race</h4>
             <ul class="race-results">
