@@ -167,7 +167,7 @@ export default {
         //race: [],
         //out: [],
         //lap: '',
-        descr: '<p>A lot of grid penaltie again.<p/><p>Starting grid:</p>' +
+        descr: '<p>A lot of grid penalties again.<p/><p>Starting grid:</p>' +
             '<ul><li>1. LEC</li>' +
             '<li>2. RUS</li>' +
             '<li>3. NOR</li>' +
