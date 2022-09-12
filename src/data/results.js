@@ -161,13 +161,13 @@ export default {
         //descr: ''
     },
     16: {
-        past: false,
+        past: true,
         scores: 'default',
         quali: ['lec', 'ver', 'sai', 'per', 'ham', 'rus', 'nor', 'ric', 'gas', 'alo', 'oco', 'bot', 'dev', 'zho', 'tsu', 'lat', 'vet', 'str', 'mag', 'msc'],
-        //race: [],
-        //out: [],
-        //lap: '',
-        descr: '<p>A lot of grid penalties again.<p/><p>Starting grid:</p>' +
+        race: ['ver', 'lec', 'rus', 'sai', 'ham', 'per', 'nor', 'gas', 'dev', 'zho', 'oco', 'msc', 'bot', 'tsu', 'lat', 'mag'],
+        out: ['ric', 'str', 'alo', 'vet'],
+        lap: 'per',
+        descr: '<p>Alex got appendix and Nyck is replacing him in Williams. A lot of grid penalties again.<p/><p>Starting grid:</p>' +
             '<ul><li>1. LEC</li>' +
             '<li>2. RUS</li>' +
             '<li>3. NOR</li>' +
@@ -188,6 +188,7 @@ export default {
             '<li>18. SAI</li>' +
             '<li>19. HAM</li>' +
             '<li>20. TSU</li>' +
-            '</ul>'
+            '</ul>' +
+            '<p>Race finished under safety car after Daniel engine failure. Nyck scored points in his first F1 race in career.</p>'
     },
 }
