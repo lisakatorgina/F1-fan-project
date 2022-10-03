@@ -198,6 +198,6 @@ export default {
         race: ['per', 'lec', 'sai', 'nor', 'ric', 'str', 'ver', 'vet', 'ham', 'gas', 'bot', 'mag', 'msc', 'rus'],
         out: ['tsu', 'oco', 'alb', 'alo', 'lat', 'zho'],
         lap: 'rus',
-        descr: 'Quali: because of team mistake with fuel Max was not able to finish his lap in Q3. <br/> Race: 🌧  start was delayed for one hour because of a huge rain. Almost whole race drivers was struggling with wet track condition. As result several crashes and SC. Max had mistaken twice and couldn\'t approach to the leaders, as well as Lewis. Both Alpine lost engines. Checo had a brilliant start and was leading the whole race.'
+        descr: 'Quali: because of team mistake with the fuel Max was not able to finish his lap in Q3. <br/> Race: 🌧  start was delayed for one hour because of a huge rain. Almost whole race drivers was struggling with wet track condition. As result several crashes and SC. Max had mistaken twice and couldn\'t approach to the leaders, as well as Lewis. Both Alpine lost engines. Checo had a brilliant start and was leading the whole race.'
     },
 }
