@@ -197,16 +197,18 @@ export default {
         quali: ['lec', 'per', 'ham', 'sai', 'alo', 'nor', 'gas', 'ver', 'mag', 'tsu', 'rus', 'str', 'msc', 'vet', 'zho', 'bot', 'ric', 'oco', 'alb', 'lat'],
         race: ['per', 'lec', 'sai', 'nor', 'ric', 'str', 'ver', 'vet', 'ham', 'gas', 'bot', 'mag', 'msc', 'rus'],
         out: ['tsu', 'oco', 'alb', 'alo', 'lat', 'zho'],
-        //lap: 'rus',
+        lap: 'rus',
+        lapNotScored: true,
         descr: 'Quali: because of team mistake with the fuel Max was not able to finish his lap in Q3. <br/> Race: 🌧  start was delayed for one hour because of a huge rain. Almost whole race drivers was struggling with wet track condition. As result several crashes and SC. Max had mistaken twice and couldn\'t approach to the leaders, as well as Lewis. Both Alpine lost engines. Checo had a brilliant start and was leading the whole race.'
     },
     18: {
-        past: false,
+        past: true,
         scores: 'default',
         quali: ['ver', 'lec', 'sai', 'per', 'oco', 'ham', 'alo', 'rus', 'vet', 'nor', 'ric', 'bot', 'tsu', 'zho', 'msc', 'alb', 'gas', 'mag', 'str', 'lat'],
-        //race: [],
-        //out: [],
-        //lap: 'rus',
-        //descr: ''
+        race: ['ver', 'per', 'lec', 'oco', 'ham', 'vet', 'alo', 'rus', 'lat', 'nor', 'ric', 'str', 'tsu', 'mag', 'bot', 'zho', 'msc', 'gas'],
+        out: ['sai', 'alb'],
+        lap: 'zho',
+        lapNotScored: true,
+        descr: 'Race: 🌧 Huge rain from the beginning. Race was stopped with red flag after 3 laps because of several crashes and poor condition. After almost 2 hour delay race was resumed but drivers had only 40 minutes until the checkered flag. Tough fight between Charles and Checo for second position till the end, in result of what Charles made a mistake and was penalized for 5 second. Checo got second position after the finish, helps to that Max become the second time world champion 🏆. Nicolas scored his first points 🐐'
     },
 }

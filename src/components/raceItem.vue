@@ -216,10 +216,11 @@ export default {
     },
     getRacePoints(item, index, out) {
       var _points = 0;
+      console.log()
       if (!out) {
         _points = this.points[this.pointsScale][index] || 0;
       }
-      if (item === this.raceResults.lap) {
+      if (item === this.raceResults.lap && !this.raceResults.lapNotScored) {
         _points++;
       }
       return _points;
