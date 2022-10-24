@@ -215,9 +215,9 @@ export default {
         past: false,
         scores: 'default',
         quali: ['sai', 'lec', 'ver', 'per', 'ham', 'rus', 'str', 'nor', 'alo', 'bot', 'alb', 'vet', 'gas', 'zho', 'tsu', 'mag', 'ric', 'oco', 'msc', 'lat'],
-        //race: [],
-        //out: [],
-        //lap: '',
+        race: ['ver', 'ham', 'lec', 'per', 'rus', 'nor', 'vet', 'mag', 'tsu', 'oco', 'zho', 'alb', 'gas', 'msc', 'alo', 'ric', 'lat'],
+        out: ['str', 'bot', 'sai'],
+        lap: 'rus',
         descr: 'Starting grid due to some penalties:' +
             '<ul><li>1. SAI</li>' +
             '<li>2. VER</li>' +
