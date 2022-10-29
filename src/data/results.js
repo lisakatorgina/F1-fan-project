@@ -212,10 +212,10 @@ export default {
         descr: 'Race: 🌧 Huge rain from the beginning. Race was stopped with red flag after 3 laps because of several crashes and poor condition. After almost 2 hour delay race was resumed but drivers had only 40 minutes until the checkered flag. Tough fight between Charles and Checo for second position till the end, in result of what Charles made a mistake and was penalized for 5 second. Checo got second position after the finish, helps to that Max become the second time world champion 🏆. Nicolas scored his first points 🐐'
     },
     19: {
-        past: false,
+        past: true,
         scores: 'default',
         quali: ['sai', 'lec', 'ver', 'per', 'ham', 'rus', 'str', 'nor', 'alo', 'bot', 'alb', 'vet', 'gas', 'zho', 'tsu', 'mag', 'ric', 'oco', 'msc', 'lat'],
-        race: ['ver', 'ham', 'lec', 'per', 'rus', 'nor', 'vet', 'mag', 'tsu', 'oco', 'zho', 'alb', 'gas', 'msc', 'alo', 'ric', 'lat'],
+        race: ['ver', 'ham', 'lec', 'per', 'rus', 'nor', 'alo', 'vet', 'mag', 'tsu', 'oco', 'zho', 'alb', 'gas', 'msc', 'ric', 'lat'],
         out: ['str', 'bot', 'sai'],
         lap: 'rus',
         descr: 'Starting grid due to some penalties:' +
