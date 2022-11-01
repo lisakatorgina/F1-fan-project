@@ -240,4 +240,13 @@ export default {
             '<li>19. ZHO</li>' +
             '<li>20. LAT</li></ul>'
     },
+    20: {
+        past: true,
+        scores: 'default',
+        quali: ['ver', 'rus', 'ham', 'per', 'sai', 'bot', 'lec', 'nor', 'alo', 'oco', 'ric', 'zho', 'tsu', 'gas', 'mag', 'msc', 'vet', 'str', 'alb', 'lat'],
+        race: ['ver', 'ham', 'per', 'rus', 'sai', 'lec', 'ric', 'oco', 'nor', 'bot', 'gas', 'alb', 'zho', 'vet', 'str', 'msc', 'mag', 'lat'],
+        out: ['alo', 'tsu'],
+        lap: 'rus',
+        //descr: ''
+    },
 }
