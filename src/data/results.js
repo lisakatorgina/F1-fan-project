@@ -249,4 +249,14 @@ export default {
         lap: 'rus',
         //descr: ''
     },
+    21: {
+        past: true,
+        scores: 'default',
+        quali: ['mag', 'ver', 'rus', 'nor', 'sai', 'oco', 'alo', 'ham', 'per', 'lec', 'alb', 'gas', 'vet', 'ric', 'str', 'lat', 'zho', 'bot', 'tsu', 'msc'],
+        sprint: ['rus', 'sai', 'ham', 'ver', 'per', 'lec', 'nor', 'mag', 'vet', 'gas', 'ric', 'msc', 'zho', 'bot', 'tsu', 'str', 'oco', 'alo', 'lat', 'alb'],
+        race: ['rus', 'ham', 'sai', 'lec', 'alo', 'ver', 'per', 'oco', 'bot', 'str', 'vet', 'zho', 'msc', 'gas', 'alb', 'lat', 'tsu'],
+        out: ['nor', 'mag', 'ric'],
+        lap: 'rus',
+        descr: ''
+    },
 }
