@@ -1,5 +1,5 @@
 export default [
-    {name: 'Max Verstappen', id: 'ver', team: 'Red Bull', number: '1', country: 'Netherlands', points: 0, photo: 'max.jpg', birthdate: '1997/09/30', champ: '2021', link: 'https://en.wikipedia.org/wiki/Max_Verstappen'},
+    {name: 'Max Verstappen', id: 'ver', team: 'Red Bull', number: '1', country: 'Netherlands', points: 0, photo: 'max.jpg', birthdate: '1997/09/30', champ: '2021, 2022', link: 'https://en.wikipedia.org/wiki/Max_Verstappen'},
     {name: 'Lewis Hamilton', id: 'ham', team: 'Mercedes', number: '44', country: 'Great Britain', points: 0, photo: 'lewis.jpg', birthdate: '1985/01/07', champ: '2008, 2014, 2015, 2017, 2018, 2019, 2020', link: 'https://en.wikipedia.org/wiki/Lewis_Hamilton'},
     {name: 'Valtteri Bottas', id: 'bot', team: 'Alfa Romeo', number: '77', country: 'Finland', points: 0, photo: 'valtteri.jpg', note: '2021 Mercedes', birthdate: '1989/08/28', link: 'https://en.wikipedia.org/wiki/Valtteri_Bottas'},
     {name: 'Sergio Perez', id: 'per', team: 'Red Bull', number: '11', country: 'Mexico', points: 0, photo: 'checo.jpg', birthdate: '1990/01/26', link: 'https://en.wikipedia.org/wiki/Sergio_P%C3%A9rez'},

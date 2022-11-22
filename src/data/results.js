@@ -259,4 +259,13 @@ export default {
         lap: 'rus',
         descr: ''
     },
+    22: {
+        past: true,
+        scores: 'default',
+        quali: ['ver', 'per', 'lec', 'sai', 'ham', 'rus', 'nor', 'oco', 'vet', 'ric', 'alo', 'tsu', 'msc', 'str', 'zho', 'mag', 'gas', 'bot', 'alb', 'lat'],
+        race: ['ver', 'lec', 'per', 'sai', 'rus', 'nor', 'oco', 'str', 'ric', 'vet', 'tsu', 'zho', 'alb', 'gas', 'bot', 'msc', 'mag'],
+        out: ['ham', 'lat', 'alo'],
+        lap: 'nor',
+        descr: ''
+    },
 }
