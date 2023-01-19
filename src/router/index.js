@@ -45,9 +45,9 @@ const routes = [
     component: () => import('../views/Teams.vue')
   },
   {
-    path: '/lando',
-    name: 'Lando',
-    component: () => import('../views/Lando.vue')
+    path: '/2022/',
+    name: '2022-home',
+    component: () => import('../views/2022/Home.vue')
   }
 ]
 

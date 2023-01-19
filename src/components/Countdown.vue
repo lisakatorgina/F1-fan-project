@@ -1,14 +1,14 @@
 <template>
   <div :class="['countdown', {'countdown_dark': dark}]">
-    <countdown :end-time="new Date(2022, 2, 17, 18, 0, 0)">
+    <countdown :end-time="new Date(2023, 2, 3, 0, 0, 0)">
       <template v-slot:process="countdown">
         <h2>We are on winter break</h2>
         <div class="load-bar">
           <div class="load-bar__progress-wrap">
-            <div class="load-bar__progress" :style="{width: `${Math.round(100 - (100/93 * countdown.timeObj.d))}%`}">{{ `${Math.round(100 - (100/93 * countdown.timeObj.d))}%` }}</div>
+            <div class="load-bar__progress" :style="{width: `${Math.round(100 - (100/102 * countdown.timeObj.d))}%`}">{{ `${Math.round(100 - (100/102 * countdown.timeObj.d))}%` }}</div>
           </div>
-          <span class="load-bar__mark" :style="{left: `${Math.round(100/93 * 17)}%`}"><span>NY</span></span>
-          <span class="load-bar__mark" :style="{left: `${Math.round(100/93 * 69)}%`}"><span>Tests</span></span>
+          <!--span class="load-bar__mark" :style="{left: `${Math.round(100/102 * 17)}%`}"><span>NY</span></span>
+          <span class="load-bar__mark" :style="{left: `${Math.round(100/102 * 69)}%`}"><span>Tests</span></span-->
         </div>
         <h2>
           Today is {{ todayString }}<br/>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="content__title">Racing season 2023</h1>
-    <my-countdown dark></my-countdown>
+    <h1 class="content__title">Racing season 2022</h1>
+    <!-- my-countdown dark></my-countdown -->
     <div class="races">
       <race-item
           v-for="(item, index) in tracks"
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import racing from "@/data/racing";
+import racing from "@/data/2022/racing";
 import RaceItem from "@/components/raceItem";
 import MyCountdown from "@/components/Countdown";
 import points from "@/data/points";
-import results from "@/data/results";
+import results from "@/data/2022/results";
 
 export default {
   components: {

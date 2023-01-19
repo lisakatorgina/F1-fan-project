@@ -146,8 +146,6 @@
 import getFlag from "@/utils/getflag";
 import getName from "@/utils/getName";
 import getTeam from "@/utils/getTeam";
-import points from "@/data/points";
-import results from "@/data/results";
 import Teams from "@/views/Teams";
 
 export default {
@@ -162,15 +160,21 @@ export default {
       type: Number,
       default: 0
     },
+    points: {
+      type: Object,
+      default: {},
+    },
+    results: {
+      type: Object,
+      default: {},
+    },
   },
   data() {
     return {
-      points: points,
-      results: results,
       showPopup: null,
       closed: false,
       trackImage: '',
-      raceResults: results[this.index],
+      raceResults: this.results[this.index],
     }
   },
   computed: {
@@ -203,7 +207,9 @@ export default {
     if (this.past && this.isMobile) {
       this.closed = true;
     }
-    this.trackImage = require(`@/assets/img/tracks/${this.item.image}`);
+    if (this.item.image) {
+      this.trackImage = require(`@/assets/img/tracks/${this.item.image}`);
+    }
   },
   methods: {
     getName,
