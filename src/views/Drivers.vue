@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="content__title">Season 2022 drivers</h1>
-    <!-- h3 class="content__subtitle">In order of last season standings</h3 -->
+    <h1 class="content__title">Season 2023 drivers</h1>
+    <h3 class="content__subtitle">In order of last season standings</h3>
     <div class="table">
       <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row', {'row_reserve': driver.reserve}]">
         <div class="row__position" v-if="Object.keys(results).length > 0">{{ index + 1 }}</div>
@@ -15,6 +15,7 @@
           {{ driver.team }}
           <!-- p v-if="driver.note" class="row__note">{{ driver.note }}</p -->
           <p v-if="driver.reserve" class="row__note">Reserve driver</p>
+          <p v-if="driver.out" class="row__note">Retired</p>
         </div>
         <div class="row__country" @click="changePhoto(currentGalleryIndex)"><span>{{ driver.country }}</span> {{ getFlag(driver.country) }}</div>
         <span v-if="Object.keys(results).length > 0" class="row__points">{{ driver.points }}</span>
@@ -71,12 +72,12 @@ export default {
   mounted() {
     for (var i = 0; i < this.driversData.length; i++) {
       var _id = this.driversData[i].id;
-      this.driversData[i].points = getPoints()[_id] ? getPoints()[_id] : 0;
+      this.driversData[i].points = getPoints(this.results)[_id] ? getPoints(this.results)[_id] : 0;
     }
-    this.driversData.sort(function(a, b){
-      return b.points - a.points;
-      //return a.team.localeCompare(b.team);
-    });
+    //this.driversData.sort(function(a, b){
+      //return b.points - a.points;
+      //return a.name.localeCompare(b.team);
+    //});
   },
   computed: {
     currentDriver() {

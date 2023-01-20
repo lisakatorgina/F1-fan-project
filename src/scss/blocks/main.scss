@@ -30,6 +30,9 @@ body {
     margin: 0 0 30px 0;
     font-weight: 300;
     text-align: center;
+    &_margin-top {
+      margin-top: 40px;
+    }
   }
   &__subtitle {
     font-size: 16px;

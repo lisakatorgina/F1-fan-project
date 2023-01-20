@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="content__title">Season 2022 teams</h1>
-    <!-- h3 class="content__subtitle">In order of last season standings</h3 -->
+    <h1 class="content__title">Season 2023 teams</h1>
+    <h3 class="content__subtitle">In order of last season standings</h3>
     <div class="table">
       <div v-for="(team, index) in teamsData" :key="index" :class="['table__item', 'row']">
         <div class="row__position" v-if="Object.keys(results).length > 0">
@@ -64,12 +64,12 @@ export default {
       var _driver1 = this.teamsData[i].drivers[0];
       var _driver2 = this.teamsData[i].drivers[1];
       var _driver3 = this.teamsData[i].drivers[2];
-      this.teamsData[i].points = (getPoints()[_driver1] ? getPoints()[_driver1] : 0) + (getPoints()[_driver2] ? getPoints()[_driver2] : 0) + (getPoints()[_driver3] ? getPoints()[_driver3] : 0);
+      this.teamsData[i].points = (getPoints(this.results)[_driver1] ? getPoints(this.results)[_driver1] : 0) + (getPoints(this.results)[_driver2] ? getPoints(this.results)[_driver2] : 0) + (getPoints(this.results)[_driver3] ? getPoints(this.results)[_driver3] : 0);
     }
-    this.teamsData.sort(function(a, b){
-      return b.points - a.points;
-      //return a.team.localeCompare(b.team);
-    });
+    //this.teamsData.sort(function(a, b){
+      //return b.points - a.points;
+      //return a.name.localeCompare(b.team);
+    //});
   },
   computed: {
     currentTeam() {

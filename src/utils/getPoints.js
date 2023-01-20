@@ -1,7 +1,7 @@
-import results from "@/data/results";
+//import results from "@/data/2022/results";
 import points from "@/data/points";
 
-export default () => {
+export default (results) => {
     let result = {};
     for (let i = 1; i <= Object.keys(results).length; i++ ) {
         let race = results[i].race;
