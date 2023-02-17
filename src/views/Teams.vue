@@ -85,7 +85,7 @@ export default {
       if (index >= this.teamsData.length || index < 0) {
         return;
       }
-      this.openedPhoto = require(`@/assets/img/cars/${this.teamsData[index].image}`);
+      this.openedPhoto = require(`@/assets/img/cars/2023/${this.teamsData[index].image}`);
       this.currentGalleryIndex = index;
     },
     closePopup(e) {

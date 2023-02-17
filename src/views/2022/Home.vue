@@ -202,7 +202,7 @@ export default {
       if (index >= this.teamsData.length || index < 0) {
         return;
       }
-      this.openedPhotoTeams = require(`@/assets/img/cars/${this.teamsData[index].image}`);
+      this.openedPhotoTeams = require(`@/assets/img/cars/2022/${this.teamsData[index].image}`);
       this.currentGalleryIndexTeams = index;
     },
     closePopupTeams(e) {
