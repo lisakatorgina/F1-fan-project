@@ -1,11 +1,12 @@
 export default {
-    /*1: {
-        past: true,
-        quali: ['lec', 'ver', 'sai', 'per', 'ham', 'bot', 'mag', 'alo', 'rus', 'gas', 'oco', 'msc', 'nor', 'alb', 'zho', 'tsu', 'hul', 'ric', 'str', 'lat'],
+    1: {
+        past: false,
+        quali: ['ver', 'per', 'lec', 'sai', 'alo', 'rus', 'ham', 'str', 'oco', 'hul', 'nor', 'bot', 'zho', 'tsu', 'alb', 'sar', 'mag', 'pia', 'dev', 'gas'],
         scores: 'default',
-        race: ['lec', 'sai', 'ham', 'rus', 'mag', 'bot', 'oco', 'tsu', 'alo', 'zho', 'msc', 'str', 'alb', 'ric', 'nor', 'lat', 'hul'],
-        out: ['per', 'ver', 'gas'],
-        lap: 'lec',
-        descr: 'Seb got covid and was replaced by Nico. Safety car after Pierre engine burnt. Both Red Bull had car failure on the last laps.',
-    },*/
+        race: ['ver', 'per', 'alo', 'sai', 'ham', 'str', 'rus', 'bot', 'gas', 'alb', 'tsu', 'sar', 'mag', 'dev', 'hul', 'zho', 'nor'],
+        out: ['oco', 'lec', 'pia'],
+        lap: 'zho',
+        //descr: '',
+        lapNotScored: true,
+    },
 }

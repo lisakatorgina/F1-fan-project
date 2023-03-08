@@ -74,10 +74,10 @@ export default {
       var _id = this.driversData[i].id;
       this.driversData[i].points = getPoints(this.results)[_id] ? getPoints(this.results)[_id] : 0;
     }
-    //this.driversData.sort(function(a, b){
-      //return b.points - a.points;
-      //return a.name.localeCompare(b.team);
-    //});
+    this.driversData.sort(function(a, b){
+      return b.points - a.points;
+      return a.name.localeCompare(b.team);
+    });
   },
   computed: {
     currentDriver() {

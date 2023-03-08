@@ -66,10 +66,10 @@ export default {
       var _driver3 = this.teamsData[i].drivers[2];
       this.teamsData[i].points = (getPoints(this.results)[_driver1] ? getPoints(this.results)[_driver1] : 0) + (getPoints(this.results)[_driver2] ? getPoints(this.results)[_driver2] : 0) + (getPoints(this.results)[_driver3] ? getPoints(this.results)[_driver3] : 0);
     }
-    //this.teamsData.sort(function(a, b){
-      //return b.points - a.points;
-      //return a.name.localeCompare(b.team);
-    //});
+    this.teamsData.sort(function(a, b){
+      return b.points - a.points;
+      return a.name.localeCompare(b.team);
+    });
   },
   computed: {
     currentTeam() {
