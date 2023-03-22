@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1 class="content__title">Season 2023 teams</h1>
-    <h3 class="content__subtitle">In order of last season standings</h3>
     <div class="table">
       <div v-for="(team, index) in teamsData" :key="index" :class="['table__item', 'row']">
         <div class="row__position" v-if="Object.keys(results).length > 0">
