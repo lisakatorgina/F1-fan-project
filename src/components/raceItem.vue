@@ -89,7 +89,6 @@
           <span class="popup__close" @click="showPopup = null">&times;</span>
         </h3>
         <div class="popup__body">
-          <div class="popup__descr" v-if="raceResults.descr" v-html="raceResults.descr"></div>
           <template v-if="raceResults.race">
             <h4>Race</h4>
             <ul class="race-results">
@@ -136,6 +135,7 @@
               <b>{{ i + 1 }}.</b> {{ getName(item) }}
             </li>
           </ul>
+          <div class="popup__descr" v-if="raceResults.descr" v-html="raceResults.descr"></div>
         </div>
       </div>
     </div>
@@ -174,7 +174,7 @@ export default {
       showPopup: null,
       closed: false,
       trackImage: '',
-      raceResults: this.results[this.index],
+      raceResults: this.results[this.index]
     }
   },
   computed: {
@@ -235,7 +235,7 @@ export default {
       if (this.isMobile) {
         this.closed = !this.closed;
       }
-    }
+    },
   },
 }
 </script>

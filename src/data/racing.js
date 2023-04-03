@@ -2,9 +2,6 @@ export default [
     {country: 'Bahrain', place: 'Sakhir', name: 'Bahrain International Circuit', dates: 'March 3-5', laps: '57', image: 'sakhir.svg'},
     {country: 'Saudi Arabia', place: 'Jeddah', name: 'Jeddah Corniche Circuit', dates: 'March 17-19', laps: '50', image: 'jeddah.svg'},
     {country: 'Australia', place: 'Melbourn', name: 'Melbourne Grand Prix Circuit', dates: 'March 31 - April 2', laps: '58', image: 'melbourn.svg'},
-
-    {country: 'TBC', place: '', name: 'there will now be no event on this weekend', dates: 'April 14-16', laps: '', image: ''},
-
     {country: 'Azerbaijan', place: 'Baku', name: 'Baku City Circuit', dates: 'April 28-30', laps: '51', image: 'baku.svg'},
     {country: 'United States', place: 'Miami', name: 'Miami International Autodrome', dates: 'May 5-7', laps: '57', image: 'miami.svg'},
     {country: 'Italy', place: 'Imola', name: 'Autodromo Enzo e Dino Ferrari', dates: 'May 19-21', laps: '63', image: 'imola.svg'},

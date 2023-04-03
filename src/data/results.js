@@ -6,16 +6,25 @@ export default {
         race: ['ver', 'per', 'alo', 'sai', 'ham', 'str', 'rus', 'bot', 'gas', 'alb', 'tsu', 'sar', 'mag', 'dev', 'hul', 'zho', 'nor'],
         out: ['oco', 'lec', 'pia'],
         lap: 'zho',
-        //descr: '',
+        descr: 'Quali: <a href="https://www.youtube.com/watch?v=Wg4YfEXK8R8" target="_blank">Quali Highlights</a><br/>Race: <a href="https://www.youtube.com/watch?v=f9j8nhMNYO4" target="_blank">Race Highlights</a> ',
         lapNotScored: true,
     },
     2: {
-        past: false,
+        past: true,
         quali: ['per', 'lec', 'alo', 'rus', 'sai', 'str', 'oco', 'ham', 'pia', 'gas', 'hul', 'zho', 'mag', 'bot', 'ver', 'tsu', 'alb', 'dev', 'nor', 'sar'],
         scores: 'default',
         race: ['per', 'ver', 'alo', 'rus', 'ham', 'sai', 'lec', 'oco', 'gas', 'mag', 'tsu', 'hul', 'zho', 'dev', 'pia', 'sar', 'nor', 'bot'],
         out: ['alb', 'str'],
         lap: 'ver',
-        //descr: '',
+        descr: 'Quali: Checo pole! 🤩<a href="https://www.youtube.com/watch?v=bvLYdmK8nUo" target="_blank">Quali Highlights</a><br/>Race: Checo won! 😎<a href="https://www.youtube.com/watch?v=BxGpi0racMc" target="_blank">Race Highlights</a> ',
+    },
+    3: {
+        past: false,
+        quali: ['ver', 'rus', 'ham', 'alo', 'sai', 'str', 'lec', 'alb', 'gas', 'hul', 'oco', 'tsu', 'nor', 'mag', 'dev', 'pia', 'zho', 'sar', 'bot', 'per'],
+        scores: 'default',
+        race: ['ver', 'ham', 'alo', 'str', 'per', 'nor', 'hul', 'pia', 'zho', 'tsu', 'bot', 'sai'],
+        out: ['oco', 'dev', 'sar', 'mag', 'rus', 'alb', 'lec'],
+        lap: 'per',
+        descr: 'Quali: Checo out 😖<a href="https://www.youtube.com/watch?v=NJ_sGE1DUQE" target="_blank">Quali Highlights</a><br/>Race: Chaos! <a href="https://www.youtube.com/watch?v=FExS3lFEwqc" target="_blank">Race Highlights</a>'
     }
 }
