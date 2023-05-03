@@ -26,5 +26,15 @@ export default {
         out: ['oco', 'dev', 'sar', 'mag', 'rus', 'alb', 'lec'],
         lap: 'per',
         descr: 'Quali: Checo out 😖<a href="https://www.youtube.com/watch?v=NJ_sGE1DUQE" target="_blank">Quali Highlights</a><br/>Race: Chaos! <a href="https://www.youtube.com/watch?v=FExS3lFEwqc" target="_blank">Race Highlights</a>'
-    }
+    },
+    4: {
+        past: true,
+        quali: ['lec', 'ver', 'per', 'sai', 'ham', 'alo', 'nor', 'tsu', 'str', 'pia', 'rus', 'oco', 'alb', 'bot', 'sar', 'zho', 'hul', 'mag', 'gas', 'dev'],
+        sprint: ['per', 'lec', 'ver', 'rus', 'sai', 'alo', 'ham', 'str', 'alb', 'pia', 'mag', 'zho', 'gas', 'dev', 'hul', 'bot', 'nor', 'oco', 'tsu'],
+        scores: 'default',
+        race: ['per', 'ver', 'lec', 'alo', 'sai', 'ham', 'str', 'rus', 'nor', 'tsu', 'pia', 'alb', 'mag', 'gas', 'oco', 'sar', 'hul', 'bot'],
+        out: ['zho', 'dev'],
+        lap: 'rus',
+        descr: ''
+    },
 }
