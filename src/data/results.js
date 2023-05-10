@@ -38,12 +38,12 @@ export default {
         descr: 'Quali: <a href="https://www.youtube.com/watch?v=7QFluV5wV4I" target="_blank">Quali Highlights</a><br/>Sprint: <a href="https://www.youtube.com/watch?v=x0ViX9RpVJo" target="_blank">Sprint Highlights</a><br/>Race: <a href="https://www.youtube.com/watch?v=nJIrvbkr4pk" target="_blank">Race Highlights.</a>'
     },
     5: {
-        past: false,
+        past: true,
         quali: ['per', 'alo', 'sai', 'mag', 'gas', 'rus', 'lec', 'oco', 'ver', 'bot', 'alb', 'hul', 'ham', 'zho', 'dev', 'nor', 'tsu', 'str', 'pia', 'sar'],
         scores: 'default',
-        //race: [],
-        //out: [],
-        //lap: 'per',
-        //descr: 'Quali: <a href="" target="_blank">Quali Highlights</a><br/>Sprint: <a href="" target="_blank">Sprint Highlights</a> Race: Chaos! <a href="" target="_blank">Race Highlights</a>'
+        race: ['ver', 'per', 'alo', 'rus', 'sai', 'ham', 'lec', 'gas', 'oco', 'mag', 'tsu', 'str', 'bot', 'alb', 'hul', 'zho', 'nor', 'dev', 'pia', 'sar'],
+        out: [],
+        lap: 'ver',
+        //descr: 'Quali: <a href="https://www.youtube.com/watch?v=qO7fo2EV1rs" target="_blank">Quali Highlights</a><br/>Race: Chaos! <a href="" target="_blank">Race Highlights</a>'
     },
 }
