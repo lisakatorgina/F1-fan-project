@@ -46,4 +46,8 @@ export default {
         lap: 'ver',
         //descr: 'Quali: <a href="https://www.youtube.com/watch?v=qO7fo2EV1rs" target="_blank">Quali Highlights</a><br/>Race: Chaos! <a href="" target="_blank">Race Highlights</a>'
     },
+    6: {
+        canceled: true,
+        descr: 'Canceled due to flooding in Emilia-Romagna region'
+    },
 }

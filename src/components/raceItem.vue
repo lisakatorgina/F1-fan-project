@@ -1,5 +1,5 @@
 <template>
-  <div :class="['races__item', {'races__item_past': past, 'races__item_current': current}, {'races__item_closed': closed && isMobile}]">
+  <div :class="['races__item', {'races__item_past': past, 'races__item_current': current, 'races__item_closed': closed && isMobile, 'races__item_canceled': canceled }]">
     <span class="races__item-number">{{ index }}</span>
     <span class="races__item-close" @click="toggleItem" v-if="isMobile && past">
       <template v-if="closed">
@@ -15,6 +15,7 @@
         <span>{{ getFlag(item.country) }}</span>
         <span v-if="past">🏁️</span>
         <span v-if="current">🚥</span>
+        <span v-if="canceled">❌</span>
       </h2>
       <span class="races__item-dates">
         {{ item.dates }}
@@ -25,6 +26,7 @@
         <h3>{{ item.place }}</h3>
         <h4>{{ item.name }}</h4>
         <div class="races__item-content">
+          <p v-if="canceled">{{ raceResults.descr }}</p>
           <div class="races__item-image" v-if="item.image !== ''" :style="{'background-image': `url(${trackImage}`}"></div>
           <template v-if="raceResults">
             <div class="races__item-info">
@@ -193,6 +195,12 @@ export default {
         if (this.raceResults.quali && !this.past) {
           return true;
         }
+      }
+      return false;
+    },
+    canceled: function () {
+      if (this.raceResults) {
+        return this.raceResults.canceled;
       }
       return false;
     },
