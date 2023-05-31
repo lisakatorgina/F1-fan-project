@@ -50,4 +50,13 @@ export default {
         canceled: true,
         descr: 'Canceled due to flooding in Emilia-Romagna region'
     },
+    7: {
+        past: true,
+        quali: ['ver', 'alo', 'lec', 'oco', 'sai', 'ham', 'gas', 'rus', 'tsu', 'nor', 'pia', 'dev', 'alb', 'str', 'bot', 'sar', 'mag', 'hul', 'zho', 'per'],
+        scores: 'default',
+        race: ['ver', 'alo', 'oco', 'ham', 'rus', 'lec', 'gas', 'sai', 'nor', 'pia', 'bot', 'dev', 'zho', 'alb', 'tsu', 'per', 'hul', 'sar'],
+        out: ['mag', 'str'],
+        lap: 'ham',
+        //descr: 'Quali: <a href="https://www.youtube.com/watch?v=qO7fo2EV1rs" target="_blank">Quali Highlights</a><br/>Race: Chaos! <a href="" target="_blank">Race Highlights</a>'
+    },
 }
