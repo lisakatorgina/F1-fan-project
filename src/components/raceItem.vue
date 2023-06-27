@@ -1,7 +1,7 @@
 <template>
   <div :class="['races__item', {'races__item_past': past, 'races__item_current': current, 'races__item_closed': closed && isMobile, 'races__item_canceled': canceled }]">
     <span class="races__item-number">{{ index }}</span>
-    <span class="races__item-close" @click="toggleItem" v-if="isMobile && past">
+    <span class="races__item-close" @click="toggleItem" v-if="isMobile && (past || canceled)">
       <template v-if="closed">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
       </template>
@@ -28,7 +28,7 @@
         <div class="races__item-content">
           <p v-if="canceled">{{ raceResults.descr }}</p>
           <div class="races__item-image" v-if="item.image !== ''" :style="{'background-image': `url(${trackImage}`}"></div>
-          <template v-if="raceResults">
+          <template v-if="raceResults && !canceled">
             <div class="races__item-info">
               <template v-if="raceResults.quali">
                 <h4>Quali</h4>
@@ -72,7 +72,7 @@
       </div>
     </transition>
     <transition name="fade">
-      <div class="races__item-info" v-if="raceResults && closed && isMobile" key="closed">
+      <div class="races__item-info" v-if="raceResults && closed && isMobile && !canceled" key="closed">
         <ul>
           <li v-for="(item, index) in raceResults.race.slice(0, 10)" :key="index">
             <template v-if="index === 0">🥇</template>
@@ -212,7 +212,7 @@ export default {
     }
   },
   mounted() {
-    if (this.past && this.isMobile) {
+    if ((this.past || this.canceled) && this.isMobile) {
       this.closed = true;
     }
     if (this.item.image) {

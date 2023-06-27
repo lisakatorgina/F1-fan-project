@@ -44,11 +44,11 @@ export default {
         race: ['ver', 'per', 'alo', 'rus', 'sai', 'ham', 'lec', 'gas', 'oco', 'mag', 'tsu', 'str', 'bot', 'alb', 'hul', 'zho', 'nor', 'dev', 'pia', 'sar'],
         out: [],
         lap: 'ver',
-        //descr: 'Quali: <a href="https://www.youtube.com/watch?v=qO7fo2EV1rs" target="_blank">Quali Highlights</a><br/>Race: Chaos! <a href="" target="_blank">Race Highlights</a>'
+        descr: 'Quali: <a href="https://youtu.be/qO7fo2EV1rs" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/2-jvlhc7c58" target="_blank">Race Highlights</a>'
     },
     6: {
         canceled: true,
-        descr: 'Canceled due to flooding in Emilia-Romagna region'
+        descr: 'Canceled due to flood in Emilia-Romagna region'
     },
     7: {
         past: true,
@@ -57,6 +57,24 @@ export default {
         race: ['ver', 'alo', 'oco', 'ham', 'rus', 'lec', 'gas', 'sai', 'nor', 'pia', 'bot', 'dev', 'zho', 'alb', 'tsu', 'per', 'hul', 'sar'],
         out: ['mag', 'str'],
         lap: 'ham',
-        //descr: 'Quali: <a href="https://www.youtube.com/watch?v=qO7fo2EV1rs" target="_blank">Quali Highlights</a><br/>Race: Chaos! <a href="" target="_blank">Race Highlights</a>'
+        descr: 'Quali: <a href="https://youtu.be/rjyqaZ9jSuI" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/JyBq7XYDiBg" target="_blank">Race Highlights</a>'
+    },
+    8: {
+        past: true,
+        quali: ['ver', 'sai', 'nor', 'gas', 'ham', 'str', 'oco', 'hul', 'alo', 'pia', 'per', 'rus', 'zho', 'dev', 'tsu', 'bot', 'mag', 'alb', 'lec', 'sar'],
+        scores: 'default',
+        race: ['ver', 'ham', 'rus', 'per', 'sai', 'str', 'alo', 'oco', 'zho', 'gas', 'lec', 'tsu', 'pia', 'dev', 'hul', 'alb', 'nor', 'mag', 'bot', 'sar'],
+        out: [],
+        lap: 'ver',
+        descr: 'Quali: <a href="https://youtu.be/yYkSk_suYKc" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/Yd5FCI0JWMg" target="_blank">Race Highlights</a>'
+    },
+    9: {
+        past: true,
+        quali: ['ver', 'hul', 'alo', 'ham', 'rus', 'oco', 'nor', 'sai', 'pia', 'alb', 'lec', 'per', 'str', 'mag', 'bot', 'tsu', 'gas', 'dev', 'sar', 'zho'],
+        scores: 'default',
+        race: ['ver', 'alo', 'ham', 'lec', 'sai', 'per', 'alb', 'oco', 'str', 'bot', 'pia', 'gas', 'nor', 'tsu', 'hul', 'zho', 'mag', 'dev'],
+        out: ['rus', 'sar'],
+        lap: 'per',
+        descr: 'Quali: <a href="https://youtu.be/7WhPb6fr5gw" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/yX_GUhWiBHk" target="_blank">Race Highlights</a>'
     },
 }
