@@ -12,7 +12,7 @@
         </div>
         <div class="row__team">
           {{ driver.team }}
-          <!-- p v-if="driver.note" class="row__note">{{ driver.note }}</p -->
+          <p v-if="driver.note" class="row__note">{{ driver.note }}</p>
           <p v-if="driver.reserve" class="row__note">Reserve driver</p>
           <p v-if="driver.out" class="row__note">Retired</p>
         </div>
