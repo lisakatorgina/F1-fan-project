@@ -26,5 +26,6 @@ export default [
     {name: 'China', flag: '🇨🇳'},
     {name: 'Denmark', flag: '🇩🇰'},
     {name: 'Quatar', flag: '🇶🇦'},
+    {name: 'New Zealand', flag: '🇳🇿'},
 ]
 

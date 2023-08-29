@@ -23,5 +23,6 @@ export default [
     {name: 'Nico Hülkenberg', id: 'hul', team: 'Haas', number: '27', country: 'Germany', points: 0, photo: 'nico.jpg', birthdate: '1987/08/19', link: 'https://en.wikipedia.org/wiki/Nico_H%C3%BClkenberg'},
     {name: 'Oscar Piastri', id: 'pia', team: 'McLaren', number: '81', country: 'Australia', points: 0, photo: 'oscar.jpg', birthdate: '2001/04/06', link: 'https://en.wikipedia.org/wiki/Oscar_Piastri'},
     {name: 'Logan Sargeant', id: 'sar', team: 'Williams', number: '2', country: 'United States', points: 0, photo: 'logan.jpg', birthdate: '2000/12/31', link: 'https://en.wikipedia.org/wiki/Logan_Sargeant'},
+    {name: 'Liam Lawson', id: 'law', team: 'AlphaTauri', number: '15', country: 'New Zealand', points: 0, photo: 'liam.jpg', birthdate: '2002/02/11', link: 'https://en.wikipedia.org/wiki/Liam_Lawson', note: 'Replace Daniel due to his injury'},
     /*{name: 'Nikita Mazepin', id: 'maz', team: 'Haas', number: '9', country: 'Russia', points: 0, photo: 'nikita.jpg', birthdate: '1992/03/02', link: 'https://en.wikipedia.org/wiki/Nikita_Mazepin'},*/
 ]
