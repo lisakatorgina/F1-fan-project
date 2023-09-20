@@ -138,6 +138,24 @@
             </li>
           </ul>
           <div class="popup__descr" v-if="raceResults.descr" v-html="raceResults.descr"></div>
+          <swiper
+              :slides-per-view="1"
+              :loop="false"
+              :pagination="true"
+              :navigation="true"
+          >
+            <swiper-slide
+                v-for="(item, index) in raceResults.img"
+                :key="index"
+            >
+              <div class="popup__image">
+                <img
+                    :src="require(`@/assets/img/${item}`)"
+                >
+              </div>
+            </swiper-slide>
+          </swiper>
+          <!--img class="popup__image" v-if="raceResults.img" :src="require(`@/assets/img/${raceResults.img}`)" alt=""-->
         </div>
       </div>
     </div>
@@ -149,10 +167,14 @@ import getFlag from "@/utils/getflag";
 import getName from "@/utils/getName";
 import getTeam from "@/utils/getTeam";
 import Teams from "@/views/Teams";
+import { Navigation, Pagination } from 'swiper'
+import { SwiperCore, Swiper, SwiperSlide } from 'swiper-vue2'
+import 'swiper/swiper-bundle.css'
+SwiperCore.use([Navigation, Pagination])
 
 export default {
   name: 'raceItem',
-  components: {Teams},
+  components: {Teams, Swiper, SwiperSlide},
   props: {
     item: {
       type: Object,
@@ -176,7 +198,14 @@ export default {
       showPopup: null,
       closed: false,
       trackImage: '',
-      raceResults: this.results[this.index]
+      raceResults: this.results[this.index],
+      swiperOptions: {
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          disabledClass: "is-disabled"
+        },
+      }
     }
   },
   computed: {

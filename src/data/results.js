@@ -131,6 +131,17 @@ export default {
         race: ['ver', 'per', 'sai', 'lec', 'rus', 'ham', 'alb', 'nor', 'alo', 'bot', 'law', 'pia', 'sar', 'zho', 'gas', 'str', 'hul', 'mag'],
         out: ['oco', 'tsu'],
         lap: 'pia',
+        lapNotScored: true,
         descr: 'Quali: <a href="https://youtu.be/bJ4Fauyg3jc?si=RtakvPjV64hPsPI6" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/bd9eALWJRzY?si=JubsVzE5JEn3ofQS" target="_blank">Race Highlights.</a>'
+    },
+    16: {
+        past: true,
+        quali: ['sai', 'rus', 'lec', 'nor', 'ham', 'mag', 'alo', 'oco', 'hul', 'law', 'ver', 'gas', 'per', 'alb', 'tsu', 'bot', 'pia', 'zar', 'zho', 'str'],
+        scores: 'default',
+        race: ['sai', 'nor', 'ham', 'lec', 'ver', 'gas', 'pia', 'per', 'law', 'mag', 'alb', 'zho', 'hul', 'sar', 'alo'],
+        out: ['rus', 'bot', 'oco','tsu', 'str'],
+        lap: 'ham',
+        descr: 'Quali: <a href="https://youtu.be/zRTHjUZHv_Q?si=-_aRIIqBblC8QPPh" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/8TmrPvoHSGQ?si=xO98ILq4U7JPgdCO" target="_blank">Race Highlights.</a><br/>Carlando power of friendship❤️🧡',
+        img: ['carlando/1.jpg', 'carlando/2.jpg', 'carlando/3.jpg']
     },
 }
