@@ -41,25 +41,6 @@ body {
     font-weight: normal;
   }
 }
-.swiper-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    object-fit: contain;
-    background: black;
-    @media (orientation: portrait) {
-      object-fit: cover;
-    }
-  }
-}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
 }
