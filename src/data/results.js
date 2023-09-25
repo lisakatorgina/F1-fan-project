@@ -144,4 +144,13 @@ export default {
         descr: 'Quali: <a href="https://youtu.be/zRTHjUZHv_Q?si=-_aRIIqBblC8QPPh" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/8TmrPvoHSGQ?si=xO98ILq4U7JPgdCO" target="_blank">Race Highlights.</a><br/>Carlando power of friendship❤️🧡',
         img: ['carlando/1.jpg', 'carlando/2.jpg', 'carlando/3.jpg']
     },
+    17: {
+        past: true,
+        quali: ['ver', 'pia', 'nor', 'lec', 'per', 'sai', 'ham', 'rus', 'tsu', 'alo', 'law', 'gas', 'alb', 'oco', 'mag', 'bot', 'str', 'hul', 'zho', 'sar'],
+        scores: 'default',
+        race: ['ver', 'nor', 'pia', 'lec', 'ham', 'sai', 'rus', 'alo', 'oco', 'gas', 'law', 'tsu', 'zho', 'hul', 'mag'],
+        out: ['alb', 'sar', 'str','per', 'bot'],
+        lap: 'ver',
+        descr: 'Quali: <a href="https://youtu.be/9yhpIO8OFNs?si=oLwIxSsx9D_crMwd" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/rPLxuLE62gI?si=ZHfCQ9zEBfVIZ_Vr" target="_blank">Race Highlights.</a>',
+    },
 }

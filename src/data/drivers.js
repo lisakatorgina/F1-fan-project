@@ -1,7 +1,7 @@
 export default [
-    {name: 'Max Verstappen', id: 'ver', team: 'Red Bull', number: '1', country: 'Netherlands', points: 0, photo: 'max.jpg', birthdate: '1997/09/30', champ: '2021, 2022', link: 'https://en.wikipedia.org/wiki/Max_Verstappen'},
+    {name: 'Max Verstappen', id: 'ver', team: 'Red Bull', number: '1', country: 'Netherlands', points: 0, photo: 'max2.jpg', birthdate: '1997/09/30', champ: '2021, 2022', link: 'https://en.wikipedia.org/wiki/Max_Verstappen'},
     {name: 'Charles Leclerc', id: 'lec', team: 'Ferrari', number: '16', country: 'Monaco', points: 0, photo: 'charles.jpg', birthdate: '1997/10/16', link: 'https://en.wikipedia.org/wiki/Charles_Leclerc'},
-    {name: 'Sergio Perez', id: 'per', team: 'Red Bull', number: '11', country: 'Mexico', points: 0, photo: 'checo.jpg', birthdate: '1990/01/26', link: 'https://en.wikipedia.org/wiki/Sergio_P%C3%A9rez'},
+    {name: 'Sergio Perez', id: 'per', team: 'Red Bull', number: '11', country: 'Mexico', points: 0, photo: 'checo2.jpg', birthdate: '1990/01/26', link: 'https://en.wikipedia.org/wiki/Sergio_P%C3%A9rez'},
     {name: 'George Russell', id: 'rus', team: 'Mercedes', number: '63', country: 'Great Britain', points: 0, photo: 'george.jpg', birthdate: '1998/02/15', link: 'https://en.wikipedia.org/wiki/George_Russell_(racing_driver)'},
     {name: 'Carlos Sainz', id: 'sai', team: 'Ferrari', number: '55', country: 'Spain', points: 0, photo: 'carlos2.jpg', birthdate: '1994/09/01', link: 'https://en.wikipedia.org/wiki/Carlos_Sainz_Jr.'},
     {name: 'Lewis Hamilton', id: 'ham', team: 'Mercedes', number: '44', country: 'Great Britain', points: 0, photo: 'lewis.jpg', birthdate: '1985/01/07', champ: '2008, 2014, 2015, 2017, 2018, 2019, 2020', link: 'https://en.wikipedia.org/wiki/Lewis_Hamilton'},
