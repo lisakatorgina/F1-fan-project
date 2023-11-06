@@ -163,4 +163,33 @@ export default {
         lap: 'ver',
         descr: 'Quali: <a href="https://youtu.be/WccO_r0GICQ?si=V1hnfvJkmU0UeWtb" target="_blank">Quali Highlights</a><br/>Sprint: <a href="https://youtu.be/Z_xBjJvYYr4?si=MGnCnP3HgH3PPZyQ" target="_blank">Sprint Highlights</a><br/>Race: <a href="https://youtu.be/meckBwrnZnU?si=CZFiLrGCqcMcmhpS" target="_blank">Race Highlights.</a>'
     },
+    19: {
+        past: true,
+        quali: ['lec', 'nor', 'ham', 'sai', 'rus', 'ver', 'gas', 'oco', 'per', 'pia', 'tsu', 'zho', 'bot', 'mag', 'ric', 'hul', 'alo', 'alb', 'str', 'sar'],
+        sprint: ['ver', 'ham', 'lec', 'nor', 'per', 'sai', 'gas', 'rus', 'alb', 'pia', 'oco', 'ric', 'alo', 'tsu', 'hul', 'bot', 'zho', 'mag', 'sar', 'str'],
+        scores: 'default',
+        race: ['ver', 'nor', 'sai', 'per', 'rus', 'gas', 'str', 'tsu', 'alb', 'sar', 'hul', 'bot', 'zho', 'mag', 'ric'],
+        out: ['alo', 'pia', 'oco'],
+        lap: 'tsu',
+        descr: 'Quali: <a href="https://youtu.be/plxp3YAakcw?si=OsmHQWKvmhnqNN7M" target="_blank">Quali Highlights</a><br/>Sprint: <a href="https://youtu.be/ig4laP4FShE?si=UMgfIap1rYBeqGtJ" target="_blank">Sprint Highlights</a><br/>Race: <a href="https://youtu.be/WkLTWmlTaJM?si=8CnLgPzN4krOzgGB" target="_blank">Race Highlights.</a><br/> Lewis P2 and Charles P6 were disqualified from the race after podium. Logan got his first point in F1.'
+    },
+    20: {
+        past: true,
+        quali: ['lec', 'sai', 'ver', 'ric', 'per', 'ham', 'pia', 'rus', 'bot', 'zho', 'gas', 'hul', 'alo', 'alb', 'tsu', 'oco', 'mag', 'str', 'nor', 'sar'],
+        scores: 'default',
+        race: ['ver', 'ham', 'lec', 'sai', 'nor', 'rus', 'ric', 'pia', 'alb', 'oco', 'gas', 'tsu', 'hul', 'zho', 'bot'],
+        out: ['sar', 'str', 'alo', 'mag', 'per'],
+        lap: 'ham',
+        descr: 'Quali: <a href="https://youtu.be/SXDJJLc-h0c?si=AAS8oUhQY78ZLtn-" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/WkLTWmlTaJM?si=jKzn-40SRFGVU1YZ" target="_blank">Race Highlights.</a><br/>Heartbreaking Checo crash in the beginning of the race.'
+    },
+    21: {
+        past: true,
+        quali: ['ver', 'lec', 'str', 'alo', 'ham', 'rus', 'nor', 'sai', 'per', 'pia', 'hul', 'oco', 'gas', 'mag', 'alb', 'tsu', 'ric', 'bot', 'sar', 'zho'],
+        sprint: ['ver', 'nor', 'per', 'rus', 'lec', 'tsu', 'ham', 'sai', 'ric', 'pia', 'alo', 'str', 'gas', 'oco', 'alb', 'mag', 'zho', 'hul', 'bot', 'sar'],
+        scores: 'default',
+        race: ['ver', 'nor', 'alo', 'per', 'str', 'sai', 'gas', 'ham', 'tsu', 'oco', 'sar', 'hul', 'ric', 'pia'],
+        out: ['rus', 'bot', 'zho', 'mag', 'alb', 'lec'],
+        lap: 'nor',
+        descr: 'Quali: <a href="https://youtu.be/oIWe4Sy52U0?si=bjzTZovz62fE5Q--" target="_blank">Quali Highlights</a><br/>Sprint: <a href="https://youtu.be/3O9HOA8ZpyA?si=ZxjFGhUyLDmJ8E6L" target="_blank">Sprint Highlights</a><br/>Race: <a href="https://youtu.be/WkLTWmlTaJM?si=Bi9wDf1H7Gyf4mjU" target="_blank">Race Highlights.</a><br/>Charles\' car failure in the formation lap. Amazing fight for P3 between Checo and Fernando in the final laps.'
+    },
 }
