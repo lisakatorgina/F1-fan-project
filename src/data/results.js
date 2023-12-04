@@ -192,4 +192,22 @@ export default {
         lap: 'nor',
         descr: 'Quali: <a href="https://youtu.be/oIWe4Sy52U0?si=bjzTZovz62fE5Q--" target="_blank">Quali Highlights</a><br/>Sprint: <a href="https://youtu.be/3O9HOA8ZpyA?si=ZxjFGhUyLDmJ8E6L" target="_blank">Sprint Highlights</a><br/>Race: <a href="https://youtu.be/WkLTWmlTaJM?si=Bi9wDf1H7Gyf4mjU" target="_blank">Race Highlights.</a><br/>Charles\' car failure in the formation lap. Amazing fight for P3 between Checo and Fernando in the final laps.'
     },
+    22: {
+        past: true,
+        quali: ['lec', 'sai', 'ver', 'rus', 'gas', 'alb', 'sar', 'bot', 'mag', 'alo', 'ham', 'per', 'hul', 'str', 'ric', 'nor', 'oco', 'zho', 'pia', 'tsu'],
+        scores: 'default',
+        race: ['ver', 'lec', 'per', 'oco', 'str', 'sai', 'ham', 'rus', 'alo', 'pia', 'gas', 'alb', 'mag', 'ric', 'zho', 'sar', 'bot'],
+        out: ['tsu', 'hul', 'nor'],
+        lap: 'pia',
+        descr: 'Quali: <a href="https://youtu.be/x2ZErZsUn1o?si=lIWxatOxntQ9qWg6" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/Q9qSwDxF6YI?si=y480smc1AX68VCCY" target="_blank">Race Highlights.</a>'
+    },
+    23: {
+        past: true,
+        quali: ['ver', 'lec', 'pia', 'rus', 'nor', 'tsu', 'alo', 'hul', 'per', 'gas', 'ham', 'oco', 'str', 'alb', 'ric', 'sai', 'mag', 'bot', 'zho', 'sar'],
+        scores: 'default',
+        race: ['ver', 'lec', 'rus', 'per', 'nor', 'pia', 'alo', 'tsu', 'ham', 'str', 'ric', 'oco', 'gas', 'alb', 'hul', 'sar', 'zho', 'sai', 'bot', 'mag'],
+        out: [],
+        lap: 'ver',
+        descr: 'Quali: <a href="https://youtu.be/PnWJjf1dQJ0?si=Z1w_PoAC0s06Tgzd" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/9Z6rtYo1qBU?si=10aqDxw_y79flDRP" target="_blank">Race Highlights.</a>'
+    },
 }
