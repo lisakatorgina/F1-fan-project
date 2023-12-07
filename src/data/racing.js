@@ -20,7 +20,7 @@ export default [
     {country: 'United States', place: 'Austin', name: 'Circuit of The Americas', dates: 'October 20-22', laps: '56', image: 'austin.svg'},
     {country: 'Mexico', place: 'Mexico City', name: 'Autódromo Hermanos Rodríguez', dates: 'October 27-29', laps: '71', image: 'mexico.svg'},
     {country: 'Brazil', place: 'São Paulo', name: 'Autódromo José Carlos Pace', dates: 'November 3-5', laps: '71', image: 'brazil.svg'},
-    {country: 'United States', place: 'Las Vegas', name: 'Las Vegas', dates: 'November 16-18', laps: '50', image: ''},
+    {country: 'United States', place: 'Las Vegas', name: 'Las Vegas', dates: 'November 16-18', laps: '50', image: 'vegas.svg'},
     {country: 'Abu Dhabi', place: 'Yas Island', name: 'Yas Marina Circuit', dates: 'November 24-26', laps: '58', image: 'yas-marina.svg'}
 
     /*{country: 'France', place: 'Le Castellet', name: 'Circuit Paul Ricard', dates: 'July 22-24', laps: '53', image: 'paulricard.svg'},
