@@ -48,6 +48,11 @@ const routes = [
     path: '/2022/',
     name: '2022-home',
     component: () => import('../views/2022/Home.vue')
+  },
+  {
+    path: '/2023/',
+    name: '2023-home',
+    component: () => import('../views/2023/Home.vue')
   }
 ]
 

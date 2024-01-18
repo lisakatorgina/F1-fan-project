@@ -19,4 +19,12 @@ export default [
     {name: 'Guanyu Zhou', id: 'zho', team: 'Alfa Romeo', number: '24', country: 'China', points: 0, photo: 'guanyu2.jpg', birthdate: '1999/05/30', link: 'https://en.wikipedia.org/wiki/Guanyu_Zhou'},
     {name: 'Kevin Magnussen', id: 'mag', team: 'Haas', number: '20', country: 'Denmark', points: 0, photo: 'kevin.webp', birthdate: '1992/10/05', link: 'https://en.wikipedia.org/wiki/Kevin_Magnussen'},
     {name: 'Logan Sargeant', id: 'sar', team: 'Williams', number: '2', country: 'United States', points: 0, photo: 'logan2.jpg', birthdate: '2000/12/31', link: 'https://en.wikipedia.org/wiki/Logan_Sargeant'},
+    {name: 'Sebastian Vettel', id: 'vet', team: 'Aston Martin', number: '5', country: 'Germany', points: 0, photo: 'seb.jpg', birthdate: '1987/07/03', champ: '2010, 2011, 2012, 2013', link: 'https://en.wikipedia.org/wiki/Sebastian_Vettel', note: 'Retired', out: true},
+    {name: 'Mick Schumacher', id: 'msc', team: 'Haas', number: '19', country: 'Germany', points: 0, photo: 'mick.jpg', birthdate: '1999/03/22', link: 'https://en.wikipedia.org/wiki/Mick_Schumacher', out: true},
+    {name: 'Nicholas Latifi', id: 'lat', team: 'Williams', number: '6', country: 'Canada', points: 0, photo: 'nicholas.jpg', birthdate: '1995/06/29', link: 'https://en.wikipedia.org/wiki/Nicholas_Latifi', out: true},
+    {name: 'Nyck de Vries', id: 'dev', team: 'AlphaTauri', number: '45', country: 'Netherlands', points: 0, photo: 'nyck2.jpg', birthdate: '1995/02/06', link: 'https://en.wikipedia.org/wiki/Nyck_de_Vries', note: 'out since Hungarian GP'},
+    {name: 'Liam Lawson', id: 'law', team: 'AlphaTauri', number: '15', country: 'New Zealand', points: 0, photo: 'liam.jpg', birthdate: '2002/02/11', link: 'https://en.wikipedia.org/wiki/Liam_Lawson', note: 'Replace Daniel due to his injury since Netherlands GP'},
+    {name: 'Nikita Mazepin', id: 'maz', team: 'Haas', number: '9', country: 'Russia', points: 0, photo: 'nikita.jpg', birthdate: '1992/03/02', link: 'https://en.wikipedia.org/wiki/Nikita_Mazepin'},
+    {name: 'Kimi Raikkonen', id: 'rai', team: 'Alfa Romeo', number: '7', country: 'Finland', points: 0, photo: 'kimi.jpg', note: 'Retired', out: true, birthdate: '1979/10/17', champ: '2007', link: 'https://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen'},
+    {name: 'Antonio Giovinazzi', id: 'gio', team: 'Alfa Romeo', number: '99', country: 'Italy', points: 0, photo: 'antonio.jpg', note: '2022 Formula E', out: true, birthdate: '1993/12/14', link: 'https://en.wikipedia.org/wiki/Antonio_Giovinazzi'},
 ]

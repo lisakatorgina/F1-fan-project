@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="content__title">Season 2024 drivers</h1>
+    <h1 class="content__title">Racing season 2023</h1>
+
+    <h1 class="content__title content__title_margin-top">Drivers standings</h1>
     <div class="table">
       <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row', {'row_reserve': driver.reserve}]">
         <div class="row__position" v-if="Object.keys(results).length > 0">{{ index + 1 }}</div>
@@ -40,32 +42,93 @@
         </div>
       </div>
     </div>
+
+    <h1 class="content__title content__title_margin-top">Teams standings</h1>
+    <div class="table">
+      <div v-for="(team, index) in teamsData" :key="index" :class="['table__item', 'row']">
+        <div class="row__position" v-if="Object.keys(results).length > 0">
+          {{ index + 1 }}
+        </div>
+        <div class="row__name row__name_team" @click="openPopupTeams(index)">
+          <h2>
+            <a href="" @click.prevent="openPopupTeams(index)">{{ team.name }}</a>
+          </h2>
+        </div>
+        <div class="row__team row__team_small">
+          {{ getName(team.drivers[0]) }}<br/>
+          {{ getName(team.drivers[1]) }}
+        </div>
+        <div class="row__logo" v-if="team.logo != ''">
+          <img :src="require(`@/assets/img/logos/${team.logo}`)" :alt="team.name">
+        </div>
+        <span v-if="Object.keys(results).length > 0" class="row__points">{{ team.points }}</span>
+      </div>
+    </div>
+    <div class="popup" v-if="popupOpenedTeams" @click="closePopup($event)">
+      <div class="popup__box">
+        <span class="popup__close" @click="popupOpenedTeams = false">&times;</span>
+        <h3>{{ currentTeam.name }}</h3>
+        <div class="popup__photo popup__photo_horizontal" :style="{'background-image': `url(${openedPhotoTeams}`}">
+          <span class="popup__prev" v-if="currentGalleryIndexTeams > 0" @click="changePhotoTeams(currentGalleryIndexTeams - 1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></span>
+          <span class="popup__next" v-if="currentGalleryIndexTeams < (teamsData.length-1)" @click="changePhotoTeams(currentGalleryIndexTeams + 1)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="content__title content__title_margin-top">Races</h1>
+    <div class="races">
+      <race-item
+          v-for="(item, index) in tracks"
+          :key="index"
+          :item="item"
+          :index="index + 1"
+          :points="points"
+          :results="results"
+      ></race-item>
+    </div>
   </div>
 </template>
 
 <script>
-import drivers from "@/data/drivers";
+import racing from "@/data/2023/racing";
+import RaceItem from "@/components/raceItem";
+import MyCountdown from "@/components/Countdown";
+import points from "@/data/points";
+import results from "@/data/2023/results";
+
+import drivers from "@/data/2023/drivers";
 import getFlag from "@/utils/getflag";
 import getName from "@/utils/getName";
-import results from "@/data/results";
 import getPoints from "@/utils/getPoints";
+
+import teams from "@/data/2023/teams";
 
 export default {
   components: {
+    RaceItem,
+    MyCountdown
   },
   metaInfo: {
-    title: 'Standings',
+    title: 'Home',
     meta: [
-      {property: 'og:title', content: "F1 fan project | Standings"},
-    ]
+      {property: 'og:title', content: "Formula 1 racing schedule and results"},
+    ],
   },
   data() {
     return {
+      tracks: racing,
+      points: points,
+      results: results,
+
       driversData: drivers,
       currentGalleryIndex: 0,
       openedPhoto: '',
       popupOpened: false,
-      results: results
+
+      currentGalleryIndexTeams: 0,
+      openedPhotoTeams: '',
+      popupOpenedTeams: false,
+      teamsData: teams,
     }
   },
   mounted() {
@@ -75,12 +138,26 @@ export default {
     }
     this.driversData.sort(function(a, b){
       return b.points - a.points;
-      return a.name.localeCompare(b.team);
+      //return a.team.localeCompare(b.team);
+    });
+
+    for (var i = 0; i < this.teamsData.length; i++) {
+      var _driver1 = this.teamsData[i].drivers[0];
+      var _driver2 = this.teamsData[i].drivers[1];
+      var _driver3 = this.teamsData[i].drivers[2];
+      this.teamsData[i].points = (getPoints(this.results)[_driver1] ? getPoints(this.results)[_driver1] : 0) + (getPoints(this.results)[_driver2] ? getPoints(this.results)[_driver2] : 0) + (getPoints(this.results)[_driver3] ? getPoints(this.results)[_driver3] : 0);
+    }
+    this.teamsData.sort(function(a, b){
+      return b.points - a.points;
+      //return a.team.localeCompare(b.team);
     });
   },
   computed: {
     currentDriver() {
       return this.driversData[this.currentGalleryIndex];
+    },
+    currentTeam() {
+      return this.teamsData[this.currentGalleryIndexTeams];
     },
   },
   methods: {
@@ -118,6 +195,22 @@ export default {
     getFlag,
     getName,
     getPoints,
+    openPopupTeams(index) {
+      this.popupOpenedTeams = true;
+      this.changePhotoTeams(index);
+    },
+    changePhotoTeams(index) {
+      if (index >= this.teamsData.length || index < 0) {
+        return;
+      }
+      this.openedPhotoTeams = require(`@/assets/img/cars/2023/${this.teamsData[index].image}`);
+      this.currentGalleryIndexTeams = index;
+    },
+    closePopupTeams(e) {
+      if (e.target.className === 'popup') {
+        this.popupOpenedTeams = false;
+      }
+    },
   }
 }
 </script>

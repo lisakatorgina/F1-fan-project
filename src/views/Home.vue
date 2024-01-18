@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="content__title">Racing season 2023</h1>
+    <h1 class="content__title">Racing season 2024</h1>
     <my-countdown dark></my-countdown>
     <div class="races">
       <race-item

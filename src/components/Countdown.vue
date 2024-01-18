@@ -1,6 +1,6 @@
 <template>
   <div :class="['countdown', {'countdown_dark': dark}]">
-    <countdown :end-time="new Date(2023, 2, 3, 0, 0, 0)">
+    <countdown :end-time="new Date(2024, 1, 29, 0, 0, 0)">
       <template v-slot:process="countdown">
         <h2>We are on winter break</h2>
         <div class="load-bar">

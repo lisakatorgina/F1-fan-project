@@ -24,6 +24,7 @@
         <!--router-link to="/laugh" class="header__menu-item" v-if="$route.name !== 'Laugh'">Laugh</router-link-->
         <router-link to="/about" class="header__menu-item" v-if="$route.name !== 'About'">About</router-link>
         <router-link to="/2022" class="header__menu-item" v-if="$route.name !== '2022-home'">2022</router-link>
+        <router-link to="/2023" class="header__menu-item" v-if="$route.name !== '2023-home'">2023</router-link>
       </div>
     </transition>
   </div>

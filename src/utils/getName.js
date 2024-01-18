@@ -1,4 +1,4 @@
-import drivers from "@/data/drivers";
+import drivers from "@/data/all-drivers";
 
 export default (value) => {
     var _name = drivers.filter(obj => {
