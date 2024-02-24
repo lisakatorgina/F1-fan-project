@@ -1,10 +1,16 @@
 import teams from "@/data/teams";
+import teams2022 from "@/data/2022/teams";
+import teams2023 from "@/data/2023/teams";
 
-export default (value) => {
-    var _team = teams.filter(obj => {
-        return obj.drivers.includes(value);
-    });
-    if (_team.length > 0 && _team[0]) {
-        return _team[0].logo;
-    }
+const teamDataByYear = {
+    '2022': teams2022,
+    '2023': teams2023
+};
+
+export default (value, year) => {
+    const _team_data = teamDataByYear[year] || teams;
+
+    const foundTeam = _team_data.find(obj => obj.drivers.includes(value));
+
+    return foundTeam ? foundTeam.logo : undefined;
 }

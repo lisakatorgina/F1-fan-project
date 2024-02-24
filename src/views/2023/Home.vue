@@ -84,6 +84,7 @@
           :index="index + 1"
           :points="points"
           :results="results"
+          year="2023"
       ></race-item>
     </div>
   </div>

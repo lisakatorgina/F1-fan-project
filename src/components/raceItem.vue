@@ -97,7 +97,7 @@
               <li v-for="(item, i) in raceResults.race" :key="`race${item}`">
                 <span>
                   <b>{{ i + 1 }}.</b> {{ getName(item) }}
-                  <img v-if="getTeam(item)" :src="require(`@/assets/img/logos/${getTeam(item)}`)" alt="">
+                  <img v-if="getTeam(item, year)" :src="require(`@/assets/img/logos/${getTeam(item, year)}`)" alt="">
                 </span>
                 <span>
                   <template v-if="item === raceResults.lap">
@@ -109,7 +109,7 @@
               <li v-for="(item, i) in raceResults.out" :key="`out${item}`">
                 <span>
                   <b>DNF</b> {{ getName(item) }}
-                  <img v-if="getTeam(item)" :src="require(`@/assets/img/logos/${getTeam(item)}`)" alt="">
+                  <img v-if="getTeam(item, year)" :src="require(`@/assets/img/logos/${getTeam(item, year)}`)" alt="">
                 </span>
                 <span>
                   <template v-if="item === raceResults.lap">
@@ -192,6 +192,10 @@ export default {
       type: Object,
       default: {},
     },
+    year: {
+      type: String,
+      default: undefined
+    }
   },
   data() {
     return {
