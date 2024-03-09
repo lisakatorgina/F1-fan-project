@@ -1,6 +1,6 @@
 export default [
     {name: 'Red Bull', country: '', principal: 'Christian Horner', logo: 'redbull.png', drivers: ['ver','per'], points: 0, image: 'red-bull.jpg'},
-    {name: 'Ferrari', country: '', principal: 'Mattia Binotto', logo: 'ferrari.png', drivers: ['sai', 'lec'], points: 0, image: 'ferrari.jpg'},
+    {name: 'Ferrari', country: '', principal: 'FREDERIC VASSEUR', logo: 'ferrari.png', drivers: ['sai', 'lec'], points: 0, image: 'ferrari.jpg'},
     {name: 'Mercedes', country: '', principal: 'Toto Wolff', logo: 'mercedes.png', drivers: ['ham', 'rus'], points: 0, image: 'mercedes.jpg'},
     {name: 'Alpine', country: '', principal: 'Davide Brivio', logo: 'alpine.png', drivers: ['oco', 'gas'], points: 0, image: 'alpine.jpg'},
     {name: 'McLaren', country: '', principal: 'Andreas Seidl', logo: 'mclaren.png', drivers: ['nor', 'pia'], points: 0, image: 'mclaren.jpg'},

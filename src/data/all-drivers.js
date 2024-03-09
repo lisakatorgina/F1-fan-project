@@ -27,4 +27,5 @@ export default [
     {name: 'Nikita Mazepin', id: 'maz', team: 'Haas', number: '9', country: 'Russia', points: 0, photo: 'nikita.jpg', birthdate: '1992/03/02', link: 'https://en.wikipedia.org/wiki/Nikita_Mazepin'},
     {name: 'Kimi Raikkonen', id: 'rai', team: 'Alfa Romeo', number: '7', country: 'Finland', points: 0, photo: 'kimi.jpg', note: 'Retired', out: true, birthdate: '1979/10/17', champ: '2007', link: 'https://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen'},
     {name: 'Antonio Giovinazzi', id: 'gio', team: 'Alfa Romeo', number: '99', country: 'Italy', points: 0, photo: 'antonio.jpg', note: '2022 Formula E', out: true, birthdate: '1993/12/14', link: 'https://en.wikipedia.org/wiki/Antonio_Giovinazzi'},
+    {name: 'Oliver Bearman', id: 'bea', team: 'Ferrari', number: '38', country: 'Great Britain', points: 0, photo: 'oliver.jpg', birthdate: '2005/05/08', link: 'https://en.wikipedia.org/wiki/Oliver_Bearman', note: 'Replace Carlos due to his appendicitis on Saudi Arabia GP'},
 ]
