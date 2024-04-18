@@ -3,7 +3,7 @@ export default [
     {country: 'Saudi Arabia', place: 'Jeddah', name: 'Jeddah Corniche Circuit', dates: 'March 7-9', laps: '50', image: 'jeddah.svg'},
     {country: 'Australia', place: 'Melbourn', name: 'Melbourne Grand Prix Circuit', dates: 'March 22-24', laps: '58', image: 'melbourn.svg'},
     {country: 'Japan', place: 'Suzuka', name: 'Suzuka International Racing Course', dates: 'April 5-7', laps: '53', image: 'suzuka.svg'},
-    {country: 'China', place: 'Shanghai', name: 'Shanghai International Circuit', dates: 'April 19-21', laps: '56', image: ''},
+    {country: 'China', place: 'Shanghai', name: 'Shanghai International Circuit', dates: 'April 19-21', laps: '56', image: 'shanghai.svg'},
     {country: 'United States', place: 'Miami', name: 'Miami International Autodrome', dates: 'May 3-5', laps: '57', image: 'miami.svg'},
     {country: 'Italy', place: 'Imola', name: 'Autodromo Enzo e Dino Ferrari', dates: 'May 17-19', laps: '63', image: 'imola.svg'},
     {country: 'Monaco', place: 'Monte Carlo', name: 'Circuit de Monaco', dates: 'May 24-26', laps: '78', image: 'monaco.svg'},
