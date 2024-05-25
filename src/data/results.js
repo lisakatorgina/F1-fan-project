@@ -53,6 +53,25 @@ export default {
         race: ['nor', 'ver', 'lec', 'per', 'sai', 'ham', 'tsu', 'rus', 'alo', 'oco', 'hul', 'gas', 'pia', 'zho', 'ric', 'bot', 'str', 'alb', 'mag'],
         out: ['sar'],
         lap: 'pia',
+        lapNotScored: true,
         descr: 'Quali: <a href="https://youtu.be/BTj7k5TNXec?si=-qr2yWc58UTMqO-e" target="_blank">Quali Highlights</a><br/>Sprint: <a href="https://youtu.be/8Hxn1m-jdyk?si=a_WimuGolnAY9UMn" target="_blank">Sprint Highlights</a><br/>Race: <a href="https://youtu.be/9wiQqcKUahc?si=goXaJI5QFg_rcKP5" target="_blank">Race Highlights.</a>'
+    },
+    7: {
+        past: true,
+        quali: ['ver', 'pia', 'nor', 'lec', 'sai', 'rus', 'tsu', 'ham', 'ric', 'hul', 'per', 'oco', 'str', 'alb', 'gas', 'bot', 'zho', 'mag', 'alo', 'sar'],
+        scores: 'default',
+        race: ['ver', 'nor', 'lec', 'pia', 'sai', 'ham', 'rus', 'per', 'str', 'tsu', 'hul', 'mag', 'ric', 'oco', 'zho', 'gas', 'sar', 'bot', 'alo'],
+        out: ['alb'],
+        lap: 'rus',
+        descr: 'Quali: <a href="https://youtu.be/1yS6gvvGEXM?si=367lxjfw5WvtTfoZ" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/wya4iAJLlzs?si=ohbC5U04bOASJrcp" target="_blank">Race Highlights.</a>'
+    },
+    8: {
+        past: false,
+        quali: ['lec', 'pia', 'sai', 'nor', 'rus', 'ver', 'ham', 'tsu', 'alb', 'gas', 'oco', 'hul', 'ric', 'str', 'mag', 'alo', 'sar', 'per', 'bot', 'zho'],
+        scores: 'default',
+        //race: ['nor', 'ver', 'lec', 'per', 'sai', 'ham', 'tsu', 'rus', 'alo', 'oco', 'hul', 'gas', 'pia', 'zho', 'ric', 'bot', 'str', 'alb', 'mag'],
+        //out: ['sar'],
+        //lap: 'pia',
+        //descr: 'Quali: <a href="" target="_blank">Quali Highlights</a><br/>Race: <a href="" target="_blank">Race Highlights.</a>'
     },
 }
