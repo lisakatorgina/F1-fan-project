@@ -103,4 +103,13 @@ export default {
         lapNotScored: true,
         descr: 'Quali: <a href="https://youtu.be/pHlcFQxF9nY?si=TWIXBrFZKJ_0bHCJ" target="_blank">Quali Highlights</a><br/>Sprint: <a href="https://youtu.be/8Qb2pAF0hmE?si=qxBLmeQe6XE_UD5t" target="_blank">Sprint Highlights</a><br/>Race: <a href="https://youtu.be/b0yb1zH2m7c?si=mHkPFwTrCv0If4Ge" target="_blank">Race Highlights.</a>'
     },
+    12: {
+        past: true,
+        quali: ['rus', 'ham', 'nor', 'ver', 'pia', 'hul', 'sai', 'str', 'alb', 'alo', 'lec', 'sar', 'tsu', 'zho', 'ric', 'bot', 'mag', 'oco', 'per', 'gas'],
+        scores: 'default',
+        race: ['ham', 'ver', 'nor', 'pia', 'sai', 'hul', 'str', 'alo', 'alb', 'tsu', 'sar', 'mag', 'ric', 'lec', 'bot', 'oco', 'per', 'zho'],
+        out: ['rus', 'gas'],
+        lap: 'sai',
+        descr: 'Quali: <a href="https://youtu.be/CQXbkGI-tmQ?si=ZS_SBcbw6csJHG3Q" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/yPvoKz6tyJs?si=A7ZPLPB_8yRdxqaP" target="_blank">Race Highlights.</a>'
+    },
 }
