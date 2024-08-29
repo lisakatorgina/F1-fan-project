@@ -118,6 +118,12 @@
                   {{ getRacePoints(item, i, true) }}
                 </span>
               </li>
+              <li v-for="(item, i) in raceResults.dq" :key="`dq${item}`">
+                <span>
+                  <b>DQ</b> {{ getName(item) }}
+                  <img v-if="getTeam(item, year)" :src="require(`@/assets/img/logos/${getTeam(item, year)}`)" alt="">
+                </span>
+              </li>
             </ul>
           </template>
           <template v-if="raceResults.sprint">

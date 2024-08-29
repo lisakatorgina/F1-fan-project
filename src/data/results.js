@@ -119,6 +119,25 @@ export default {
         race: ['pia', 'nor', 'ham', 'lec', 'ver', 'sai', 'per', 'rus', 'tsu', 'str', 'alo', 'ric', 'hul', 'alb', 'mag', 'bot', 'sar', 'oco', 'zho'],
         out: ['gas'],
         lap: 'rus',
-        descr: ''
+        descr: 'Quali: <a href="https://youtu.be/BQpMioqbh3I?si=A5lu0I6Ery58-IuT" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/YJ0NYHONwts?si=lgv2enHpKmtXgIAb" target="_blank">Race Highlights.</a>'
+    },
+    14: {
+        past: true,
+        quali: ['ver', 'lec', 'per', 'ham', 'nor', 'pia', 'rus', 'sai', 'alo', 'oco', 'alb', 'gas', 'ric', 'bot', 'str', 'hul', 'mag', 'tsu', 'sar', 'zho'],
+        scores: 'default',
+        race: ['ham', 'pia', 'lec', 'ver', 'nor', 'sai', 'per', 'alo', 'oco', 'ric', 'str', 'alb', 'gas', 'mag', 'bot', 'tsu', 'sar', 'hul'],
+        out: ['zho'],
+        dq: ['rus'],
+        lap: 'per',
+        descr: 'Quali: <a href="https://youtu.be/lDB1oqMKW7A?si=qyRVazMsq6i-cq1V" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/pQaG0ay957M?si=iD28sTlFhowMLZkN" target="_blank">Race Highlights.</a><br/>George finished first but was disqualified due to his car being underweight.'
+    },
+    15: {
+        past: true,
+        quali: ['nor', 'ver', 'pia', 'rus', 'per', 'lec', 'alo', 'str', 'gas', 'sai', 'ham', 'tsu', 'hul', 'mag', 'ric', 'oco', 'bot', 'zho'],
+        scores: 'default',
+        race: ['nor', 'ver', 'lec', 'pia', 'sai', 'per', 'rus', 'ham', 'gas', 'alo', 'hul', 'ric', 'str', 'alb', 'oco', 'sar', 'tsu', 'mag', 'bot', 'zho'],
+        out: [],
+        lap: 'nor',
+        descr: 'Quali: <a href="https://youtu.be/UAna0bJUhhw?si=Xe97faY7nJ97PWBg" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/cFM_6zb35rI?si=pHrNrCJTGEN5mb6H" target="_blank">Race Highlights.</a>'
     },
 }
