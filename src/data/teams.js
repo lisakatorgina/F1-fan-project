@@ -8,5 +8,5 @@ export default [
     {name: 'Kick Sauber', country: '', principal: 'Frédéric Vasseur', logo: 'stake.png', drivers: ['bot', 'zho'], points: 0, image: 'kick-sauber.webp'},
     {name: 'Haas', country: '', principal: 'Guenther Steiner', logo: 'haas.png', drivers: ['mag', 'hul'], points: 0, image: 'haas.jpg'},
     {name: 'RB', country: '', principal: 'Franz Tost', logo: 'rb.png', drivers: ['tsu', 'ric', 'law'], points: 0, image: 'rb.jpg'},
-    {name: 'Williams', country: '', principal: 'Jost Capito', logo: 'williams.png', drivers: ['alb', 'sar'], points: 0, image: 'williams.webp'},
+    {name: 'Williams', country: '', principal: 'Jost Capito', logo: 'williams.png', drivers: ['alb', 'sar', 'col'], points: 0, image: 'williams.webp'},
 ]

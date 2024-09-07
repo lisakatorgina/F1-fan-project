@@ -12,8 +12,7 @@
           </h2>
         </div>
         <div class="row__team row__team_small">
-          {{ getName(team.drivers[0]) }}<br/>
-          {{ getName(team.drivers[1]) }}
+          <span v-for="driver in team.drivers" style="display: block;">{{ getName(driver) }}</span>
         </div>
         <div class="row__logo" v-if="team.logo != ''">
           <img :src="require(`@/assets/img/logos/${team.logo}`)" :alt="team.name">
