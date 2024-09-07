@@ -5,8 +5,9 @@
       <p>Hello! My name is Lisa.</p>
       <p>I am russian currently living in Mexico web-developer and this silly little website is a project to share my love for Formula 1, because to love is to share 🧡.<br/> I started it after the end of the 2021 racing season to survive the winter break.</p>
       <p>During the season I am going to publish race results and scores.</p>
-      <p>I hope you enjoy what you can find here and I promise I will improve it. If you want to give me any feedback you can contact me by <a href="mailto:lisakatorgina@gmail.com">lisakatorgina@gmail.com</a></p>
-      <p>I also have an instagram account about Formula 1 <a href="https://www.instagram.com/lisalovesformula1/" target="_blank">@lisalovesformula1</a></p>
+      <p>I hope you enjoy what you can find here and I promise I will improve it.</p>
+      <!--p>I hope you enjoy what you can find here and I promise I will improve it. If you want to give me any feedback you can contact me by <a href="mailto:lisakatorgina@gmail.com">lisakatorgina@gmail.com</a></p>
+      <p>I also have an instagram account about Formula 1 <a href="https://www.instagram.com/lisalovesformula1/" target="_blank">@lisalovesformula1</a></p-->
       <!--p><img class="qr" src="../assets/img/qr.png" alt=""/></p-->
       <!--p><play-sound audio-source="twch.mp3"></play-sound></p-->
     </div>
