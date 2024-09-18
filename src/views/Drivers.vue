@@ -71,7 +71,7 @@ export default {
   mounted() {
     for (var i = 0; i < this.driversData.length; i++) {
       var _id = this.driversData[i].id;
-      this.driversData[i].points = getPoints(this.results)[_id] ? getPoints(this.results)[_id] : 0;
+      this.driversData[i].points = this.driversData[i].points + (getPoints(this.results)[_id] ? getPoints(this.results)[_id] : 0);
     }
     this.driversData.sort(function(a, b){
       return b.points - a.points;

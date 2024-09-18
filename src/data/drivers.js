@@ -19,6 +19,6 @@ export default [
     {name: 'Guanyu Zhou', id: 'zho', team: 'Alfa Romeo', number: '24', country: 'China', points: 0, photo: 'guanyu2.jpg', birthdate: '1999/05/30', link: 'https://en.wikipedia.org/wiki/Guanyu_Zhou'},
     {name: 'Kevin Magnussen', id: 'mag', team: 'Haas', number: '20', country: 'Denmark', points: 0, photo: 'kevin.webp', birthdate: '1992/10/05', link: 'https://en.wikipedia.org/wiki/Kevin_Magnussen'},
     {name: 'Logan Sargeant', id: 'sar', team: 'Williams', number: '2', country: 'United States', points: 0, photo: 'logan2.jpg', birthdate: '2000/12/31', link: 'https://en.wikipedia.org/wiki/Logan_Sargeant', note: 'Out after Netherlands GP #15'},
-    {name: 'Oliver Bearman', id: 'bea', team: 'Ferrari', number: '38', country: 'Great Britain', points: 0, photo: 'oliver.jpg', birthdate: '2005/05/08', link: 'https://en.wikipedia.org/wiki/Oliver_Bearman', note: 'Replace Carlos due to his appendicitis on Saudi Arabia GP'},
+    {name: 'Oliver Bearman', id: 'bea', team: 'Ferrari, Haas', number: '38', country: 'Great Britain', points: 1, photo: 'oliver.jpg', birthdate: '2005/05/08', link: 'https://en.wikipedia.org/wiki/Oliver_Bearman', note: 'Replace Carlos due to his appendicitis on Saudi Arabia GP and penalized Kevin on Baku'},
     {name: 'Franco Colapinto', id: 'col', team: 'Williams', number: '43', country: 'Argentina', points: 0, photo: 'franco.jpg', birthdate: '2003/05/27', link: 'https://en.wikipedia.org/wiki/Franco_Colapinto', note: 'Replace Logan since Monza #16'},
 ]

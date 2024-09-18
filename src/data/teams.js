@@ -6,7 +6,7 @@ export default [
     {name: 'McLaren', country: '', principal: 'Andreas Seidl', logo: 'mclaren.png', drivers: ['nor', 'pia'], points: 0, image: 'mclaren.jpg'},
     {name: 'Aston Martin', country: '', principal: '', logo: 'astonmartin.png', drivers: ['alo', 'str'], points: 0, image: 'aston-martin.webp'},
     {name: 'Kick Sauber', country: '', principal: 'Frédéric Vasseur', logo: 'stake.png', drivers: ['bot', 'zho'], points: 0, image: 'kick-sauber.webp'},
-    {name: 'Haas', country: '', principal: 'Guenther Steiner', logo: 'haas.png', drivers: ['mag', 'hul'], points: 0, image: 'haas.jpg'},
+    {name: 'Haas', country: '', principal: 'Guenther Steiner', logo: 'haas.png', drivers: ['mag', 'hul', 'bea__haas'], points: 0, image: 'haas.jpg'},
     {name: 'RB', country: '', principal: 'Franz Tost', logo: 'rb.png', drivers: ['tsu', 'ric', 'law'], points: 0, image: 'rb.jpg'},
     {name: 'Williams', country: '', principal: 'Jost Capito', logo: 'williams.png', drivers: ['alb', 'sar', 'col'], points: 0, image: 'williams.webp'},
 ]
