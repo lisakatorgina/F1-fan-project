@@ -2,7 +2,7 @@
   <div>
     <h1 class="content__title">Season 2024 drivers</h1>
     <div class="table">
-      <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row', {'row_reserve': driver.reserve}]">
+      <div v-for="(driver, index) in driversData" :key="index" :class="['table__item', 'row', {'row_reserve': driver.reserve, 'row_out': driver.out}]">
         <div class="row__position" v-if="Object.keys(results).length > 0">{{ index + 1 }}</div>
         <div class="row__name">
           <div>
