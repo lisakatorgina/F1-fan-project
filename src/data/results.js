@@ -205,6 +205,6 @@ export default {
         race: ['rus', 'ham', 'sai', 'lec', 'ver', 'nor', 'pia', 'hul', 'tsu', 'per', 'alo', 'mag', 'zho', 'col', 'str', 'law', 'oco', 'bot'],
         out: ['alb', 'gas'],
         lap: 'nor',
-        descr: 'Quali: <a href="https://youtu.be/fsovddV6weQ?si=WvYsAtuKOgo-5BWw" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/sNd1-1GjMDY?si=ytIb7LBEQuvztGtO" target="_blank">Race Highlights.<br/>Verstappen Champion 🏆</a>'
+        descr: 'Quali: <a href="https://youtu.be/fsovddV6weQ?si=WvYsAtuKOgo-5BWw" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/sNd1-1GjMDY?si=ytIb7LBEQuvztGtO" target="_blank">Race Highlights.</a><br/>Verstappen Champion 🏆'
     },
 }
