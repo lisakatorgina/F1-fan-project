@@ -200,11 +200,30 @@ export default {
     },
     22: {
         past: true,
-        quali: ['rus', 'sai', 'gas', 'lec', 'ver', 'nor', 'tsu', 'pia', 'hul', 'ham', 'oco', 'mag', 'zho', 'col', 'law', 'per', 'alo', 'alb', 'bot', 'str'],
+        quali: ['rus', 'sai', 'gas', 'lec', 'ver', 'nor','tsu', 'pia', 'hul', 'ham', 'oco', 'mag', 'zho', 'col', 'law', 'per', 'alo', 'alb', 'bot', 'str'],
         scores: 'default',
         race: ['rus', 'ham', 'sai', 'lec', 'ver', 'nor', 'pia', 'hul', 'tsu', 'per', 'alo', 'mag', 'zho', 'col', 'str', 'law', 'oco', 'bot'],
         out: ['alb', 'gas'],
         lap: 'nor',
         descr: 'Quali: <a href="https://youtu.be/fsovddV6weQ?si=WvYsAtuKOgo-5BWw" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/sNd1-1GjMDY?si=ytIb7LBEQuvztGtO" target="_blank">Race Highlights.</a><br/>Verstappen Champion 🏆'
+    },
+    23: {
+        past: true,
+        quali: ['ver', 'rus', 'nor', 'pia', 'lec', 'ham', 'sai', 'alo', 'per', 'mag', 'gas', 'zho', 'bot', 'tsu', 'str', 'alb', 'law', 'hul', 'col', 'oco'],
+        scores: 'default',
+        race: ['ver', 'lec', 'pia', 'rus', 'gas', 'sai', 'alo', 'zho', 'mag', 'nor', 'bot', 'ham', 'tsu', 'law', 'alb'],
+        out: ['hul', 'per', 'str', 'oco', 'col'],
+        lap: 'nor',
+        descr: 'Quali: <a href="https://youtu.be/PmPRxHhYTjo?si=qAvB8vjp5YowoBYi" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/NGSPg5ns2-0?si=0nP9GDNm-QVYa8Tu" target="_blank">Race Highlights.</a>'
+    },
+    24: {
+        past: true,
+        quali: ['nor', 'pia', 'sai', 'hul', 'ver', 'gas', 'rus', 'alo', 'bot', 'per', 'tsu', 'law', 'str', 'lec', 'mag', 'alb', 'zho', 'ham', 'col', 'doo'],
+        scores: 'default',
+        race: ['nor', 'sai', 'lec', 'ham', 'rus', 'ver', 'gas', 'hul', 'alo', 'pia', 'alb', 'tsu', 'zho', 'str', 'doo', 'mag'],
+        out: ['law', 'bot', 'col', 'per'],
+        lap: 'mag',
+        lapNotScored: true,
+        descr: 'Quali: <a href="https://youtu.be/HDcSpCXH4g0?si=gBnaTGEmII5ubrVQ" target="_blank">Quali Highlights</a><br/>Race: <a href="https://youtu.be/Qa0nj2CcaSM?si=_XFEt3ls7qw-U4Qt" target="_blank">Race Highlights.</a>'
     },
 }

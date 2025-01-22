@@ -22,4 +22,5 @@ export default [
     {name: 'Oliver Bearman', id: 'bea', team: 'Ferrari, Haas', number: '50', country: 'Great Britain', points: 1, photo: 'oliver.jpg', birthdate: '2005/05/08', link: 'https://en.wikipedia.org/wiki/Oliver_Bearman', note: 'Replace Carlos due to his appendicitis on Saudi Arabia GP and penalized Kevin on Baku', reserve: true},
     {name: 'Franco Colapinto', id: 'col', team: 'Williams', number: '43', country: 'Argentina', points: 0, photo: 'franco.jpg', birthdate: '2003/05/27', link: 'https://en.wikipedia.org/wiki/Franco_Colapinto', note: 'Replace Logan since Monza #16'},
     {name: 'Liam Lawson', id: 'law', team: 'RB', number: '15', country: 'New Zealand', points: 0, photo: 'liam.jpg', birthdate: '2002/02/11', link: 'https://en.wikipedia.org/wiki/Liam_Lawson', note: 'Replace Daniel since USA GP #19'},
+    {name: 'Jack Doohan', id: 'doo', team: 'Alpine', number: '7', country: 'Australia', points: 0, photo: 'jack.jpg', birthdate: '2003/01/20', link: 'https://en.wikipedia.org/wiki/Jack_Doohan', note: 'Replace Esteban in Abu Dhabi #24'},
 ]
